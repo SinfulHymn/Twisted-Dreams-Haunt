@@ -9,6 +9,7 @@ module.exports = {
       backgroundImage:{
         'hero': "url('/images/landscapeFIX-min.png')",
         'hero2': "url('/images/tdh-vector.png')",
+        'footer': "url('/images/footerbg.png')",
       },
       colors: {
         primary: '#0F0E0E',

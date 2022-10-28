@@ -1,4 +1,5 @@
 import Header from '@components/Header/Header';
+import Foooter from '@components/Footer/Footer';
 
 type Props = {
     children: React.ReactNode;
@@ -11,6 +12,7 @@ const Layout = ({ children }: Props) => {
             <main className="flex-grow">
                 {children}
             </main>
+            <Foooter />
         </div>
     );
 }
