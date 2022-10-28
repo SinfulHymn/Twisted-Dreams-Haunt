@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body{
-  background-color: theme('colors.secondary');
+  background-color: theme('colors.primary');
 }

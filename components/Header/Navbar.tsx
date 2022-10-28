@@ -49,13 +49,13 @@ const Navbar = (): React.ReactElement => {
                     <div className="flex justify-center items-center sm:flex-[1_1_0] order-2
                     
                     sm:justify-end">
-                        <Link href={'/'} className='ml-4 '>
+                        <Link href={'/'} className=' p-4'>
                             <BsInstagram className="text-2xl" />
                         </Link>
-                        <Link href={'/'} className='ml-4' >
+                        <Link href={'/'} className=' p-4' >
                             <BsTwitter className="text-2xl" />
                         </Link>
-                        <Link href={'/'} className='ml-4'>
+                        <Link href={'/'} className=' p-4'>
                             <FaTiktok className="text-2xl" />
                         </Link>
                     </div>
