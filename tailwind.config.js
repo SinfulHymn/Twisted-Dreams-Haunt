@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'hero': "url('/images/landscapeFIX-min.png')",
+        'hero2': "url('/images/tdh-vector.png')",
+      },
       colors: {
         primary: '#0F0E0E',
         secondary: '#3D0000',
@@ -17,7 +21,11 @@ module.exports = {
         'carousel-title1': 'rgba(7, 47, 79, .75)',
         'carousel-title2': 'rgba(255, 255, 255, .75)',
       },
+      fontFamily: {
+        custom: ['AnotherDanger', 'sans-serif'],
+        
     },
     plugins: [],
   },
-};
+  } 
+}

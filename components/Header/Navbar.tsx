@@ -15,9 +15,16 @@ const Navbar = (): React.ReactElement => {
                     {/* logo */}
                     <div className=' flex-0 sm:flex-[1_1_0]  justify-center items-center '>
                         <Link href={"/"} className="max-h-[80px]">
-                            <Image src={""} alt={"Logo"}>
+                            <Image 
+                            className="p-1"
+                            src={"/images/twisted-dreams-main.png"} 
+                            alt={"Logo"}
+                            width={200}
+                            height={200}
 
-                            </Image>
+                            />
+
+                            
                         </Link>
                     </div>
                     
@@ -31,17 +38,19 @@ const Navbar = (): React.ReactElement => {
                     {/* nav */}
                     <div
                      className={"w-full sm:flex-[1_1_0] md:w-auto md:block  " + (isOpen ? 'block' : 'hidden')}>
-                        <ul className="flex flex-col sm:flex-row justify-between items-center ">
+                        <ul className="flex flex-col sm:flex-row justify-between text-lg items-center font-custom">
                             <li>
-                                <Link href={'/'} className='block p-4'>Home</Link>
+                                <Link href={'/'} className='block p-4 hover:text-main-red'>About</Link>
                             </li>
                             <li>
-                                <Link href={'/'} className=' block p-4'>About</Link>
+                                <Link href={'/'} className=' block p-4 hover:text-main-red'>Gallery</Link>
                             </li>
                             <li>
-                                <Link href={'/'} className='block p-4'>Contact</Link>
+                                <Link href={'/'} className='block p-4 hover:text-main-red'>Merch</Link>
                             </li>
-
+                            <li>
+                                <Link href={'/'} className='block p-4 hover:text-main-red'>Location</Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -49,14 +58,14 @@ const Navbar = (): React.ReactElement => {
                     <div className="flex justify-center items-center sm:flex-[1_1_0] order-2
                     
                     sm:justify-end">
-                        <Link href={'/'} className=' p-4'>
-                            <BsInstagram className="text-2xl" />
+                        <Link href={'/'} className='hover:text-main-red p-4'>
+                            <BsInstagram className="text-2xl " />
                         </Link>
-                        <Link href={'/'} className=' p-4' >
-                            <BsTwitter className="text-2xl" />
+                        <Link href={'/'} className='hover:text-main-red p-4' >
+                            <BsTwitter className="text-2xl " />
                         </Link>
-                        <Link href={'/'} className=' p-4'>
-                            <FaTiktok className="text-2xl" />
+                        <Link href={'/'} className=' p-4 hover:text-main-red'>
+                            <FaTiktok className="text-2xl " />
                         </Link>
                     </div>
 
