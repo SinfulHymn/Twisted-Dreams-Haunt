@@ -7,12 +7,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'hero': "url('/images/landscapeFIX-min.png')",
-        'hero2': "url('/images/tdh-vector.png')",
-        'footer': "url('/images/footerbg.png')",
+        'hero': "url('/images/landscape-web.png')",
+        'hero2': "url('/images/tdh-web.png')",
+        'footer': "url('/images/footerbg-web.png')",
       },
       colors: {
-        primary: '#0F0E0E',
+        primary: '#000000',
         secondary: '#3D0000',
         textlogo: '#eecfb4',
         'main-red': '#CE2D4F',

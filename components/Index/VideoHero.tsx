@@ -34,9 +34,7 @@ const VideoHero = () => {
                     <div className="absolute top-[70%] right-0  left-0 z-20">
                         <h1 className="text-4xl sm:text-6xl text-white font-custom font-bold text-center">
                         
-                        <p className="text-textlogo drop-shadow-2xl">
-                        Land Closest To<br /> Hell
-                        </p>
+                        
                         </h1>
                         
 
