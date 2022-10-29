@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const VideoHero = () => {
@@ -8,8 +8,18 @@ const VideoHero = () => {
 
             <div className="relative min-h-[500px] sm:min-h-[600px] bg-hero bg-cover bg-center -z-50 overflow-hidden">
 
+
                 <div className="absolute w-full h-full bg-black bg-opacity-70 -z-40">
 
+                <video 
+                className="absolute w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                id="background-video"
+                >
+                 <source src={'/video/TwistedDreamsHaunt.mp4'} type='video/mp4'/>
+                </video>
 
                     <div className=" w-full h-full flex justify-center items-center -z-30 ">
                         <Image
@@ -24,7 +34,7 @@ const VideoHero = () => {
                     <div className="absolute top-[70%] right-0  left-0 z-20">
                         <h1 className="text-4xl sm:text-6xl text-white font-custom font-bold text-center">
                         
-                        <p className=" drop-shadow-2xl">
+                        <p className="text-textlogo drop-shadow-2xl">
                         Land Closest To<br /> Hell
                         </p>
                         </h1>

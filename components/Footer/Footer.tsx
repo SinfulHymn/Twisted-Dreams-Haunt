@@ -17,7 +17,7 @@ const Footer = () =>{
                         Copyright © 2022 Twisted Dreams Haunted House
                     </p>
                     <p>
-                        Created by <a href="https://www.linkedin.com/in/brandon-lee-0b0b1b1b9/" target="_blank" rel="noreferrer">Brandon Lee</a>
+                        Created by <a href="https://github.com/Kmachappy" target="_blank" rel="noreferrer">Alejandro Rojas</a>
                     </p>
                 </div>
             </div>
