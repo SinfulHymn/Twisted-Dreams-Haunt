@@ -4,14 +4,16 @@ import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
 import { useState } from "react";
 import { Squash as Squash } from "hamburger-react";
+import Socials from "./Socials";
+import SocialsMobile from "./SocialsMobile";
 
 const Navbar = (): React.ReactElement => {
     const [isOpen, setOpen] = useState(false)
 
     return (
-        <div className="bg-black">
+        <div className="relative bg-black">
             <div className="container mx-auto ">
-                <nav className="flex text-white items-center justify-between px-1">
+                <nav className="flex flex-wrap text-white items-center justify-between px-1">
                     {/* logo */}
                     <div className=' flex-0 sm:flex-[1_1_0]  justify-center items-center '>
                         <Link href={"/"} className="max-h-[80px]">
@@ -37,37 +39,29 @@ const Navbar = (): React.ReactElement => {
 
                     {/* nav */}
                     <div
-                     className={"w-full sm:flex-[1_1_0] md:w-auto md:block  " + (isOpen ? 'block' : 'hidden')}>
+                     className={"order-3 sm:order-2 w-full sm:flex-[1_1_0] md:w-auto md:block  " + (isOpen ? 'block' : 'hidden')}>
+                        <SocialsMobile />
                         <ul className="flex flex-col sm:flex-row justify-between text-lg items-center font-custom">
                             <li>
-                                <Link href={'/'} className='block p-4 hover:text-main-red'>About</Link>
+                                <Link href={'/about'} className='block p-4 hover:text-main-red'>About</Link>
                             </li>
                             <li>
-                                <Link href={'/'} className=' block p-4 hover:text-main-red'>Gallery</Link>
+                                <Link href={'/gallery'} className=' block p-4 hover:text-main-red'>Gallery</Link>
                             </li>
                             <li>
-                                <Link href={'/'} className='block p-4 hover:text-main-red'>Merch</Link>
+                                <Link href={'/merch'} className='block p-4 hover:text-main-red'>Merch</Link>
                             </li>
                             <li>
-                                <Link href={'/'} className='block p-4 hover:text-main-red'>Location</Link>
+                                <Link href={'/location'} className='block p-4 hover:text-main-red'>Location</Link>
+                            </li>                            <li>
+                                <Link href={'/location'} className='block p-4 hover:text-main-red'>Location</Link>
                             </li>
+                            
                         </ul>
                     </div>
 
                     {/* socials */}
-                    <div className="flex justify-center items-center sm:flex-[1_1_0] order-2
-                    
-                    sm:justify-end">
-                        <Link href={'/'} className='hover:text-main-red p-4'>
-                            <BsInstagram className="text-2xl " />
-                        </Link>
-                        <Link href={'/'} className='hover:text-main-red p-4' >
-                            <BsTwitter className="text-2xl " />
-                        </Link>
-                        <Link href={'/'} className=' p-4 hover:text-main-red'>
-                            <FaTiktok className="text-2xl " />
-                        </Link>
-                    </div>
+                    <Socials />
 
 
                 </nav>

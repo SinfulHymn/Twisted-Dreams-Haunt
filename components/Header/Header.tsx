@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const Layout = () => {
     return (
-        <header className="flex flex-col min-w-full">
+        <header className="relative flex flex-col min-w-full">
             <Navbar />
 
         </header>
