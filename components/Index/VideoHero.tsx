@@ -23,7 +23,7 @@ const VideoHero = () => {
 
                     <div className=" w-full h-full flex justify-center items-center -z-30 ">
                         <Image
-                            src={"/images/tdh-vector.png"}
+                            src={"/images/tdh-web.png"}
                             alt={"banner"}
                             width={350}
                             height={350}
