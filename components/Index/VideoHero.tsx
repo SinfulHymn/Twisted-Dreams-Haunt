@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import AutoPlaySilentVideo from "./VideoMutedFix";
 
 const VideoHero = () => {
 
@@ -10,16 +11,11 @@ const VideoHero = () => {
 
 
                 <div className="absolute w-full h-full bg-black bg-opacity-70 -z-40">
+                <AutoPlaySilentVideo
+                    className="absolute w-full h-full object-cover"
+                    videoSrc="/video/TwistedDreamsHaunt.mp4"
+                />
 
-                <video 
-                className="absolute w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-                id="background-video"
-                >
-                 <source src={'/video/TwistedDreamsHaunt.mp4'} type='video/mp4'/>
-                </video>
 
                     <div className=" w-full h-full flex justify-center items-center -z-30 ">
                         <Image
