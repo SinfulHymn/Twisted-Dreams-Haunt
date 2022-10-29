@@ -1,6 +1,11 @@
 import React, {useRef, useEffect} from "react"
 
-export default function AutoPlaySilentVideo({className, videoSrc}) {
+type Props = {
+    className?: string
+    videoSrc: string
+}
+
+export default function AutoPlaySilentVideo({className, videoSrc} : Props) {
     const videoRef = useRef(undefined);
     useEffect(() => {
         videoRef.current.defaultMuted = true;
