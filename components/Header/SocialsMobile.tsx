@@ -5,7 +5,7 @@ import Link from "next/link";
 const SocialsMobile = () => {
     return (
         <div className="flex sm:hidden justify-center items-center">
-            <Link href={'/'} className='hover:text-main-red p-4'>
+            <Link href={'https://www.instagram.com/twisted_dreams_haunt/'} className='hover:text-main-red p-4'>
                 <BsInstagram className="text-2xl " />
             </Link>
             <Link href={'/'} className='hover:text-main-red p-4' >

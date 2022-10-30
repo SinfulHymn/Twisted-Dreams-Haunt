@@ -5,6 +5,7 @@ type Props = {
     videoSrc: string
 }
 
+
 export default function AutoPlaySilentVideo({className, videoSrc} : Props) {
     const videoRef = useRef(undefined);
     useEffect(() => {
