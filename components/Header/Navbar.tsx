@@ -17,19 +17,15 @@ const Navbar = (): React.ReactElement => {
                     {/* logo */}
                     <div className=' flex-0 sm:flex-[1_1_0]  justify-center items-center '>
                         <Link href={"/"} className="max-h-[80px]">
-                            <Image 
-                            className="p-1"
-                            src={"/images/twisted-dreams-main.png"} 
-                            alt={"Logo"}
-                            width={200}
-                            height={200}
-
+                            <Image
+                                className="p-1"
+                                src={"/images/twisted-dreams-main.png"}
+                                alt={"Logo"}
+                                width={200}
+                                height={200}
                             />
-
-                            
                         </Link>
                     </div>
-                    
                     {/* hamburger menu */}
                     <div className="order-3 md:hidden ">
                         <Squash color="#FFF" label="Show menu"
@@ -39,9 +35,9 @@ const Navbar = (): React.ReactElement => {
 
                     {/* nav */}
                     <div
-                     className={"order-3 sm:order-2 w-full sm:flex-[1_1_0] md:w-auto md:block  " + (isOpen ? 'block' : 'hidden')}>
+                        className={"order-3 sm:order-2 w-full sm:flex-[1_1_0] md:w-auto md:block  " + (isOpen ? 'block' : 'hidden')}>
                         <SocialsMobile />
-                        <ul className="flex flex-col sm:flex-row justify-between text-lg items-center font-custom">
+                        <ul className="flex flex-col sm:flex-row justify-between text-lg items-center ">
                             <li>
                                 <Link href={'/about'} className='block p-4 hover:text-main-red'>About</Link>
                             </li>
@@ -54,9 +50,9 @@ const Navbar = (): React.ReactElement => {
                             <li>
                                 <Link href={'/location'} className='block p-4 hover:text-main-red'>Location</Link>
                             </li>                            <li>
-                                <Link href={'/location'} className='block p-4 hover:text-main-red'>Location</Link>
+                                <Link href={'/location'} className='block p-4 hover:text-main-red'>Support</Link>
                             </li>
-                            
+
                         </ul>
                     </div>
 
