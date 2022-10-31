@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from "react"
+import React, { useRef, useEffect } from "react"
 
 type Props = {
     className?: string
@@ -6,7 +6,7 @@ type Props = {
 }
 
 
-export default function AutoPlaySilentVideo({className, videoSrc} : Props) {
+export default function AutoPlaySilentVideo({ className, videoSrc }: Props) {
     const videoRef = useRef(undefined);
     useEffect(() => {
         videoRef.current.defaultMuted = true;
@@ -19,7 +19,7 @@ export default function AutoPlaySilentVideo({className, videoSrc} : Props) {
             autoPlay
             muted
             playsInline>
-            <source src={videoSrc} type="video/mp4"/>
+            <source src={videoSrc} type="video/mp4" />
         </video>
     );
 }

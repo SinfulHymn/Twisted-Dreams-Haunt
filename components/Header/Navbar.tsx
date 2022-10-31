@@ -1,7 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { BsInstagram, BsTwitter } from "react-icons/bs";
-import { FaTiktok } from "react-icons/fa";
 import { useState } from "react";
 import { Squash as Squash } from "hamburger-react";
 import Socials from "./Socials";

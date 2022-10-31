@@ -5,7 +5,6 @@ const Layout = () => {
     return (
         <header className="relative flex flex-col min-w-full">
             <Navbar />
-
         </header>
     );
 }

@@ -12,7 +12,7 @@ const Layout = ({ children }: Props) => {
             <main className="flex-grow">
                 {children}
             </main>
-            <Foooter />
+            <Foooter/>
         </div>
     );
 }
