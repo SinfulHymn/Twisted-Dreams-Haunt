@@ -9,7 +9,7 @@ const Navbar = (): React.ReactElement => {
     const [isOpen, setOpen] = useState(false)
 
     return (
-        <div className="relative bg-black">
+        <div className="absolute bg-black w-full">
             <div className="container mx-auto ">
                 <nav className="flex flex-wrap text-white items-center justify-between px-1">
                     {/* logo */}
@@ -43,10 +43,10 @@ const Navbar = (): React.ReactElement => {
                                 <Link href={'/gallery'} className=' block p-4 hover:text-main-red'>Location</Link>
                             </li>
                             <li>
-                                <Link href={'/merch'} className='block p-4 hover:text-main-red'>Merch</Link>
+                                <Link href={'/merch'} className='block p-4 hover:text-main-red'>Gallery</Link>
                             </li>
                             <li>
-                                <Link href={'/location'} className='block p-4 hover:text-main-red'>Location</Link>
+                                <Link href={'/location'} className='block p-4 hover:text-main-red'>About</Link>
                             </li>                            <li>
                                 <Link href={'/location'} className='block p-4 hover:text-main-red'>Support</Link>
                             </li>

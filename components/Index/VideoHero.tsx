@@ -30,7 +30,7 @@ const VideoHero = () => {
                         alt={"banner"}
                         width={350}
                         height={350}
-                        className="absolute w-[200px] opacity-[.92] sm:w-[350px]"
+                        className="absolute w-[200px] opacity-[.92] sm:w-[340px] "
                         quality={100}
                     />
                 </div>
