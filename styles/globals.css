@@ -9,6 +9,10 @@
       font-family: 'AnotherDanger';
       src: url('/fonts/AnotherDanger.otf') format('opentype');
   }
+  @font-face {
+    font-family: 'Cinzel';
+    src: url('/fonts/Cinzel/static/Cinzel-Regular.ttf') format('truetype');
+  }
 }
 
 

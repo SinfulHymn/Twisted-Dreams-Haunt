@@ -9,7 +9,7 @@ const Layout = ({ children }: Props) => {
     return (
         <div className=" flex flex-col h-screen">
             <Header />
-            <main className="flex-grow pt-14">
+            <main className="flex-grow">
                 {children}
             </main>
             <Foooter/>

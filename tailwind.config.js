@@ -25,6 +25,7 @@ module.exports = {
       },
       fontFamily: {
         custom: ["AnotherDanger", "sans-serif"],
+        custom2: ['Cinzel', "sans-serif"],
       },
       plugins: [],
     },

@@ -3,10 +3,10 @@ import VideoHero from "./VideoHero";
 import Content from "./Content";
 const Index = () => {
     return (
-        <>
+        <div className="pt-16">
             <VideoHero />
             <Content />
-        </>
+        </div>
     );
 }
 

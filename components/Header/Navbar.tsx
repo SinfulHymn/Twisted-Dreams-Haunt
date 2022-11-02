@@ -33,9 +33,9 @@ const Navbar = (): React.ReactElement => {
 
                     {/* nav */}
                     <div
-                        className={"order-3 sm:order-2 w-full sm:flex-[1_1_0] md:w-auto md:block  " + (isOpen ? 'block' : 'hidden')}>
+                        className={"order-3 sm:order-2 w-full sm:flex-[1_1_0] md:block " + (isOpen ? 'block' : 'hidden')}>
                         <SocialsMobile />
-                        <ul className="flex flex-col sm:flex-row justify-between text-lg items-center ">
+                        <ul className="flex flex-col sm:flex-row justify-between text-lg items-center font-custom2">
                             <li>
                                 <Link href={'/merch'} className='block p-4 hover:text-main-red'>Merch</Link>
                             </li>
