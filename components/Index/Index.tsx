@@ -5,7 +5,7 @@ const Index = () => {
     return (
         <div className="pt-16">
             <VideoHero />
-            <Content />
+            {/* <Content /> */}
         </div>
     );
 }
