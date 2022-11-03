@@ -31,7 +31,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className="flex flex-col flex-end w-full justify-center items-center text-xs py-1 font-semibold">
+                <div className="flex flex-col flex-end w-full justify-center items-center text-xs pb-6 font-semibold">
                     <p>
                         Created by <Link href="https://github.com/Kmachappy" target="_blank" className="font-medium hover:text-main-red" rel="noreferrer">Alejandro Rojas &#127875;</Link>
                     </p>
