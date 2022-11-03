@@ -20,6 +20,11 @@
       "@utils/*": ["utils/*"],
       "@lib/*": ["lib/*"],
       "@services/*": ["services/*"],
+      "@util/*": ["util/*"],
+      "@hooks/*": ["hooks/*"],
+      "@pages/*": ["pages/*"],
+      "@styles/*": ["styles/*"],
+      "@data/*": ["data/*"],
       
     }
   },
