@@ -12,19 +12,19 @@ const VideoHero = () => {
                             bg of the div is hero
                             center and cover background images 
             */}
-            <div className="relative min-h-[500px] sm:min-h-[600px] bg-hero bg-cover bg-center -z-50 overflow-hidden">
+            <div className="relative min-h-[500px] sm:min-h-[600px] bg-hero bg-cover bg-center z-0 overflow-hidden">
                 {/* black overlay for the image
                     absolute
                     w-full 
                 */}
-                <div className="absolute w-full h-full bg-black bg-opacity-70 -z-40"></div>
+                <div className="absolute w-full h-full bg-black bg-opacity-70 z-10"></div>
 
                 <AutoPlaySilentVideo
-                    className="absolute w-full h-full object-cover -z-30"
+                    className="absolute w-full h-full object-cover z-20"
                     videoSrc="/video/TwistedDreamsHaunt.mp4"
                 />
 
-                <div className="absolute w-full h-full flex justify-center items-center -z-20 ">
+                <div className="absolute w-full h-full flex justify-center items-center z-30 ">
                     <Image
                         src={"/images/tdh-web.png"}
                         alt={"banner"}
