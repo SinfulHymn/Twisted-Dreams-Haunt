@@ -12,7 +12,7 @@ const Layout = ({ children, title }: Props) => {
 
             <Heads title={title}/>
             <Header />
-            <main className="flex-grow">
+            <main className="flex-grow pt-16">
                 {children}
             </main>
             <Foooter />

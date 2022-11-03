@@ -1,9 +1,12 @@
 import React from "react";
 import VideoHero from "./VideoHero";
-import Content from "./Content";
+import { useRouter } from "next/router";
+
 const Index = () => {
+    const router = useRouter();
+    console.log(router);
     return (
-        <div className="pt-16">
+        <div>
             <VideoHero />
             {/* <Content /> */}
         </div>
