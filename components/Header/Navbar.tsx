@@ -25,7 +25,7 @@ const Navbar = (): React.ReactElement => {
                         </Link>
                     </div>
                     {/* hamburger menu */}
-                    <div className="order-3 md:hidden ">
+                    <div className="order-3 lg:hidden ">
                         <Squash color="#FFF" label="Show menu"
                             toggled={isOpen} toggle={setOpen} />
                     </div>
@@ -33,9 +33,9 @@ const Navbar = (): React.ReactElement => {
 
                     {/* nav */}
                     <div
-                        className={"order-3 sm:order-2 w-full sm:flex-[1_1_0] md:block " + (isOpen ? 'block' : 'hidden')}>
+                        className={"order-3 lg:order-2 w-full lg:flex-[1_1_0] lg:block " + (isOpen ? 'block' : 'hidden')}>
                         <SocialsMobile />
-                        <ul className="flex flex-col sm:flex-row justify-between text-lg items-center font-custom2">
+                        <ul className="flex flex-col lg:flex-row justify-between text-lg items-center font-custom2">
                             <li>
                                 <Link href={'/merch'} className='block p-4 hover:text-main-red'>Merch</Link>
                             </li>
@@ -43,12 +43,12 @@ const Navbar = (): React.ReactElement => {
                                 <Link href={'/gallery'} className=' block p-4 hover:text-main-red'>Location</Link>
                             </li>
                             <li>
-                                <Link href={'/merch'} className='block p-4 hover:text-main-red'>Gallery</Link>
+                                <Link href={'/merch'} className='block p-4 hover:text-main-red'>Photos</Link>
                             </li>
                             <li>
                                 <Link href={'/location'} className='block p-4 hover:text-main-red'>About</Link>
                             </li>                            <li>
-                                <Link href={'/location'} className='block p-4 hover:text-main-red'>Support</Link>
+                                <Link href={'/location'} className='block p-4 hover:text-main-red'>Contact</Link>
                             </li>
 
                         </ul>
