@@ -9,7 +9,7 @@ const Navbar = (): React.ReactElement => {
     const [isOpen, setOpen] = useState(false)
 
     return (
-        <div className="absolute bg-black w-full">
+        <div className="absolute bg-black w-full z-30 ">
             <div className="container mx-auto ">
                 <nav className="flex flex-wrap text-white items-center justify-between px-1">
                     {/* logo */}
