@@ -14,7 +14,7 @@ const Socials = () => {
             <Link href={'/'} className=' p-4 hover:text-main-red'>
                 <FaTiktok className="text-2xl " />
             </Link>
-            <Link href={'https://www.instagram.com/twisted_dreams_haunt/'} className='hover:text-main-red p-4'>
+            <Link href={'/cart'} className='hover:text-main-red p-4'>
             <FaShoppingCart className="text-2xl " />
 
             </Link>

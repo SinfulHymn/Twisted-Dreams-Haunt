@@ -25,7 +25,7 @@ const Navbar = (): React.ReactElement => {
                         </Link>
                     </div>
                     {/* hamburger menu */}
-                    <div className="order-3 lg:hidden ">
+                    <div className="order-3 lg:hidden ml-4 ">
                         <Squash color="#FFF" label="Show menu"
                             toggled={isOpen} toggle={setOpen} />
                     </div>
