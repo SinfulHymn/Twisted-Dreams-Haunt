@@ -4,7 +4,7 @@ import Socials from "./Socials"
 
 const Footer = () => {
     return (
-        <footer className="relative w-full min-h-[400px] sm:min-h-[320px] bg-footer bg-contain bg-no-repeat bg-center z-0 overflow-hidden font-custom2 text-gray-300 p-2 pb-1">
+        <footer className="relative w-full min-h-[400px] sm:min-h-[320px] bg-footer bg-contain bg-no-repeat bg-center z-0 overflow-hidden font-custom2 text-gray-300 ">
 
             <div className="absolute w-full h-full bg-black bg-opacity-90 -z-40 block border-yellow-800 "></div>
 
