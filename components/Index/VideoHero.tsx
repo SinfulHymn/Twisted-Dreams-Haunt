@@ -12,7 +12,7 @@ const VideoHero = () => {
                             bg of the div is hero
                             center and cover background images 
             */}
-            <div className="relative min-h-[500px] sm:min-h-[600px] bg-hero bg-cover bg-center z-0 overflow-hidden">
+            <div className="relative min-h-[500px] lg:min-h-[600px] bg-hero bg-cover bg-center z-0 overflow-hidden">
                 {/* black overlay for the image
                     absolute
                     w-full 
@@ -30,7 +30,7 @@ const VideoHero = () => {
                         alt={"banner"}
                         width={350}
                         height={350}
-                        className="absolute w-[200px] opacity-[.92] sm:w-[340px] "
+                        className="absolute w-[200px] sm:w-[240px] opacity-[.92] lg:w-[320px]"
                         quality={100}
                     />
                 </div>
