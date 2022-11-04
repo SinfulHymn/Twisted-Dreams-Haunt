@@ -1,5 +1,5 @@
 import Head from "next/head"
-const Heads = ({ title }) => {
+const AppHead = ({ title }) => {
     return (
         <Head>
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -14,5 +14,4 @@ const Heads = ({ title }) => {
     )
 }
 
-
-export default Heads
+export default AppHead
