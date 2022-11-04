@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
                 <div className="mb-4 w-full relative overflow-hidden">
                     <Link href={"/"} className="h-full w-full overflow-hidden ">
                         <Image
-                            className="object-fill h-[150px] w-full"
+                            className="object-fill h-[150px] xs:h-[175px] sm:h-[240px] md:h-[200px] lg:h-[200px] xl:h-[280px] 2xl:h-[300px] w-full"
                             src={product.image}
                             alt={product.name}
                             width={1000}

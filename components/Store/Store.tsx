@@ -4,7 +4,7 @@ import ProductList from "./ProductList";
 import PRODUCTS from "./data";
 import Nav from "./Nav";
 
-const Merch = () => {
+const Store = () => {
     console.log(PRODUCTS);
     return (
         <div className=" relative bg-no-repeat bg-center text-white  bg-hero2 h-full w-full bg-contain z-0">
@@ -21,4 +21,4 @@ const Merch = () => {
     );
 }
 
-export default Merch;
+export default Store;
