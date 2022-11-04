@@ -37,7 +37,7 @@ const Navbar = (): React.ReactElement => {
                         <SocialsMobile />
                         <ul className="flex flex-col lg:flex-row justify-between text-xl items-center font-custom2 font-medium">
                             <li>
-                                <Link href={'/merch'} className='block p-4 hover:text-main-red'>Merch</Link>
+                                <Link href={'/store'} className='block p-4 hover:text-main-red'>Store</Link>
                             </li>
                             <li>
                                 <Link href={'/gallery'} className=' block p-4 hover:text-main-red'>Location</Link>

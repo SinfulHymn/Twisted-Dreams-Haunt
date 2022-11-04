@@ -4,7 +4,7 @@ const PRODUCTS = [
       name: 'Twisted Dreams Short Sleeve T-Shirt',
       price: '25.00',
       collection: 'Clothing',
-      image: '/images/placeholder.jpg'
+      image: '/images/tshirt.png'
     },
     {
       id: 2,

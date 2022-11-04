@@ -3,17 +3,17 @@ import Image from "next/image";
 const ProductCard = ({ product }) => {
     return (
         <div className="p-2 md:p-4 lg:p-5 bg-white">
-            <div className="relative flex grow flex-col">
-                <div className="mb-4 w-full relative">
-                    <Link href={"/"}>
+            <div className="relative flex flex-grow flex-col">
+                <div className="mb-4 w-full relative overflow-hidden">
+                    <Link href={"/"} className="h-full w-full overflow-hidden ">
                         <Image
-                            className="pt-0 w-full h-full object-cover object-center"
+                            className="object-fill h-[145px]"
                             src={product.image}
                             alt={product.name}
-                            width={500}
-                            height={500}
-                        >
-                        </Image>
+                            width={1000}
+                            height={1000}
+                            quality={100}
+                        />
                     </Link>
                 </div>
                 <div className="flex flex-col justify-between">

@@ -1,5 +1,5 @@
 import Layout from "@components/Layout"
-import Store from "@components/Merch/Merch"
+import Store from "@components/Store/Store"
 
 export default function Merch() {
   return (
