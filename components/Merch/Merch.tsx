@@ -15,7 +15,7 @@ const Merch = () => {
             <div className="flex justify-center items-center font-custom2 py-4 text-2xl sm:text-5xl">
                 Twisted Dreams Merch
             </div>
-            {/* <ProductList products={PRODUCTS}/> */}
+            <ProductList products={PRODUCTS}/>
         </div>
 
     );
