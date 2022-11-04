@@ -12,8 +12,8 @@ const Merch = () => {
 
             {/* <Nav></Nav> */}
 
-            <div className="flex justify-center items-center font-custom2 py-4 text-2xl sm:text-5xl">
-                Twisted Dreams Merch
+            <div className="flex justify-center items-center font-semibold font-custom2 py-4 text-2xl sm:text-5xl">
+                Twisted Dreams Store
             </div>
             <ProductList products={PRODUCTS}/>
         </div>
