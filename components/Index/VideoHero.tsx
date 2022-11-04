@@ -28,8 +28,8 @@ const VideoHero = () => {
                     <Image
                         src={"/images/tdh-web.png"}
                         alt={"banner"}
-                        width={350}
-                        height={350}
+                        width={500}
+                        height={500}
                         className="absolute w-[200px] sm:w-[240px] opacity-[.92] lg:w-[320px]"
                         quality={100}
                     />

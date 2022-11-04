@@ -5,7 +5,7 @@ const ProductList = ({ products }) => {
             <div className="text-xl sm:text-2xl font-custom2 font-semibold text-white">
                 Featured Products
             </div>
-            <div className="my-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5">
+            <div className="my-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-5">
 
             {products.map((product) => (
                 <ProductCard product={product} key={product.id} />
