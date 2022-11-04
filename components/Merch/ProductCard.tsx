@@ -17,11 +17,11 @@ const ProductCard = ({ product }) => {
                     </Link>
                 </div>
                 <div className="flex flex-col justify-between">
-                    <Link 
-                    className="block text-slate-600 font-normal font-sans text-base xs:text-lg pt-0.5 mb-1"
-                    href={"/"}>{product.name}</Link>
+                    <Link
+                        className="block text-slate-600 font-normal font-sans text-base xs:text-lg pt-0.5 mb-1"
+                        href={"/"}>{product.name}</Link>
                     <div className="mt-2">
-                    <span class="font-semibold font-sans text-xl text-gray-600">${product.price}</span>
+                        <span className="font-semibold font-sans text-xl text-gray-600">${product.price}</span>
                     </div>
 
                 </div>
