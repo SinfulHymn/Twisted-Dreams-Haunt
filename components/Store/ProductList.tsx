@@ -1,5 +1,6 @@
 import ProductCard from "./ProductCard";
 const ProductList = ({ products }) => {
+    
     return (
         <div className=" p-6 container mx-auto w-full ">
             <div className="text-xl sm:text-2xl font-custom2 font-semibold text-white">
