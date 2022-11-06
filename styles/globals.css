@@ -2,21 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
-  @font-face{
-      font-family: 'AnotherDanger';
-      src: url('/fonts/AnotherDanger.otf') format('opentype');
+  @font-face {
+    font-family: "AnotherDanger";
+    src: url("/fonts/AnotherDanger.otf") format("opentype");
   }
   @font-face {
-    font-family: 'Cinzel';
-    src: url('/fonts/Cinzel/Cinzel-VariableFont_wght.ttf') format('truetype');
+    font-family: "Cinzel";
+    src: url("/fonts/Cinzel/Cinzel-VariableFont_wght.ttf") format("truetype");
   }
 }
 
+body {
+  background-color: theme("colors.primary");
+}
 
-
-body{
-  background-color: theme('colors.primary');
+@media not all and (min-resolution: 0.001dpcm) {
+  img[loading="lazy"] {
+    clip-path: inset(0.5px);
+  }
 }

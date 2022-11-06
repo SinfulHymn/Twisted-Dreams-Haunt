@@ -1,5 +1,8 @@
 import ProductCard from "./ProductCard";
+import { useRouter } from "next/router";
 const ProductList = ({ products }) => {
+    const router = useRouter();
+    const productUrl = productHandle => router.push(`/store/products/${productHandle}`);
 
     return (
         <div className=" p-6 container mx-auto w-full ">
@@ -9,7 +12,12 @@ const ProductList = ({ products }) => {
             <div className="my-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
 
                 {products.map((product) => (
-                    <ProductCard product={product} key={product.id} />
+                    <ProductCard 
+                    product={product} 
+                    key={product.handle}
+                    productUrl={productUrl}
+                    />
+                    // <></>
                 ))}
             </div>
         </div>
