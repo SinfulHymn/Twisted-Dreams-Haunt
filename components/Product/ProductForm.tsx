@@ -1,14 +1,15 @@
 import { useState } from 'react'
 
-import {FaShoppingCart} from 'react-icons/fa'
+import { FaShoppingCart } from 'react-icons/fa'
 
 // import { useCartContext, useAddToCartContext } from '@/context/Store'
 
 function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
+  console.log('!@#@!!#@#2', variants)
   const [quantity, setQuantity] = useState(1)
 
-  // const [variantId, setVariantId] = useState(variants[0].node.id)
-  // const [variant, setVariant] = useState(variants[0])
+  const [variantId, setVariantId] = useState(variants[0].id)
+  const [variant, setVariant] = useState(variants[0])
   // const isLoading = useCartContext()[2]
   // const addToCart = useAddToCartContext()
 
@@ -55,10 +56,10 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
 
   return (
     <div className="w-full">
-      {/* <div className="flex justify-start space-x-2 w-full">
-        <div className="flex flex-col items-start space-y-1 flex-grow-0">
-          <label className="text-gray-500 text-base">Qty.</label>
-          <input
+      <div className="flex justify-start space-x-2 w-full">
+      <div className="flex flex-col items-start space-y-1 flex-grow-0">
+        <label className="text-gray-500 text-base">Qty.</label>
+        <input
             type="number"
             inputMode="numeric"
             id="quantity"
@@ -70,6 +71,7 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
             className="text-gray-900 form-input border border-gray-300 w-16 rounded-sm focus:border-palette-light focus:ring-palette-light"
           />
         </div>
+      {/* 
         <div className="flex flex-col items-start space-y-1 flex-grow">
           <label className="text-gray-500 text-base">Size</label>
           <select
@@ -92,16 +94,18 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
             }
           </select>
         </div>
-      </div>
+        */}
+       </div>
       <button
-        className={atcBtnStyle}
+        
+        className='pt-3 pb-2 bg-galleryButton text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex justify-center items-baseline  hover:bg-galleryButtonHover'
         aria-label="cart-button"
         onClick={handleAddToCart}
       >
         Add To Cart
         <FaShoppingCart  className="w-5 ml-2" />
-      </button> */}
-    </div>
+      </button>
+    </div >
   )
 }
 
