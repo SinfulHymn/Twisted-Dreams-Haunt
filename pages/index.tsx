@@ -20,4 +20,4 @@ export const getServerSideProps = async () => {
       cart: parseShopifyResponse(cart)
     },
   };
-};
+}; 
