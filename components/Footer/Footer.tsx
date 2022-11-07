@@ -33,7 +33,7 @@ const Footer = () => {
 
                 <div className="flex flex-col flex-end w-full justify-center items-center text-xs pb-6 font-semibold">
                     <p>
-                        Created by <Link href="https://github.com/Kmachappy" target="_blank" className="font-medium hover:text-main-red" rel="noreferrer">Alejandro Rojas &#127875;</Link>
+                        Website Built by <Link href="https://github.com/Kmachappy" target="_blank" className="font-medium hover:text-main-red" rel="noreferrer">Alejandro Rojas &#127875;</Link>
                     </p>
                     <p>
                         Copyright © 2022 Twisted Dreams Haunted House
