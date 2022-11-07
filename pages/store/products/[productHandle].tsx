@@ -10,7 +10,6 @@ export default function ProductPage({ product }) {
   return (
     <Layout title={`- ${handle}`}>
       <ProductLayout images={images} product={product}/>
-
     </Layout>
   )
 }
