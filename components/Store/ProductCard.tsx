@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 const ProductCard = ({ product, productUrl }) => {
-    console.log(product);
+    // console.log(product);
     const { id, title, images, variants, handle } = product;
     const { src: productImage } = images[0] || {src:"/images/placeholder.jpg"};
     // console.log(`${productUrl(handle)}`);

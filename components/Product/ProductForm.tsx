@@ -1,21 +1,23 @@
 import { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { useCartContext, useAddToCartContext } from '@/context/Store'
+
+import {FaShoppingCart} from 'react-icons/fa'
+
+// import { useCartContext, useAddToCartContext } from '@/context/Store'
 
 function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
   const [quantity, setQuantity] = useState(1)
-  const [variantId, setVariantId] = useState(variants[0].node.id)
-  const [variant, setVariant] = useState(variants[0])
-  const isLoading = useCartContext()[2]
-  const addToCart = useAddToCartContext()
 
-  const atcBtnStyle = isLoading ?
-    `pt-3 pb-2 bg-palette-primary text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex 
-                      justify-center items-baseline  hover:bg-palette-dark opacity-25 cursor-none`
-    :
-    `pt-3 pb-2 bg-palette-primary text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex 
-                      justify-center items-baseline  hover:bg-palette-dark`
+  // const [variantId, setVariantId] = useState(variants[0].node.id)
+  // const [variant, setVariant] = useState(variants[0])
+  // const isLoading = useCartContext()[2]
+  // const addToCart = useAddToCartContext()
+
+  // const atcBtnStyle = isLoading ?
+  //   `pt-3 pb-2 bg-palette-primary text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex 
+  //                     justify-center items-baseline  hover:bg-palette-dark opacity-25 cursor-none`
+  //   :
+  //   `pt-3 pb-2 bg-palette-primary text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex 
+  //                     justify-center items-baseline  hover:bg-palette-dark`
 
   function handleSizeChange(e) {
     setVariantId(e)
@@ -53,7 +55,7 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
 
   return (
     <div className="w-full">
-      <div className="flex justify-start space-x-2 w-full">
+      {/* <div className="flex justify-start space-x-2 w-full">
         <div className="flex flex-col items-start space-y-1 flex-grow-0">
           <label className="text-gray-500 text-base">Qty.</label>
           <input
@@ -97,8 +99,8 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
         onClick={handleAddToCart}
       >
         Add To Cart
-        <FontAwesomeIcon icon={faShoppingCart} className="w-5 ml-2" />
-      </button>
+        <FaShoppingCart  className="w-5 ml-2" />
+      </button> */}
     </div>
   )
 }
