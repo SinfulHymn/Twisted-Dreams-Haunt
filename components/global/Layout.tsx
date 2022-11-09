@@ -4,14 +4,15 @@ import AppHead from './Head';
 type Props = {
     children: React.ReactNode;
     title?: string;
+    cart: object;
 };
 
-const Layout = ({ children, title }: Props) => {
+const Layout = ({ children, title, cart }: Props) => {
     return (
         <>
             <div className="flex flex-col min-h-screen">
                 <AppHead title={title} />
-                <Header />
+                <Header cart={cart} />
                 <main className="flex-grow pt-16">
                     {children}
                 </main>

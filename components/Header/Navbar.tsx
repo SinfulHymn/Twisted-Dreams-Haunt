@@ -5,7 +5,7 @@ import { Squash as Squash } from "hamburger-react";
 import Socials from "./Socials";
 import SocialsMobile from "./SocialsMobile";
 
-const Navbar = (): React.ReactElement => {
+const Navbar = ({cart}): React.ReactElement => {
     const [isOpen, setOpen] = useState(false)
 
     return (
@@ -34,7 +34,7 @@ const Navbar = (): React.ReactElement => {
                     {/* nav */}
                     <div
                         className={"order-3 lg:order-2 w-full lg:flex-[1_1_0] lg:block " + (isOpen ? 'block' : 'hidden')}>
-                        <SocialsMobile />
+                        <SocialsMobile  />
                         <ul className="flex flex-col lg:flex-row justify-between text-xl items-center font-custom2 font-medium">
                             <li>
                                 <Link href={'/store'} className='block p-4 hover:text-main-red'>Store</Link>
@@ -55,7 +55,7 @@ const Navbar = (): React.ReactElement => {
                     </div>
 
                     {/* socials */}
-                    <Socials />
+                    <Socials cart={cart}/>
 
 
                 </nav>
