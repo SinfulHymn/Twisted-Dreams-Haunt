@@ -34,7 +34,7 @@ const VideoHero = () => {
                         quality={100}
                     />
                 </div>
-                <div className="absolute bottom-8 right-0  left-0 z-40">
+                <div className="absolute bottom-4 right-0 left-0 z-40 px-10">
                     <h1 className="text-4xl sm:text-6xl text-textlogo font-custom font-bold text-center ">
                         Thank you for a great Haunt!
                     </h1>

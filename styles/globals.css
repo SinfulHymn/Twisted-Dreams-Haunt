@@ -100,7 +100,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   .react-calendar__tile {
-    font-size: ;
+    font-size: large;
   }
  }
 .react-calendar__navigation__label__labelText {
@@ -111,9 +111,15 @@ body {
   line-height: 1.5em;
   font-family: Cinzel;
 }
+@media only screen and (max-width: 475px){
+  .react-calendar__navigation__label__labelText {
+    font-size: 1.4em;
+  }
+}
 .react-calendar__navigation button:disabled {
   background-color: #441311;
 }
+
 
 
 

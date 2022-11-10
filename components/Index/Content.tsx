@@ -40,7 +40,7 @@ const Content = () => {
 
         </div>
 
-        <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={12}>
+        <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={13}>
         {  
         ({ TileLayer, Marker, Popup }) => (
             <>
@@ -48,6 +48,7 @@ const Content = () => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
               />
+              
               <Marker position={DEFAULT_CENTER}>
                 <Popup>
                   A pretty CSS3 popup. <br /> Easily customizable.
