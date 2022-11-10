@@ -1,6 +1,6 @@
 import Calendar from 'react-calendar'
 import { useState } from 'react';
-import Map from './index';
+import Map from './Test';
 import styles from '@components/Index/Map.module.css';
 
 const datesToAddClassTo = [];
