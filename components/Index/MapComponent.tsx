@@ -32,7 +32,7 @@ const MapComponent = ({ children, className, ...rest }) => {
 
   return (
     <MapContainer className={mapClassName} {...rest}>
-      {/* {children(ReactLeaflet)} */}
+      {children(ReactLeaflet)}
     </MapContainer>
   )
 }

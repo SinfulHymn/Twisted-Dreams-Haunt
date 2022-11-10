@@ -41,7 +41,7 @@ const Content = () => {
         </div>
 
         <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={12}>
-        {/* {  
+        {  
         ({ TileLayer, Marker, Popup }) => (
             <>
               <TileLayer
@@ -54,7 +54,7 @@ const Content = () => {
                 </Popup>
               </Marker>
             </>
-          )} */}
+          )}
         </Map>
     </>
     );
