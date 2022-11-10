@@ -1,12 +1,39 @@
 import Calendar from 'react-calendar'
-import { useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Map from './Test';
 import styles from '@components/Index/Map.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const datesToAddClassTo = [];
-const DEFAULT_CENTER = [33.8529527, -118.0314395]
+
+const center = [33.8529527, -118.0314395]
+const zoom = 12
+
+function DisplayPosition({ map }) {
+  const [position, setPosition] = useState(() => map.getCenter())
+
+  const onClick = useCallback(() => {
+    map.setView(center, zoom)
+  }, [map])
+
+  const onMove = useCallback(() => {
+    setPosition(map.getCenter())
+  }, [map])
+
+  useEffect(() => {
+    map.on('move', onMove)
+    return () => {
+      map.off('move', onMove)
+    }
+  }, [map, onMove])
+
+  return (
+    <p>
+      latitude: {position.lat.toFixed(4)}, longitude: {position.lng.toFixed(4)}{' '}
+      <button onClick={onClick}>reset</button>
+    </p>
+  )
+}
 
 
 const Content = () => {
@@ -41,11 +68,14 @@ const Content = () => {
         </div>
 
       </div>
+{/* TODO: 
+  add external state to recenter map
+*/}
 
       <Map
         className={styles.homeMap}
-        center={DEFAULT_CENTER}
-        zoom={12}
+        center={center}
+        zoom={zoom}
         scrollWheelZoom={false}
       >
         {
@@ -57,7 +87,7 @@ const Content = () => {
               />
 
 
-              <Marker position={DEFAULT_CENTER}>
+              <Marker position={center}>
                 <Popup>
                   <Link
                     className='flex flex-col items-center '
