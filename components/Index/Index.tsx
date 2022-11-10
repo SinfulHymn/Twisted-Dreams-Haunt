@@ -1,15 +1,7 @@
-import React from "react";
-import VideoHero from "./VideoHero";
-import Content from "./Content";
+import dynamic from 'next/dynamic';
 
-const Index = () => {
+const Map = dynamic(() => import('./MapComponent'), {
+  ssr: false
+});
 
-    return (
-        <div>
-            <VideoHero />
-            <Content />
-        </div>
-    );
-}
-
-export default Index;
+export default Map;

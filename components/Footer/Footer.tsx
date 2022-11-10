@@ -25,7 +25,7 @@ const Footer = () => {
                             Your Neighborly Haunt in Orange County
                         </p>
                         <p className="px-10 py-2 hover:text-main-red">
-                            5815 panama drive, Buena Park, CA 90621
+                            <Link href={"https://goo.gl/maps/Vye9xaDydMJKiuY36"}> 5815 panama drive, Buena Park, CA 90621</Link>
                         </p>
                     </div>
 

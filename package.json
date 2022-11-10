@@ -11,11 +11,13 @@
   "dependencies": {
     "@shopify/shopify-api": "^5.2.0",
     "hamburger-react": "^2.5.0",
+    "leaflet": "^1.9.2",
     "next": "13.0.0",
     "react": "18.2.0",
     "react-calendar": "^4.0.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
+    "react-leaflet": "^4.1.0",
     "shopify-buy": "^2.17.1"
   },
   "devDependencies": {

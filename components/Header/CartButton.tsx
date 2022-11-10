@@ -19,11 +19,3 @@ export default function CartButton({ cart }) {
     )
 }
 
-export const getServerSideProps = async () => {
-    const cart = await shopifyClient.checkout.create()
-    return {
-      props: {
-        cart: parseShopifyResponse(cart)
-      },
-    };
-  }; 
