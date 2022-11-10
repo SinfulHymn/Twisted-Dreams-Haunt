@@ -4,7 +4,7 @@ import Map from './Test';
 import styles from '@components/Index/Map.module.css';
 
 const datesToAddClassTo = [];
-const DEFAULT_CENTER = [38.907132, -77.036546]
+const DEFAULT_CENTER = [33.8529527,-118.0314395]
 
 
 const Content = () => {

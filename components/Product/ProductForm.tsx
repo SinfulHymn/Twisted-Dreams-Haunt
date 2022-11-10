@@ -30,29 +30,29 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
     setVariant(selectedVariant)
   }
 
-  async function handleAddToCart() {
-    const varId = variant.node.id
-    // update store context
-    if (quantity !== '') {
-      addToCart({
-        productTitle: title,
-        productHandle: handle,
-        productImage: mainImg,
-        variantId: varId,
-        variantPrice: variant.node.price,
-        variantTitle: variant.node.title,
-        variantQuantity: quantity
-      })
-    }
-  }
+  // async function handleAddToCart() {
+  //   const varId = variant.node.id
+  //   // update store context
+  //   if (quantity !== '') {
+  //     addToCart({
+  //       productTitle: title,
+  //       productHandle: handle,
+  //       productImage: mainImg,
+  //       variantId: varId,
+  //       variantPrice: variant.node.price,
+  //       variantTitle: variant.node.title,
+  //       variantQuantity: quantity
+  //     })
+  //   }
+  // // }
 
-  function updateQuantity(e) {
-    if (e === '') {
-      setQuantity('')
-    } else {
-      setQuantity(Math.floor(e))
-    }
-  }
+  // function updateQuantity(e) {
+  //   if (e === '') {
+  //     setQuantity('')
+  //   } else {
+  //     setQuantity(Math.floor(e))
+  //   }
+  // }
 
   return (
     <div className="w-full">
@@ -67,7 +67,7 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
             min="1"
             step="1"
             value={quantity}
-            onChange={(e) => updateQuantity(e.target.value)}
+            // onChange={(e) => updateQuantity(e.target.value)}
             className="text-gray-900 form-input border border-gray-300 w-16 rounded-sm focus:border-palette-light focus:ring-palette-light"
           />
         </div>
@@ -100,7 +100,7 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
         
         className='pt-3 pb-2 bg-galleryButton text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex justify-center items-baseline  hover:bg-galleryButtonHover'
         aria-label="cart-button"
-        onClick={handleAddToCart}
+        // onClick={handleAddToCart}
       >
         Add To Cart
         <FaShoppingCart  className="w-5 ml-2" />
