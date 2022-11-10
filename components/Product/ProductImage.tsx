@@ -10,7 +10,7 @@ function ProductImage({ images }) {
             alt: images[0].variableValues.handle
         }
     )
-    const ref = useRef()
+    const ref = useRef<HTMLInputElement>(null)
 
     function scroll(scrollOffset) {
         ref.current.scrollLeft += scrollOffset
