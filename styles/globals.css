@@ -113,7 +113,7 @@ body {
 }
 @media only screen and (max-width: 475px){
   .react-calendar__navigation__label__labelText {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }
 .react-calendar__navigation button:disabled {
