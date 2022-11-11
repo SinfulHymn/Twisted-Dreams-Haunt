@@ -21,7 +21,7 @@ const Footer = () => {
                     </div>
 
                     <div className="leading-6 text-lg sm:text-lg font-semibold">
-                        <p className="px-12 py-2 text-[#20291f]">
+                        <p className="px-12 py-2 text-[#9d6524]">
                             Your Neighborly Haunt in Orange County
                         </p>
                         <p className="px-10 py-2 hover:text-main-red">
@@ -35,7 +35,7 @@ const Footer = () => {
                     <p className=" text-">
                         webpage built by <Link href="https://github.com/Kmachappy" target="_blank" className="font-medium hover:text-main-red text-textlogo" rel="noreferrer">alejandro rojas &#127875;</Link>
                     </p>
-                    <p className="text-main-red">
+                    <p className="text-[#9d6524]">
                         Copyright © 2022 Twisted Dreams Haunted House
                     </p>
                 </div>
