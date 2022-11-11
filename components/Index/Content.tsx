@@ -1,5 +1,6 @@
 import Calendar from 'react-calendar'
 import { useCallback, useEffect, useState } from 'react';
+import ReactPlayer from './Test2';
 import Map from './Test';
 import styles from '@components/Index/Map.module.css';
 import Link from 'next/link';
@@ -46,7 +47,10 @@ const Content = () => {
     <>
 
       <div className="container mx-auto p-6 ">
-        <div className='flex justify-center items-center '>
+        <div className='flex flex-col justify-center items-center '>
+          <div className=' my-6'>
+            <ReactPlayer />
+          </div>
 
           <Calendar
             className="bg-slate-900"
@@ -68,7 +72,7 @@ const Content = () => {
         </div>
 
       </div>
-{/* TODO: 
+      {/* TODO: 
   add external state to recenter map
 */}
 
