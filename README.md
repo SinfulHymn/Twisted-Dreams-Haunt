@@ -1,7 +1,7 @@
 
 <div id="top" align="center">
   <a href="https://github.com/Kmachappy/Twisted-Dreams-Haunt">
-    <img src="https://i.imgur.com/8h2BmLd.png" alt="Logo" width="250" height="150">
+    <img src="https://i.imgur.com/8h2BmLd.png" alt="Logo" width="150" height="250">
   </a>
   <a href="https://twisteddreamshaunt.com/">
     <h3 align="center">Twisted Dreams Haunt</h3>
@@ -30,7 +30,7 @@
 
 Description            |  Screenshot
 :---:|:----:
-| <p align="left">- A Django ecommerce web application that displays a directory keyboard related products. <br> - Users will be able to explore Keyboard products and view all their details about the Product! <br> - Users can leave a reviews on Products they have purchased. <br>- Users are able to browse and filter products by their categories <br> - Users are able to add products to their cart and maintain session with their cart <br> - Users are able to modify cart session from the cart summary page<br> - users are able to delete products or update products from their cart with full functionality <br> - when users make changes to their carts all the data is managed correctly in session <br> - subtotals and price items are calculated correctly as well as cart quantity</p> | ![](https://i.imgur.com/bGD2s2z.jpg) |
+| <p align="left">- A Django ecommerce web application that displays a directory keyboard related products. <br> - Users will be able to explore Keyboard products and view all their details about the Product! <br> - Users can leave a reviews on Products they have purchased. <br>- Users are able to browse and filter products by their categories <br> - Users are able to add products to their cart and maintain session with their cart <br> - Users are able to modify cart session from the cart summary page<br> - users are able to delete products or update products from their cart with full functionality <br> - when users make changes to their carts all the data is managed correctly in session <br> - subtotals and price items are calculated correctly as well as cart quantity</p> | ![](https://i.imgur.com/yuKmaI4.png) |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
