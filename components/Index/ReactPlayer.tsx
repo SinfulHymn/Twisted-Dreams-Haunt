@@ -6,7 +6,9 @@ return(
 
  <ReactPlayer
     url='https://www.youtube.com/watch?v=l9fdeRmsnMA'
+    width={800}
     
+    controls={true}
   />
 )
 }
