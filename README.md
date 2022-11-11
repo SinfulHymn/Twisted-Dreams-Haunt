@@ -1,9 +1,9 @@
 
 <div id="top" align="center">
-  <a href="https://github.com/Kmachappy/Runners-Page">
-    <img src="https://i.imgur.com/jdjcdMZ.jpg" alt="Logo" width="250" height="150">
+  <a href="https://github.com/Kmachappy/Twisted-Dreams-Haunt">
+    <img src="https://imgur.com/a/NcYDkdc" alt="Logo" width="250" height="150">
   </a>
-  <a href="https://kmacshop.herokuapp.com/">
+  <a href="https://twisteddreamshaunt.com/">
     <h3 align="center">Twisted Dreams Haunt</h3>
   </a>
 
