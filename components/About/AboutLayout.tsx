@@ -6,7 +6,7 @@ import VideoMutedFix from "@components/Index/VideoMutedFix";
 const center = [33.8529527, -118.0314395];
 const zoom = 15;
 
-const LocationLayout = () => {
+const AboutLayout = () => {
     return (
         <div className="py-6">
             <div className="relative h-56">
@@ -17,7 +17,7 @@ const LocationLayout = () => {
                 <div className="absolute w-full h-full bg-black bg-opacity-70 z-10"></div>
                 <div className="absolute w-full h-full flex justify-center items-center z-20">
                     <h1 className="text-4xl sm:text-6xl text-textlogo font-custom2 font-bold text-center ">
-                        Contact
+                        About
                     </h1>
 
 
@@ -63,32 +63,19 @@ const LocationLayout = () => {
             </Map>
 
             <div className="text-white mx-auto container flex flex-col justify-center">
-                {/* make a div that contains the address  */}
+                {/* make a div that is an about us section */}
                 <div className="flex flex-col justify-center items-center py-6">
-                    <div className="flex flex-col justify-center items-center">
-                        <p className="text-6xl text-textlogo font-bold font-custom2 text-center leading-normal">
-                            <span className="text-">
-                                Twisted Dreams
-                                <br />
-                                Haunt House
-                            </span>
-                            <br />
-                            is hosted at
-                            <br />
-                            5815 panama drive
-                            <br />
-                            Buena Park, CA 90621  
-                        </p>
-
-
-                    </div>
-
+                    <h1 className="text-4xl sm:text-6xl text-textlogo font-custom2 font-bold text-center ">
+                        About Us
+                    </h1>
+                    <p className="text-center text-xl sm:text-2xl font-custom2 text-textlogo">
+                        Twisted Dreams Haunt is a haunted house located in the city of Buena Park, California. We are an organization that is dedicated to providing a fun, frightful, and safe environment for our guests. We are a group of friends who have been working together for over 20 years to bring you the best haunted house experience in Orange County California.
+                    </p>
                 </div>
-                
-                    
+
             </div>
         </div>
     );
 };
 
-export default LocationLayout;
+export default AboutLayout;

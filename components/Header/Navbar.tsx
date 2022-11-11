@@ -42,17 +42,17 @@ const Navbar = ({ cart }): React.ReactElement => {
                             <li>
                                 <Link href={'/store'} className='block p-4 hover:text-main-red'>Store</Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link href={'/location'} className=' block p-4 hover:text-main-red'>Location</Link>
+                            </li> */}
+                            <li>
+                                <Link href={'/gallery'} className='block p-4 hover:text-main-red'>Photos</Link>
                             </li>
                             <li>
-                                <Link href={'/merch'} className='block p-4 hover:text-main-red'>Photos</Link>
+                                <Link href={'/about'} className='block p-4 hover:text-main-red'>About</Link>
                             </li>
                             <li>
-                                <Link href={'/location'} className='block p-4 hover:text-main-red'>About</Link>
-                            </li>
-                            <li>
-                                <Link href={'/location'} className='block p-4 hover:text-main-red'>Contact</Link>
+                                <Link href={'/contact'} className='block p-4 hover:text-main-red'>Contact</Link>
                             </li>
 
                         </ul>
