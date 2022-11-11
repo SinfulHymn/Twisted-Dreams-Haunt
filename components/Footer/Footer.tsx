@@ -14,14 +14,14 @@ const Footer = () => {
                     <div className="block z-20 leading-10 ">
                         <Link href={'/about'} className='text-main-red block p-4 hover:text-white text-3xl font-semibold'>Sign Your Waiver</Link>
                             
-                        <p className="block p-2 text-3xl font-medium">
+                        <p className="block p-2 text-3xl font-medium text-[#9d6524]">
                             Twisted Dreams Haunted House
                         </p>
                     <Socials></Socials>
                     </div>
 
                     <div className="leading-6 text-lg sm:text-lg font-semibold">
-                        <p className="px-12 py-2">
+                        <p className="px-12 py-2 text-[#20291f]">
                             Your Neighborly Haunt in Orange County
                         </p>
                         <p className="px-10 py-2 hover:text-main-red">
@@ -32,10 +32,10 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col flex-end w-full justify-center items-center text-xs pb-6 font-semibold">
-                    <p>
-                        Website Built by <Link href="https://github.com/Kmachappy" target="_blank" className="font-medium hover:text-main-red" rel="noreferrer">Alejandro Rojas &#127875;</Link>
+                    <p className=" text-">
+                        webpage built by <Link href="https://github.com/Kmachappy" target="_blank" className="font-medium hover:text-main-red text-textlogo" rel="noreferrer">alejandro rojas &#127875;</Link>
                     </p>
-                    <p>
+                    <p className="text-main-red">
                         Copyright © 2022 Twisted Dreams Haunted House
                     </p>
                 </div>

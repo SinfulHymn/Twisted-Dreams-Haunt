@@ -29,7 +29,7 @@ body {
   max-width: 100%;
   background: #1a1a13;
   line-height: 1.125em;
-  color: #84531a;
+  color: #9d6524;
 }
 @media only screen and (max-width: 767px) {
   .react-calendar {
@@ -59,11 +59,11 @@ body {
 
 .react-calendar__tile {
   background: #441311 !important;
-  border: 1px solid #84531a;
-  color: #84531a;
+  border: 1px solid #9d6524;
+  color: #9d6524;
 }
 .react-calendar__tile--now {
-  background: #84531a !important;
+  background: #9d6524 !important;
   color: #1a1a13;
 }
 .react-calendar__tile:disabled {
@@ -71,7 +71,7 @@ body {
 }
 .react-calendar__tile--active {
   background: #20291f !important;
-  color: #84531a;
+  color: #9d6524;
 }
 
 .react-calendar__navigation {
