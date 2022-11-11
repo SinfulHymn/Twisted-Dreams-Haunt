@@ -70,8 +70,9 @@ const Content = () => {
               tileContent={({ date, view }) => view === 'month' && date.getDate() === 21 || date.getDate() === 22 || date.getDate() === 23 || date.getDate() === 31 || (date.getDate() === 30 && date.getMonth() === 9) || (date.getDate() === 28 && date.getMonth() === 9) || (date.getDate() === 29 && date.getMonth() === 9) ? <div className=" leading-none text-red-500 text-[10px] lg:text-s ">Twisted Dreams Haunt
               </div> : null}
             > </Calendar>
-            <div className='bg-[#441311] h-28 right-80 left-80 absolute opacity-90  -rotate-12 text-center content-center center'>
-              <span className='h-10 top-0 bottom text-white text-4xl font-custom'>Come back next year</span></div>
+            {/* <div className='bg-[#441311] h-28 right-80 left-80 absolute opacity-90  -rotate-12 text-center content-center center'>
+              <span className='h-10 top-0 bottom text-white text-4xl font-custom'>Come back next year</span>
+            </div> */}
           </div>
         </div>
 
