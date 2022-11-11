@@ -51,24 +51,28 @@ const Content = () => {
           <div className=' my-4 sm:my-6 w-full flex justify-center'>
             <ReactPlayer />
           </div>
-
-          <Calendar
-            className="bg-slate-900"
-            onChange={onChange}
-            value={value}
-            calendarType="US"
-            minDate={new Date(2022, 9, 21)}
-            maxDate={new Date(2022, 10, 0)}
-            minDetail="month"
-            showNeighboringMonth={true}
-            showNavigation={true}
-            prevLabel={null}
-            nextLabel={null}
-            next2Label={null}
-            prev2Label={null}
-            tileDisabled={({ date, view }) => view === 'month' && date.getDay() === 2 || date.getDay() === 3 || date.getDay() === 4 || date.getDate() == 24}
-            tileContent={({ date, view }) => view === 'month' && date.getDate() === 21 || date.getDate() === 22 || date.getDate() === 23 || date.getDate() === 31 || (date.getDate() === 30 && date.getMonth() === 9) || (date.getDate() === 28 && date.getMonth() === 9) || (date.getDate() === 29 && date.getMonth() === 9) ? <div className=" leading-none text-red-500 text-[10px] lg:text-s ">Twisted Dreams Haunt</div> : null}
-          />
+          <div className=' w-fit flex justify-center items-center '>
+            <Calendar
+              onChange={onChange}
+              value={value}
+              calendarType="US"
+              minDate={new Date(2022, 9, 21)}
+              maxDate={new Date(2022, 10, 0)}
+              minDetail="month"
+              showNeighboringMonth={true}
+              showNavigation={true}
+              prevLabel={null}
+              nextLabel={null}
+              next2Label={null}
+              prev2Label={null}
+              tileClassName="relative"
+              tileDisabled={({ date, view }) => view === 'month' && date.getDay() === 2 || date.getDay() === 3 || date.getDay() === 4 || date.getDate() == 24}
+              tileContent={({ date, view }) => view === 'month' && date.getDate() === 21 || date.getDate() === 22 || date.getDate() === 23 || date.getDate() === 31 || (date.getDate() === 30 && date.getMonth() === 9) || (date.getDate() === 28 && date.getMonth() === 9) || (date.getDate() === 29 && date.getMonth() === 9) ? <div className=" leading-none text-red-500 text-[10px] lg:text-s ">Twisted Dreams Haunt
+              </div> : null}
+            > </Calendar>
+            <div className='bg-[#441311] h-28 right-80 left-80 absolute opacity-90  -rotate-12 text-center content-center center'>
+              <span className='h-10 top-0 bottom text-white text-4xl font-custom'>Come back next year</span></div>
+          </div>
         </div>
 
       </div>

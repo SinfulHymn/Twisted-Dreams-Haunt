@@ -5,7 +5,7 @@ import { Squash as Squash } from "hamburger-react";
 import Socials from "./Socials";
 import SocialsMobile from "./SocialsMobile";
 
-const Navbar = ({cart}): React.ReactElement => {
+const Navbar = ({ cart }): React.ReactElement => {
     const [isOpen, setOpen] = useState(false)
 
     return (
@@ -34,20 +34,24 @@ const Navbar = ({cart}): React.ReactElement => {
                     {/* nav */}
                     <div
                         className={"order-3 lg:order-2 w-full lg:flex-[1_1_0] lg:block " + (isOpen ? 'block' : 'hidden')}>
-                        <SocialsMobile  />
+                        <SocialsMobile />
                         <ul className="flex flex-col lg:flex-row justify-between text-xl items-center font-custom2 font-medium">
+                            <li>
+                                <Link href={'/'} className='block p-4 hover:text-main-red'>Home</Link>
+                            </li>
                             <li>
                                 <Link href={'/store'} className='block p-4 hover:text-main-red'>Store</Link>
                             </li>
                             <li>
-                                <Link href={'/gallery'} className=' block p-4 hover:text-main-red'>Location</Link>
+                                <Link href={'/location'} className=' block p-4 hover:text-main-red'>Location</Link>
                             </li>
                             <li>
                                 <Link href={'/merch'} className='block p-4 hover:text-main-red'>Photos</Link>
                             </li>
                             <li>
                                 <Link href={'/location'} className='block p-4 hover:text-main-red'>About</Link>
-                            </li>                            <li>
+                            </li>
+                            <li>
                                 <Link href={'/location'} className='block p-4 hover:text-main-red'>Contact</Link>
                             </li>
 
@@ -55,7 +59,7 @@ const Navbar = ({cart}): React.ReactElement => {
                     </div>
 
                     {/* socials */}
-                    <Socials cart={cart}/>
+                    <Socials cart={cart} />
 
 
                 </nav>
