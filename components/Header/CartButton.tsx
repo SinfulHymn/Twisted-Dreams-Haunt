@@ -3,7 +3,7 @@ import { FaShoppingCart } from "react-icons/fa"
 import { shopifyClient, parseShopifyResponse } from "@lib/shopify"
 
 export default function CartButton({ cart }) {
-    console.log(cart)
+    // console.log(cart)
     return (
 
         <Link href={'/cart'} className='relative hover:text-main-red p-4'>

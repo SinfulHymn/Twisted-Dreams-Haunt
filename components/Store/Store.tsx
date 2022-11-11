@@ -6,7 +6,7 @@ import Nav from "./Nav";
 import VideoMutedFix from "@components/Index/VideoMutedFix";
 
 const Store = ({ products }) => {
-    // console.log(PRODUCTS);
+    
     return (
         <div className=" relative bg-no-repeat bg-center text-white  bg-hero2 h-full w-full bg-contain z-0">
             <div className="absolute w-full h-full bg-black bg-opacity-60 -z-10"></div>

@@ -9,10 +9,10 @@ const Socials = ({ cart }) => {
             <Link href={'https://www.instagram.com/twisted_dreams_haunt/'} className='hover:text-main-red p-4'>
                 <BsInstagram className="text-2xl " />
             </Link>
-            <Link href={'/'} className='hover:text-main-red p-4' >
+            <Link href={'https://twitter.com/TDHAUNT'} className='hover:text-main-red p-4' >
                 <BsTwitter className="text-2xl " />
             </Link>
-            <Link href={'/'} className=' p-4 hover:text-main-red'>
+            <Link href={'https://www.tiktok.com/@twisteddreamshaunt'} className=' p-4 hover:text-main-red'>
                 <FaTiktok className="text-2xl " />
             </Link>
             <CartButton cart={cart}/>

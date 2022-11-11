@@ -11,12 +11,12 @@ const Socials = () => {
                 <BsInstagram className="text-2xl" />
             </Link>
             <Link
-                href={'/'}
+                href={'https://twitter.com/TDHAUNT'}
                 className='hover:text-main-red p-4'>
                 <BsTwitter className="text-2xl" />
             </Link>
             <Link
-                href={'/'}
+                href={'https://www.tiktok.com/@twisteddreamshaunt'}
                 className='hover:text-main-red p-4'>
                 <FaTiktok className="text-2xl" />
             </Link>

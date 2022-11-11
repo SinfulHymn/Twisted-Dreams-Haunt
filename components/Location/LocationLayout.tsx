@@ -66,7 +66,7 @@ const LocationLayout = () => {
                 {/* make a div that contains the address  */}
                 <div className="flex flex-col justify-center items-center py-6">
                     <div className="flex flex-col justify-center items-center">
-                        <p className="text-6xl text-textlogo font-bold font-custom2 text-center leading-normal">
+                        <p className="text-4xl sm:text-6xl text-textlogo font-bold font-custom2 text-center leading-normal">
                             <span className="text-">
                                 Twisted Dreams
                                 <br />
