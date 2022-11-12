@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { formatter } from "@utils/helpers";
 
-const ProductCard = ({ product, productUrl }) => {
+const ProductCard = ({ product }) => {
 
     const { id, title, images, priceRange, handle } = product.node;
     console.log(handle);

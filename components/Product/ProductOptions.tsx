@@ -11,7 +11,7 @@ export default function ProductOptions({ name, values, selectedOptions, setOptio
               return (
                 <label key={id} htmlFor={id}>
                   <input 
-                    className="sr-only"
+                    className="sr-only" 
                     type="radio"
                     id={id}
                     name={`option-${name}`}
