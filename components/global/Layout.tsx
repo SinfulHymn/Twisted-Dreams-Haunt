@@ -4,7 +4,7 @@ import AppHead from './Head';
 type Props = {
     children: React.ReactNode;
     title?: string;
-    cart: object;
+    
 };
 
 const Layout = ({ children, title }: Props) => {
