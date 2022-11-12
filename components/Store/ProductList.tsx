@@ -8,7 +8,7 @@ const ProductList = ({ products }) => {
     const productUrl = productHandle => router.push(`/store/products/${productHandle}`);
 
     return (
-        <div className=" p-6 container mx-auto w-full ">
+        <div className=" p-4 sm:p-6 container mx-auto w-full ">
             <div className="text-xl sm:text-2xl font-custom2 font-semibold text-white">
                 Products
             </div>

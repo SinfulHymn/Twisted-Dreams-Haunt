@@ -54,7 +54,7 @@ const Navbar = (): React.ReactElement => {
                                 <Link href={'/store'} className='block p-4 hover:text-main-red'>Store</Link>
                             </li>
                             <li>
-                                <Link href={'/gallery'} className='block p-4 hover:text-main-red'>Photos</Link>
+                                <Link href={'/gallery'} className='block p-4 hover:text-main-red'>Gallery</Link>
                             </li>
                             <li>
                                 <Link href={'/about'} className='block p-4 hover:text-main-red'>About</Link>
