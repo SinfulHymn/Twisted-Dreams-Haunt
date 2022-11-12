@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react"
-import { createCheckout, updateCheckout } from "@lib/shopifyql"
+import { createCheckout, updateCheckout } from "@lib/Shopifyql"
 
 
 interface IContextProps {
