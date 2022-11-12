@@ -12,12 +12,20 @@ const VideoHero = () => {
                             bg of the div is hero
                             center and cover background images 
             */}
-            <div className="relative min-h-[500px] lg:min-h-[600px] bg-hero bg-cover bg-center z-0 overflow-hidden">
+            <div className="relative min-h-[500px] lg:min-h-[600px]    z-0 overflow-hidden">
+                {/* <Image
+                src="/images/landscape-web.png"
+                alt="Twisted Dreams Haunt"
+                fill
+                className="absolute top-0 left-0 w-full h-full object-cover"
+                quality={100}
+                /> */}
+                
                 {/* black overlay for the image
                     absolute
                     w-full 
                 */}
-                <div className="absolute w-full h-full bg-black bg-opacity-70 z-10"></div>
+                {/* <div className="absolute w-full h-full bg-black bg-opacity-80 z-10"></div> */}
 
                 <AutoPlaySilentVideo
                     className="absolute w-full h-full object-cover z-20"

@@ -1,7 +1,7 @@
 import Calendar from 'react-calendar'
 import { useCallback, useEffect, useState } from 'react';
-import ReactPlayer from './Test2';
-import Map from './Test';
+import ReactPlayer from './PlayerSSRfix';
+import Map from './MapSSRfix';
 import styles from '@components/Index/Map.module.css';
 import Link from 'next/link';
 import Image from 'next/image';

@@ -1,4 +1,4 @@
-import Map from "@components/Index/Test"
+import Map from "@components/Index/MapSSRfix"
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@components/Index/Map.module.css";
