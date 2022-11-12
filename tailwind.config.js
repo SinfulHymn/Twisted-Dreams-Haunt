@@ -23,6 +23,7 @@ module.exports = {
         primary: "#000000",
         secondary: "#3D0000",
         textlogo: "#eecfb4",
+        cart: "#242525",
         galleryButton: "#242525ca",
         galleryButtonHover: "#452023",
         "main-red": "#CE2D4F",

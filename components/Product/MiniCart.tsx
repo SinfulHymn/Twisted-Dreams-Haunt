@@ -35,7 +35,7 @@ export default function MiniCart({ cart }) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="absolute inset-0 bg-gray-500 dark:bg-slate-800 bg-opacity-75 transition-opacity" />
+            <Dialog.Overlay className="absolute inset-0 bg-gray-500 dark:bg-galleryButton  transition-opacity" />
           </Transition.Child>
 
           <div className="fixed inset-y-0 right-0 pl-10 max-w-full flex">
@@ -49,7 +49,7 @@ export default function MiniCart({ cart }) {
               leaveTo="translate-x-full"
             >
               <div className="w-screen max-w-md">
-                <div className="h-full flex flex-col bg-white dark:bg-slate-900 shadow-xl overflow-y-scroll">
+                <div className="h-full flex flex-col bg-white dark:bg-cart shadow-xl overflow-y-scroll">
                   <div className="flex-1 py-6 overflow-y-auto px-4 sm:px-6">
                     <div className="flex items-start justify-between">
                       <Dialog.Title className="text-lg font-medium text-gray-900 dark:text-gray-100">Shopping cart</Dialog.Title>

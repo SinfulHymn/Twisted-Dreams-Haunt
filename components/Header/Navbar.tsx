@@ -7,6 +7,7 @@ import SocialsMobile from "./SocialsMobile";
 import { useContext } from "react";
 import { CartContext } from "@context/shopContext";
 import MiniCart from "@components/Product/MiniCart";
+import CartButton from "./CartButton";
 
 const Navbar = (): React.ReactElement => {
 
@@ -32,7 +33,10 @@ const Navbar = (): React.ReactElement => {
                         </Link>
                     </div>
                     {/* hamburger menu */}
-                    <div className="order-3 lg:hidden ml-4 ">
+                    <div className="flex order-5 lg:hidden ml-4 ">
+                        <div className="sm:hidden">
+                        <CartButton />
+                        </div>
                         <Squash color="#FFF" label="Show menu"
                             toggled={isOpen} toggle={setOpen} />
                     </div>
@@ -65,7 +69,9 @@ const Navbar = (): React.ReactElement => {
                     {/* socials */}
                     <Socials />
 
-                    <MiniCart cart={cart}/>
+                    <MiniCart 
+                    
+                    cart={cart}/>
                 </nav>
             </div>
         </div>
