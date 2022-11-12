@@ -21,7 +21,7 @@ const Navbar = (): React.ReactElement => {
                 <nav className="flex flex-wrap text-white items-center justify-between px-1">
                     {/* logo */}
                     <div className=' flex-0 sm:flex-[1_1_0]  justify-center items-center'>
-                        
+                        <Link href={"/"}>
                             <Image
                                 className="p-"
                                 src={"/images/twisted-dreams-main.png"}
@@ -29,7 +29,7 @@ const Navbar = (): React.ReactElement => {
                                 width={200}
                                 height={200}
                             />
-                        
+                        </Link>
                     </div>
                     {/* hamburger menu */}
                     

@@ -46,9 +46,9 @@ const Content = () => {
   return (
     <>
 
-      <div className="container mx-auto p-3 sm:p-6 ">
+      <div className="container mx-auto p-2 sm:p-4 ">
         <div className='flex flex-col justify-center items-center '>
-          <div className=' my-4 sm:my-6 w-full flex justify-center'>
+          <div className=' py-3 w-full flex justify-center'>
             <ReactPlayer />
           </div>
           <div className=' w-fit flex justify-center items-center '>
