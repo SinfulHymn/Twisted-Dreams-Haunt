@@ -1,11 +1,11 @@
 import Layout from "@components/global/Layout"
-import { getAllProducts, getProduct } from "@lib/shopifyql";
+import { getAllProducts, getProduct } from "@lib/Shopifyql";
 import ProductLayout from "@components/Product/ProductLayout";
 
 
 export default function ProductPage({ product, cart }) {
   return (
-      <Layout cart={cart} title="- Product">
+      <Layout title="- Product">
         <ProductLayout product={product} />
       </Layout>
       
