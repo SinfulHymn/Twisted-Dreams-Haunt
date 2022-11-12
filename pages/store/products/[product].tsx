@@ -3,7 +3,7 @@ import { getAllProducts, getProduct } from "@lib/Shopifyql";
 import ProductLayout from "@components/Product/ProductLayout";
 
 
-export default function ProductPage({ product, cart }) {
+export default function ProductPage({ product }) {
   return (
       <Layout title="- Product">
         <ProductLayout product={product} />
