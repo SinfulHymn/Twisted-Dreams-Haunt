@@ -1,17 +1,15 @@
-
 <div id="top" align="center">
   <a href="https://github.com/Kmachappy/Twisted-Dreams-Haunt">
-    <img src="https://i.imgur.com/8h2BmLd.png" alt="Logo" width="180" height="250">
+    <img src="https://i.imgur.com/8h2BmLd.png" alt="Logo" width="200" height="280">
   </a>
   <a href="https://twisteddreamshaunt.com/">
     <h3 align="center">Twisted Dreams Haunt</h3>
   </a>
-
   <p align="center">
-    A Full Stack Event/Ecommerce Web Page <br/>
-    Twisted Dreams Haunted House
- <p>Next.js FullStack App</p><br />
-    <a href="https://twisteddreamshaunt.com/"><strong>Live Website - Twisted Dreams Haunt </strong></a>
+    An Event & Ecommerce Web App <br/>
+    A Full Stack Nextjs 
+  </p>
+    <a href="https://twisteddreamshaunt.com/"><strong>Live Website - Twisted Dreams Haunt</strong></a>
     <br />
  Event/Ecommerce Web Application built with <br/>
     <a href="https://nextjs.org/">Nextjs</a>
@@ -27,27 +25,23 @@
 </div>
 
 # About
-
-Description            |  Screenshot
-:---:|:----:
-| <p align="left">- A Django ecommerce web application that displays a directory keyboard related products. <br> - Users will be able to explore Keyboard products and view all their details about the Product! <br> - Users can leave a reviews on Products they have purchased. <br>- Users are able to browse and filter products by their categories <br> - Users are able to add products to their cart and maintain session with their cart <br> - Users are able to modify cart session from the cart summary page<br> - users are able to delete products or update products from their cart with full functionality <br> - when users make changes to their carts all the data is managed correctly in session <br> - subtotals and price items are calculated correctly as well as cart quantity</p> | ![](https://i.imgur.com/yuKmaI4.png) |
+|            Description             |               Screenshot             |
+| :--------------------------------: | :----------------------------------: |
+| <p align="left">- A React event and ecommerce web application that displays media and information about the Twisted Dreams Event. <br> - Users will be able to explore event details and it's store with Products!<br>- Users are able to browse and filter products by their categories <br> - Users are able to add products to their cart and maintain session with their cart <br> - Users are able to checkout items added to cart <br> - checkout happens through shopify storefront api | <img src="https://i.imgur.com/nqHnjUA.pngng" alt="Logo" width="700" height="460"> |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # KmacShop WireFrame and ERD
 
-Index/Home             |  Category/Filtered
-:-------------------------:|:-------------------------:
-![](https://i.imgur.com/I7mtFwB.png)  |  ![](https://i.imgur.com/4BJ71X9.png)
+|              Index/Home              |          Category/Filtered           |
+| :----------------------------------: | :----------------------------------: |
+| ![](https://i.imgur.com/I7mtFwB.png) | ![](https://i.imgur.com/4BJ71X9.png) |
 
-Product Show             |   Current ERD
-:-------------------------:|:-------------------------:
-![](https://i.imgur.com/253u25t.png)  |  ![](https://i.imgur.com/cMeAhAT.png)
-
+|             Product Show             |             Current ERD              |
+| :----------------------------------: | :----------------------------------: |
+| ![](https://i.imgur.com/253u25t.png) | ![](https://i.imgur.com/cMeAhAT.png) |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 # Routes
 
@@ -66,6 +60,7 @@ path('register/', views.account_register, name='register'),
 path('activate/<slug:uidb64>/<slug:token>/', views.account_activate, name='activate'),
 path('dashboard/', views.dashboard, name='dashboard'),
 ```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Models
@@ -100,6 +95,7 @@ class ProductImage(models.Model):
 ```
 
 Catergory Model:
+
 ```
 class Category(models.Model):
     name = models.CharField(max_length=255, db_index=True)
@@ -107,6 +103,7 @@ class Category(models.Model):
 ```
 
 Order Model:
+
 ```
 class Order(models.Model):
     order_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -126,6 +123,7 @@ class Order(models.Model):
 ```
 
 ProductReview Model:
+
 ```
 class ProductReview(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
@@ -136,9 +134,8 @@ class ProductReview(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     active = models.BooleanField(default=True)
-    
-```
 
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -152,7 +149,7 @@ class ProductReview(models.Model):
 - User will be able to sign up or log in
 - if user is logged in they can
 
-        - can view products 
+        - can view products
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -175,8 +172,8 @@ class ProductReview(models.Model):
 # Roadmap and future Implementations
 
 ```
-```
 
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -191,7 +188,7 @@ class ProductReview(models.Model):
 - As a user, On the show page I should be able to update the event data
 - As a user, On the show page I should be able add a review for the event
 - As a user, I could contribute to the database of events by creating another race event on the database on the head of the page
-- As a user, I should be able to log in  on the header and view and edit my reviews
+- As a user, I should be able to log in on the header and view and edit my reviews
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -210,30 +207,32 @@ class ProductReview(models.Model):
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # API's used
+
  <!-- - **[Strava API](https://developers.strava.com/)**. -->
+
 - **[Leaflet API](https://leafletjs.com/SlavaUkraini/)**.
 - **[mapbox API](https://leafletjs.com/SlavaUkraini/)**.
 
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 # KmacShop ScreenShots
 
-Index/Home             |  Category/Filtered
-:-------------------------:|:-------------------------:
-![](https://i.imgur.com/bGD2s2z.jpg)  |  ![](https://i.imgur.com/haKGQ6J.png)
+|              Index/Home              |          Category/Filtered           |
+| :----------------------------------: | :----------------------------------: |
+| ![](https://i.imgur.com/bGD2s2z.jpg) | ![](https://i.imgur.com/haKGQ6J.png) |
 
-Product Show             |   Cart Summary
-:-------------------------:|:-------------------------:
-![](https://i.imgur.com/cpQWQEo.png)  |  ![](https://i.imgur.com/PajTdjV.png)
-User Profile           |  Checkout
-:-------------------------:|:-------------------------:
+|             Product Show             |             Cart Summary             |
+| :----------------------------------: | :----------------------------------: |
+| ![](https://i.imgur.com/cpQWQEo.png) | ![](https://i.imgur.com/PajTdjV.png) |
+|             User Profile             |               Checkout               |
+|     :-------------------------:      |     :-------------------------:      |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 # Resources/Links
+
 ```
+
 ```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
