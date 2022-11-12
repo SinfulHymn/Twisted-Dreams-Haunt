@@ -1,7 +1,7 @@
 import Layout from "@components/global/Layout"
 import LocationLayout from "@components/Location/LocationLayout"
 
-export default function Location({cart}) {
+export default function Location() {
   
   return (
     <Layout title="- Home">
@@ -9,3 +9,4 @@ export default function Location({cart}) {
     </Layout>
     )
 }
+  
