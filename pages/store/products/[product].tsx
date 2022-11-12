@@ -12,7 +12,7 @@ export default function ProductPage({ product, cart }) {
   )
 }
 
-
+ 
 export async function getStaticPaths() {
 
   const products = await getAllProducts();
