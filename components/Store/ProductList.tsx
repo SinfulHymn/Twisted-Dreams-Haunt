@@ -19,7 +19,7 @@ const ProductList = ({ products }) => {
                     <ProductCard 
                     product={product} 
                     key={product.node.id}
-                    productUrl={productUrl}
+                    
                     
                     />
                     

@@ -1,6 +1,6 @@
 import Layout from "@components/global/Layout"
 import Index from "@components/Index/IndexLayout"
-import { shopifyClient, parseShopifyResponse } from "@lib/shopify"
+
 
 export default function Home({cart}) {
   return (
@@ -10,12 +10,3 @@ export default function Home({cart}) {
     )
 }
 
-export const getServerSideProps = async () => {
-  const cart = await shopifyClient.checkout.create()
-  
-  return {
-    props: {
-      cart: parseShopifyResponse(cart)
-    },
-  };
-}; 

@@ -1,7 +1,18 @@
 import { createContext, useState, useEffect } from "react"
 import { createCheckout, updateCheckout } from "@lib/shopifyql"
 
-const CartContext = createContext()
+
+interface IContextProps {
+  dispatch: ({type}:{type:string}) => void;
+  addToCart: (variantId: string) => void;
+  cartOpen: boolean;
+  setCartOpen: (value: boolean) => void;
+  checkoutUrl: string;
+  removeCartItem: (variantId: string) => void;
+}
+
+
+const CartContext = createContext({} as IContextProps)
 
 export default function ShopProvider({ children }) {
   const [cart, setCart] = useState([]);
@@ -16,7 +27,7 @@ export default function ShopProvider({ children }) {
       if (cartObject[0].id) {
         setCart([cartObject[0]]);
       } else if (cartObject[0].length > 0) {
-        setCart(...[cartObject[0]]);
+        setCart.apply(null, [cartObject[0]]);
       }
 
       setCheckoutId(cartObject[1].id);

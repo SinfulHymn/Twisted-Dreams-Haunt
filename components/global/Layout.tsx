@@ -7,12 +7,12 @@ type Props = {
     cart: object;
 };
 
-const Layout = ({ children, title, cart }: Props) => {
+const Layout = ({ children, title }: Props) => {
     return (
         <>
             <div className="flex flex-col min-h-screen">
                 <AppHead title={title} />
-                <Header cart={cart} />
+                <Header  />
                 <main className="flex-grow pt-16">
                     {children}
                 </main>

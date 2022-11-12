@@ -4,9 +4,9 @@ import ProductOptions from "./ProductOptions";
 import { CartContext } from "@context/shopContext";
 
 export default function ProductForm({ product }) {
-    console.log(useContext(CartContext));
-    const addToCart = useContext(CartContext);
-
+    console.log('$$$$$$$$$$$$$$$$',useContext(CartContext));
+    const { addToCart } = useContext(CartContext);
+console.log("$$$$$$",addToCart)
     const allVariantOptions = product.variants.edges?.map(variant => {
         const allOptions = {};
 
@@ -25,6 +25,7 @@ export default function ProductForm({ product }) {
             variantQuantity: 1
         }
     })
+    console.log(allVariantOptions)
 
     const defaultValues = {}
     product.options.map(item => {
@@ -55,7 +56,7 @@ export default function ProductForm({ product }) {
 
     return (
         <div className="rounded-xl p-2 shadow-lg flex flex-col w-full md:w-2/5">
-            <h2 className="text-2xl font-bold dark:text-white">{product.title}</h2>
+            <h2 className="text-3xl font-bold dark:text-white">{product.title}</h2>
             <span className="pb-3 text-white">{formatter.format(product.variants.edges[0].node.priceV2.amount)}</span>
             {
                 product.options.map(({ name, values }) => (

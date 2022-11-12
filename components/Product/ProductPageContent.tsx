@@ -5,12 +5,10 @@ import SwiperCore, { Navigation, Pagination } from 'swiper'
 import RecommendedList from "./RecommendedList"
 
 export default function ProductPageContent({ product }) {
-    // console.log('this is image',product.images.edges[0].node.originalSrc)
 
     const images = []
 
     product.images.edges.map((image, i) => {
-        console.log('this is image', image.node.originalSrc)
         images.push(
             <SwiperSlide key={`slide-${i}`}>
                 <Image
@@ -27,15 +25,15 @@ export default function ProductPageContent({ product }) {
     return (
         <div className="">
             <div className="flex flex-col justify-center items-center space-y-8 md:flex-row md:items-stat md:-space-y-4 md:space-x-4 lg:space-x-10 lg:max-w-6xl w-11/12 mx-auto">
-                <div className=" my-0 sm:my-auto w-full max-w-lg bg-slate-900 rounded-lg overflow-hidden shadow-lg md:w-1/2 text-white -z-10"> 
-                    <div className="relative h-96 w-full">
-                       <Image
-                       src={product.images.edges[0].node.originalSrc}
-                          alt={product.images.edges[0].node.altText}
-                          fill
-                       >
+                <div className=" my-0 sm:my-auto w-full max-w-lg bg-slate-900 rounded-lg overflow-hidden shadow-lg md:w-1/2 text-white border border-[#9d6524]">
+                    <div className="  relative h-96 w-full">
+                    <Image
+                    src={product.images.edges[0].node.originalSrc}
+                    alt={product.images.edges[0].node.altText}
+                    fill
+                    className="object-cover" />
 
-                       </Image>
+
                     </div>
                 </div>
                 <ProductForm product={product} />
