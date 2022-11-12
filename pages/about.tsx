@@ -6,18 +6,10 @@ import AboutLayout from "@components/About/AboutLayout";
 export default function About({cart}) {
   
   return (
-    <Layout cart={cart} title="- Home">
+    <Layout title="- Home">
         <AboutLayout />
     </Layout>
     )
 }
 
 
-export const getServerSideProps = async () => {
-  const cart = await shopifyClient.checkout.create()
-  return {
-    props: {
-      cart: parseShopifyResponse(cart)
-    },
-  };
-}; 
