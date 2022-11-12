@@ -14,11 +14,7 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
-      backgroundImage: {
-        hero: "url('/images/landscape-web.png')",
-        hero2: "url('/images/tdh-web.png')",
-        footer: "url('/images/footerbg-web.png')",
-      },
+
       colors: {
         primary: "#000000",
         secondary: "#3D0000",

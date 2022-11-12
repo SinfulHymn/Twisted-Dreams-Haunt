@@ -4,7 +4,7 @@ import GalleryLayout from "@components/Gallery/GalleryLayout"
 export default function Gallery({cart}) {
   
   return (
-    <Layout title="- Home">
+    <Layout title="- Gallery">
      <GalleryLayout />   
     </Layout>
     )

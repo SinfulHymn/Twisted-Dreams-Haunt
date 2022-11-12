@@ -26,7 +26,7 @@ const Layout = ({ children, title }: Props) => {
                 <Image
                 fill
                 className='object-contain -z-50'
-                src="/images/tdh-web.png"
+                src="/images/tdh-small-web.png"
                 alt="TDH"
                 />
                 <div className="absolute w-full h-full bg-black bg-opacity-90 -z-40 block "></div>

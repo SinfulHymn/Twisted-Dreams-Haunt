@@ -34,7 +34,7 @@ const VideoHero = () => {
 
                 <div className="absolute w-full h-full flex justify-center items-center z-30 ">
                     <Image
-                        src={"/images/tdh-web.png"}
+                        src={"/images/tdh-small-web.png"}
                         alt={"banner"}
                         width={500}
                         height={500}

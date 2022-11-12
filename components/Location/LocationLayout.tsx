@@ -46,7 +46,7 @@ const LocationLayout = () => {
                                     >
                                         <Image
                                             className='max-h-[6.25rem] w-auto object-center'
-                                            src="/images/tdh-web.png"
+                                            src="/images/tdh-small-web.png"
                                             alt="Twisted Dreams Haunt"
                                             width={400}
                                             height={400}

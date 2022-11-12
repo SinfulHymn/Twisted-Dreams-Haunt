@@ -4,8 +4,16 @@
 
 .homeMap {
   width: 100%;
-  height: 20rem;
+  height: 16rem;
 }
+
+@media screen and (min-width: 768px) {
+  .homeMap {
+    height: 20rem;
+  }
+}
+  
+
 
 .locationMap{
   width: 100%;

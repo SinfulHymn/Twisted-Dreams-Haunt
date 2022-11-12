@@ -104,7 +104,7 @@ const Content = () => {
                   >
                     <Image
                       className='max-h-[100px] w-auto object-center'
-                      src="/images/tdh-web.png"
+                      src="/images/tdh-small-web.png"
                       alt="Twisted Dreams Haunt"
                       width={400}
                       height={400}
