@@ -65,7 +65,7 @@ const Navbar = (): React.ReactElement => {
                     {/* socials */}
                     <Socials />
 
-                    {/* <MiniCart cart={cart}/> */}
+                    <MiniCart cart={cart}/>
                 </nav>
             </div>
         </div>
