@@ -8,7 +8,6 @@ import { useContext } from "react";
 import { CartContext } from "@context/shopContext";
 import MiniCart from "@components/Product/MiniCart";
 import CartButton from "./CartButton";
-
 const Navbar = (): React.ReactElement => {
 
     const { cart } = useContext(CartContext);
@@ -33,7 +32,8 @@ const Navbar = (): React.ReactElement => {
                         </Link>
                     </div>
                     {/* hamburger menu */}
-                    <div className="flex justify-center items-center order-5 lg:hidden ml-4 ">
+                    
+                    <div className="flex justify-center items-center order-3 lg:hidden ml-4 ">
                         <div className="sm:hidden">
                         <CartButton />
                         </div>
@@ -69,9 +69,7 @@ const Navbar = (): React.ReactElement => {
                     {/* socials */}
                     <Socials />
 
-                    <MiniCart 
-                    
-                    cart={cart}/>
+                    <MiniCart cart={cart}/>
                 </nav>
             </div>
         </div>
