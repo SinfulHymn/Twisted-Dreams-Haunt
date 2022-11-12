@@ -1,21 +1,30 @@
 import Link from "next/link"
+import { useContext, useState } from "react"
+import { CartContext } from "@context/shopContext"
 import { FaShoppingCart } from "react-icons/fa"
-import { shopifyClient, parseShopifyResponse } from "@lib/shopify"
+
 
 export default function CartButton() {
+
+    const { cart, cartOpen, setCartOpen } = useContext(CartContext);
+    const [quantiy, setQuantity ]= useState(0);
+    let cartQuantity = 0;
+    cart.map(item => {
+        
+        return (cartQuantity += item.variantQuantity)
+    })
     
     return (
 
-        <Link href={'/cart'} className='relative hover:text-main-red p-4'>
+        <div onClick={()=>setCartOpen(!cartOpen)} className='relative hover:text-main-red p-4'>
             <FaShoppingCart className="text-2xl" />
-                <span className="hidden absolute top-1 right-1 bg-red-600 rounded-full text-xs w-5 h-5 text-center flex justify-center items-center ">
-                    <span className=" text-white">
-
-                    {""}
-                    </span>
+            <span className={"absolute top-1 right-1 bg-main-red rounded-full text-xs w-5 h-5 text-center flex justify-center items-center " + ((cartQuantity<1) ? "hidden" : "")}>
+                <span className=" text-white" >
+                    {cartQuantity}
                 </span>
+            </span>
+        </div>
 
-        </Link>
     )
 }
 

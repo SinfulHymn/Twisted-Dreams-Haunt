@@ -1,6 +1,6 @@
 import { Fragment, useContext, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { XIcon } from '@heroicons/react/outline'
+import {AiOutlineClose} from 'react-icons/ai'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CartContext } from '@context/shopContext'
@@ -61,7 +61,7 @@ export default function MiniCart({ cart }) {
                           onClick={() => setCartOpen(false)}
                         >
                           <span className="sr-only">Close panel</span>
-                          <XIcon className="h-6 w-6" aria-hidden="true" />
+                          <AiOutlineClose className="h-6 w-6" aria-hidden="true" />
                         </button>
                       </div>
                     </div>
@@ -88,7 +88,7 @@ export default function MiniCart({ cart }) {
                                       <div className="flex justify-between text-base font-medium text-gray-900 dark:text-gray-100">
                                         <h3>
                                           <Link href={`/products/${product.handle}`} passHref>
-                                            <a onClick={() => setCartOpen(false)}>{product.title}</a>
+                                            <div onClick={() => setCartOpen(false)}>{product.title}</div>
                                           </Link>
                                         </h3>
                                         <p className="ml-4">{formatter.format(product.variantPrice)}</p>

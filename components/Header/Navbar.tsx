@@ -4,8 +4,15 @@ import { useState } from "react";
 import { Squash as Squash } from "hamburger-react";
 import Socials from "./Socials";
 import SocialsMobile from "./SocialsMobile";
+import { useContext } from "react";
+import { CartContext } from "@context/shopContext";
+import MiniCart from "@components/Product/MiniCart";
 
-const Navbar = ({ cart }): React.ReactElement => {
+const Navbar = (): React.ReactElement => {
+
+    const { cart } = useContext(CartContext);
+
+    
     const [isOpen, setOpen] = useState(false)
 
     return (
@@ -42,9 +49,6 @@ const Navbar = ({ cart }): React.ReactElement => {
                             <li>
                                 <Link href={'/store'} className='block p-4 hover:text-main-red'>Store</Link>
                             </li>
-                            {/* <li>
-                                <Link href={'/location'} className=' block p-4 hover:text-main-red'>Location</Link>
-                            </li> */}
                             <li>
                                 <Link href={'/gallery'} className='block p-4 hover:text-main-red'>Photos</Link>
                             </li>
@@ -59,9 +63,9 @@ const Navbar = ({ cart }): React.ReactElement => {
                     </div>
 
                     {/* socials */}
-                    <Socials cart={cart} />
+                    <Socials />
 
-
+                    {/* <MiniCart cart={cart}/> */}
                 </nav>
             </div>
         </div>
@@ -69,3 +73,4 @@ const Navbar = ({ cart }): React.ReactElement => {
 };
 
 export default Navbar;
+

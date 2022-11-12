@@ -9,6 +9,7 @@ interface IContextProps {
   setCartOpen: (value: boolean) => void;
   checkoutUrl: string;
   removeCartItem: (variantId: string) => void;
+  cart: any;
 }
 
 

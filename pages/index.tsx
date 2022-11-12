@@ -2,9 +2,9 @@ import Layout from "@components/global/Layout"
 import Index from "@components/Index/IndexLayout"
 
 
-export default function Home({cart}) {
+export default function Home() {
   return (
-    <Layout cart={cart} title="- Home">
+    <Layout title="- Home">
       <Index />
     </Layout>
     )
