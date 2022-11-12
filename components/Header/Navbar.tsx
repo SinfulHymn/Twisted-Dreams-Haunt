@@ -33,7 +33,7 @@ const Navbar = (): React.ReactElement => {
                         </Link>
                     </div>
                     {/* hamburger menu */}
-                    <div className="flex order-5 lg:hidden ml-4 ">
+                    <div className="flex justify-center items-center order-5 lg:hidden ml-4 ">
                         <div className="sm:hidden">
                         <CartButton />
                         </div>
