@@ -25,6 +25,7 @@
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"],
       "@data/*": ["data/*"],
+      "@context/*": ["context/*"],
       
     }
   },

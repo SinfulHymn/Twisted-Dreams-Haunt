@@ -1,7 +1,7 @@
 
 <div id="top" align="center">
   <a href="https://github.com/Kmachappy/Twisted-Dreams-Haunt">
-    <img src="https://i.imgur.com/8h2BmLd.png" alt="Logo" width="150" height="250">
+    <img src="https://i.imgur.com/8h2BmLd.png" alt="Logo" width="180" height="250">
   </a>
   <a href="https://twisteddreamshaunt.com/">
     <h3 align="center">Twisted Dreams Haunt</h3>
@@ -13,7 +13,7 @@
  <p>Next.js FullStack App</p><br />
     <a href="https://twisteddreamshaunt.com/"><strong>Live Website - Twisted Dreams Haunt </strong></a>
     <br />
- Event/Ecommerce Web Application built on <br/>
+ Event/Ecommerce Web Application built with <br/>
     <a href="https://nextjs.org/">Nextjs</a>
     ·
     <a href="https://www.shopify.com/">Shopify</a>

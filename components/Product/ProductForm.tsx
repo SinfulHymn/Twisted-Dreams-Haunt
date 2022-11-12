@@ -1,112 +1,78 @@
-import { useState } from 'react'
+import { useState, useContext } from "react";
+import { formatter } from "@utils/helpers";
+import ProductOptions from "./ProductOptions";
+import { CartContext } from "@context/shopContext";
 
-import { FaShoppingCart } from 'react-icons/fa'
+export default function ProductForm({ product }) {
+console.log(useContext(CartContext));
+  const addToCart = useContext(CartContext);
 
-// import { useCartContext, useAddToCartContext } from '@/context/Store'
+  const allVariantOptions = product.variants.edges?.map(variant => {
+    const allOptions = {};
 
-function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
-  console.log('!@#@!!#@#2', variants)
-  const [quantity, setQuantity] = useState(1)
+    variant.node.selectedOptions.map(item => {
+      allOptions[item.name] = item.value;
+    })
 
-  const [variantId, setVariantId] = useState(variants[0].id)
-  const [variant, setVariant] = useState(variants[0])
-  // const isLoading = useCartContext()[2]
-  // const addToCart = useAddToCartContext()
+    return {
+      id: variant.node.id,
+      title: product.title,
+      handle: product.handle,
+      image: variant.node.image?.originalSrc,
+      options: allOptions,
+      variantTitle: variant.node.title,
+      variantPrice: variant.node.priceV2.amount,
+      variantQuantity: 1
+    }
+  })
 
-  // const atcBtnStyle = isLoading ?
-  //   `pt-3 pb-2 bg-palette-primary text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex 
-  //                     justify-center items-baseline  hover:bg-palette-dark opacity-25 cursor-none`
-  //   :
-  //   `pt-3 pb-2 bg-palette-primary text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex 
-  //                     justify-center items-baseline  hover:bg-palette-dark`
+  const defaultValues = {}
+  product.options.map(item => {
+    defaultValues[item.name] = item.values[0];
+  })
 
-  function handleSizeChange(e) {
-    setVariantId(e)
-    // send back size change
-    const selectedVariant = variants.filter(v => v.node.id === e).pop()
-    setVariantPrice(selectedVariant.node.price)
+  const [selectedVariant, setSelectedVariant] = useState(allVariantOptions[0]);
+  const [selectedOptions, setSelectedOptions] = useState(defaultValues);
 
-    // update variant
-    setVariant(selectedVariant)
+  function setOptions(name, value) {
+    setSelectedOptions(prevState => {
+      return { ...prevState, [name]: value }
+    });
+
+    const selection = {
+      ...selectedOptions,
+      [name]: value
+    }
+
+    allVariantOptions.map(item => {
+      if (JSON.stringify(item.options) === JSON.stringify(selection)) {
+        setSelectedVariant(item);
+      }
+    })
+
   }
 
-  // async function handleAddToCart() {
-  //   const varId = variant.node.id
-  //   // update store context
-  //   if (quantity !== '') {
-  //     addToCart({
-  //       productTitle: title,
-  //       productHandle: handle,
-  //       productImage: mainImg,
-  //       variantId: varId,
-  //       variantPrice: variant.node.price,
-  //       variantTitle: variant.node.title,
-  //       variantQuantity: quantity
-  //     })
-  //   }
-  // // }
-
-  // function updateQuantity(e) {
-  //   if (e === '') {
-  //     setQuantity('')
-  //   } else {
-  //     setQuantity(Math.floor(e))
-  //   }
-  // }
 
   return (
-    <div className="w-full">
-      <div className="flex justify-start space-x-2 w-full">
-      <div className="flex flex-col items-start space-y-1 flex-grow-0">
-        <label className="text-gray-500 text-base">Qty.</label>
-        <input
-            type="number"
-            inputMode="numeric"
-            id="quantity"
-            name="quantity"
-            min="1"
-            step="1"
-            value={quantity}
-            // onChange={(e) => updateQuantity(e.target.value)}
-            className="text-gray-900 form-input border border-gray-300 w-16 rounded-sm focus:border-palette-light focus:ring-palette-light"
+    <div className="rounded-2xl p-4 shadow-lg flex flex-col w-full md:w-1/3">
+      <h2 className="text-2xl font-bold dark:text-white">{product.title}</h2>
+      <span className="pb-3 dark:text-white">{formatter.format(product.variants.edges[0].node.priceV2.amount)}</span>
+      {
+        product.options.map(({ name, values }) => (
+          <ProductOptions
+            key={`key-${name}`}
+            name={name}
+            values={values}
+            selectedOptions={selectedOptions}
+            setOptions={setOptions}
           />
-        </div>
-      {/* 
-        <div className="flex flex-col items-start space-y-1 flex-grow">
-          <label className="text-gray-500 text-base">Size</label>
-          <select
-            id="size-selector"
-            name="size-selector"
-            onChange={(event) => handleSizeChange(event.target.value)}
-            value={variantId}
-            className="form-select border border-gray-300 rounded-sm w-full text-gray-900 focus:border-palette-light focus:ring-palette-light"
-          >
-            {
-              variants.map(item => (
-                <option
-                  id={item.node.id}
-                  key={item.node.id}
-                  value={item.node.id}
-                >
-                  {item.node.title}
-                </option>
-              ))
-            }
-          </select>
-        </div>
-        */}
-       </div>
-      <button
-        
-        className='pt-3 pb-2 bg-galleryButton text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex justify-center items-baseline  hover:bg-galleryButtonHover'
-        aria-label="cart-button"
-        // onClick={handleAddToCart}
-      >
-        Add To Cart
-        <FaShoppingCart  className="w-5 ml-2" />
-      </button>
-    </div >
-  )
+        ))
+      }
+      <button 
+      onClick={() => {
+        addToCart(selectedVariant);
+      }}
+      className="bg-black dark:bg-white rounded-lg text-white dark:text-black px-2 py-3 hover:bg-gray-800 dark:hover:bg-gray-300 mt-3">Add to Cart</button>
+    </div>
+  );
 }
-
-export default ProductForm
