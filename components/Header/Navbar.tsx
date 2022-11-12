@@ -28,6 +28,8 @@ const Navbar = (): React.ReactElement => {
                                 alt={"Logo"}
                                 width={200}
                                 height={200}
+                                            sizes="(max-width: 640px) 100vw, 640px"
+
                             />
                         </Link>
                     </div>
