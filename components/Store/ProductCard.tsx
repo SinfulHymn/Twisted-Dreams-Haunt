@@ -5,7 +5,7 @@ import { formatter } from "@utils/helpers";
 const ProductCard = ({ product }) => {
 
     const { id, title, images, priceRange, handle } = product.node;
-    console.log(handle);
+    
     const amount = priceRange.minVariantPrice.amount;
     const productImage = images.edges[0] ? images.edges[0].node.originalSrc : "/images/placeholder.jpg";
 

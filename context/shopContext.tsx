@@ -3,13 +3,15 @@ import { createCheckout, updateCheckout } from "@lib/Shopifyql"
 
 
 interface IContextProps {
-  dispatch: ({type}:{type:string}) => void;
+  
   addToCart: (variantId: string) => void;
   cartOpen: boolean;
   setCartOpen: (value: boolean) => void;
   checkoutUrl: string;
   removeCartItem: (variantId: string) => void;
   cart: any;
+  cartTotal: number;
+  value : any;
 }
 
 
@@ -85,15 +87,18 @@ export default function ShopProvider({ children }) {
 
   return (
     <CartContext.Provider value={{
-      cart,
+      addToCart,
       cartOpen,
       setCartOpen,
-      addToCart,
       checkoutUrl,
-      removeCartItem
+      removeCartItem,
+      cart,
+      cartTotal: cart.reduce((acc, item) => acc + item.variantQuantity, 0),
+      value: cart.reduce((acc, item) => acc + item.variantQuantity * item.price, 0)
     }}>
       {children}
     </CartContext.Provider>
+    
   )
 }
 

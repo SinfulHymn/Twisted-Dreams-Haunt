@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 
 const ProductList = ({ products }) => {
-    console.log('@@@@@@@@@@@',products[0]);
+    
     const router = useRouter();
     const productUrl = productHandle => router.push(`/store/products/${productHandle}`);
 

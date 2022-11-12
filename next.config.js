@@ -11,8 +11,8 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'cdn.shopify.com',
-        port: '',
         pathname: '/s/**',
+        
       },
     ],
   },

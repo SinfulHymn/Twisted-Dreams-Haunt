@@ -4,7 +4,7 @@ import ProductOptions from "./ProductOptions";
 import { CartContext } from "@context/shopContext";
 
 export default function ProductForm({ product }) {
-    console.log('######',product);
+    
 
     const { addToCart } = useContext(CartContext);
     const allVariantOptions = product.variants.edges?.map(variant => {
@@ -25,7 +25,7 @@ export default function ProductForm({ product }) {
             variantQuantity: 1
         }
     })
-    console.log(allVariantOptions)
+    
 
     const defaultValues = {}
     product.options.map(item => {
