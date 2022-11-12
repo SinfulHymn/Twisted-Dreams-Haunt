@@ -4,7 +4,7 @@ import { getProductsInCollection } from "@lib/Shopifyql"
 
 export default function Index({ products, cart }) {
   return (
-    <Layout title="- Merch">
+    <Layout title="- Store">
       <Store products={products} />
     </Layout>
   )

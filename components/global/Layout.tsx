@@ -1,6 +1,10 @@
 import Header from '@components/Header/Header';
 import Foooter from '@components/Footer/Footer';
 import AppHead from './Head';
+import Image from 'next/image';
+
+import { useRouter} from 'next/router';
+
 type Props = {
     children: React.ReactNode;
     title?: string;
@@ -8,12 +12,24 @@ type Props = {
 };
 
 const Layout = ({ children, title }: Props) => {
+    const router = useRouter();
+    console.log('this is the router',router)
+    // console.log(router.query);
+
     return (
         <>
-            <div className="flex flex-col min-h-screen">
+            <div className="relative flex flex-col min-h-screen">
+                   
                 <AppHead title={title} />
                 <Header  />
-                <main className="flex-grow pt-16">
+                <main className="relative flex-grow pt-[60px]">
+                <Image
+                fill
+                className='object-contain -z-50'
+                src="/images/tdh-web.png"
+                alt="TDH"
+                />
+                <div className="absolute w-full h-full bg-black bg-opacity-90 -z-40 block "></div>
                     {children}
                 </main>
                 <Foooter />

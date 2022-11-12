@@ -20,16 +20,16 @@ const Navbar = (): React.ReactElement => {
             <div className="container mx-auto ">
                 <nav className="flex flex-wrap text-white items-center justify-between px-1">
                     {/* logo */}
-                    <div className=' flex-0 sm:flex-[1_1_0]  justify-center items-center '>
-                        <Link href={"/"} className="max-h-[80px]">
+                    <div className=' flex-0 sm:flex-[1_1_0]  justify-center items-center'>
+                        
                             <Image
-                                className="p-1"
+                                className="p-"
                                 src={"/images/twisted-dreams-main.png"}
                                 alt={"Logo"}
                                 width={200}
                                 height={200}
                             />
-                        </Link>
+                        
                     </div>
                     {/* hamburger menu */}
                     
