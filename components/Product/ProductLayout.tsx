@@ -1,6 +1,3 @@
-import ProductImage from "./ProductImage";
-import ProductDetails from "./ProductDetails";
-import { getAllProducts, getProduct } from "@lib/shopifyql";
 import ProductPageContent from "./ProductPageContent";
 
 const ProductLayout = ({ product }) => {
