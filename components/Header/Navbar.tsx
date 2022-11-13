@@ -23,12 +23,12 @@ const Navbar = (): React.ReactElement => {
                     <div className=' flex-0 sm:flex-[1_1_0]  justify-center items-center'>
                         <Link href={"/"}>
                             <Image
-                                className="p-"
+                                className="p-4"
                                 src={"/images/twisted-dreams-main.png"}
                                 alt={"Logo"}
                                 width={200}
-                                height={200}
-                                            sizes="(max-width: 640px) 100vw, 640px"
+                                height={60}
+                                sizes="(max-width: 640px) 100vw, 640px"
 
                             />
                         </Link>
