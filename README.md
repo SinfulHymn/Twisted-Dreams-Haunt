@@ -22,6 +22,8 @@
     ·
     <a href="https://tailwindcss.com/">TailwindCSS</a>
   </p>
+  <p> Light House Score</p>
+  <img src="https://i.imgur.com/ZvfVqI2.png" alt="Logo" width="450" height="100"> 
 </div>
 
 # About
