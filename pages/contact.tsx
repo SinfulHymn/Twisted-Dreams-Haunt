@@ -1,11 +1,11 @@
 import Layout from "@components/global/Layout"
-import LocationLayout from "@components/Location/LocationLayout"
+import ContactLayout from "@components/Contact/ContactLayout"
 
-export default function Location() {
+export default function Contact() {
   
   return (
     <Layout title="- Home">
-        <LocationLayout />
+        <ContactLayout />
     </Layout>
     )
 }

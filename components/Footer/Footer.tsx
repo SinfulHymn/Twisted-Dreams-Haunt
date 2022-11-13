@@ -12,7 +12,7 @@ const Footer = () => {
         className="absolute top-0 left-0 w-full h-full object-contain -z-50"
       />
 
-      <div className="absolute w-full h-full bg-black bg-opacity-90 -z-40 block border-yellow-800 "></div>
+      <div className="absolute w-full h-full bg-black bg-opacity-70 -z-40 block border-yellow-800 "></div>
 
       <div className=" flex flex-col w-full h-full justify-center items-center  border-green-800 ">
         <div className="relative grow flex flex-col items-center justify-center text-center z-10">

@@ -22,14 +22,14 @@ const Layout = ({ children, title }: Props) => {
                    
                 <AppHead title={title} />
                 <Header  />
-                <main className="relative flex-grow pt-[60px]">
+                <main className="relative flex-grow pt-[60px] flex flex-col">
                 <Image
                 fill
                 className='object-contain -z-50'
                 src="/images/tdh-small-web.png"
                 alt="TDH"
                 />
-                <div className="absolute w-full h-full bg-black bg-opacity-90 -z-40 block "></div>
+                <div className="absolute w-full h-full bg-black bg-opacity-70 -z-40 block "></div>
                     {children}
                 </main>
                 <Foooter />

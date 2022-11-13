@@ -8,7 +8,7 @@ const zoom = 15;
 
 const AboutLayout = () => {
     return (
-        <div className="">
+        <>
             
             <Banner title={"About"} />
        
@@ -16,7 +16,7 @@ const AboutLayout = () => {
            
             
 
-            <div className="text-white mx-auto container flex flex-col justify-center">
+            <div className="text-white mx-auto container flex flex-col justify-center flex-grow">
                 {/* make a div that is an about us section */}
                 <div className="flex flex-col justify-center items-center py-6">
                     <h1 className="text-4xl sm:text-6xl text-textlogo font-custom2 font-bold text-center ">
@@ -68,7 +68,7 @@ const AboutLayout = () => {
                         </>
                     )}
             </Map>
-        </div>
+        </>
     );
 };
 

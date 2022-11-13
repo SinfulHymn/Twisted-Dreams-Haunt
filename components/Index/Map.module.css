@@ -4,7 +4,8 @@
 
 .homeMap {
   width: 100%;
-  height: 16rem;
+  height: 12rem;
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 768px) {
@@ -17,5 +18,5 @@
 
 .locationMap{
   width: 100%;
-  height: 32rem;
+  height: 32rem;  
 }
