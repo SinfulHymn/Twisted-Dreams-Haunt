@@ -23,7 +23,8 @@ export default function ProductPageContent({ product }) {
     SwiperCore.use([Navigation, Pagination]);
 
     return (
-        <div className="">
+<>
+<div className="flex-grow flex flex-col py-10">
             <div className="flex flex-col justify-center items-center space-y-8 md:flex-row md:items-stat md:-space-y-4 md:space-x-4 lg:space-x-10 lg:max-w-6xl w-11/12 mx-auto">
                 <div className=" my-0 sm:my-auto w-full max-w-lg bg-slate-900 rounded-lg overflow-hidden shadow-lg md:w-1/2 text-white border border-[#9d6524]">
                     <div className="  relative h-96 w-full">
@@ -41,8 +42,8 @@ export default function ProductPageContent({ product }) {
             <p className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-11/12 mx-auto dark:text-white">
                 {product.description}
             </p>
-            <RecommendedList current={product.id} products={product.collections.edges[0].node.products.edges} />
         </div>
-
+            <RecommendedList current={product.id} products={product.collections.edges[0].node.products.edges} />
+</>
     )
 }

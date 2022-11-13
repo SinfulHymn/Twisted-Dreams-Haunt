@@ -1,11 +1,13 @@
 import ProductPageContent from "./ProductPageContent";
+import Banner from "@components/global/Banner";
 
 const ProductLayout = ({ product }) => {
     
     return (
-        <div className=" py-12 sm:pt-20">
+        <>
+            <Banner title={product.title} />
             <ProductPageContent product={product} />
-        </div>
+        </>
     );
 };
 

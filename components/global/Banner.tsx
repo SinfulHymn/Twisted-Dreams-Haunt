@@ -2,7 +2,7 @@ import VideoMutedFix from '@components/Index/VideoMutedFix';
 
 const Banner = ({title}) => {
     return (
-        <div className="relative h-40 sm:h-56">
+        <div className="relative h-40 sm:h-48">
         <VideoMutedFix
           className="absolute w-full h-full object-cover z-0"
           videoSrc="/video/TwistedDreamsHaunt.mp4"
