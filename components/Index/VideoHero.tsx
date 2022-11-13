@@ -25,11 +25,11 @@ const VideoHero = () => {
                     w-full 
                 */}
         {/* <div className="absolute w-full h-full bg-black bg-opacity-80 z-10"></div> */}
-{/* 
+
         <AutoPlaySilentVideo
           className="absolute w-full h-full object-cover z-20"
           videoSrc="/video/TwistedDreamsHaunt.mp4"
-        /> */}
+        />
 
         <div className="absolute w-full h-full flex justify-center items-center z-30 ">
           <Image
@@ -39,6 +39,7 @@ const VideoHero = () => {
             height={500}
             className="absolute w-[200px] sm:w-[240px] opacity-[.92] lg:w-[320px]"
             // quality={100}
+            
             sizes="(max-width: 640px) 100vw, 640px"
           />
         </div>

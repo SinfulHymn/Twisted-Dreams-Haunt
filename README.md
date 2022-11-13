@@ -31,130 +31,36 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-# KmacShop WireFrame and ERD
-
-|              Index/Home              |          Category/Filtered           |
-| :----------------------------------: | :----------------------------------: |
-| ![](https://i.imgur.com/I7mtFwB.png) | ![](https://i.imgur.com/4BJ71X9.png) |
-
-|             Product Show             |             Current ERD              |
-| :----------------------------------: | :----------------------------------: |
-| ![](https://i.imgur.com/253u25t.png) | ![](https://i.imgur.com/cMeAhAT.png) |
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-# Routes
+# How to use
 
 ```
-path('', views.index, name='index'),
-path('products/<slug:slug>/', views.product_detail, name='product_detail'),
-path('categories/<slug:category_slug>/', views.category_index, name='catergory_index'),
-path('categories/<slug:category_slug>/products/<slug:product_slug>/', views.category_products, name='category_products'),
-path('', views.cart_summary, name='cart_summary'),
-path('add/', views.cart_add, name='cart_add'),
-path('delete/', views.cart_delete, name='cart_delete'),
-path('update/', views.cart_update, name='cart_update'),
-path('login/', auth_views.LoginView.as_view(template_name='account/registration/login.html',form_class=UserLoginForm), name='login'),
-path('logout/', auth_views.LogoutView.as_view(next_page='/account/login/'), name='logout'),
-path('register/', views.account_register, name='register'),
-path('activate/<slug:uidb64>/<slug:token>/', views.account_activate, name='activate'),
-path('dashboard/', views.dashboard, name='dashboard'),
+$ npm install
+
+$ npm run dev
+
+$ mv example.env.local .env.local
+
+edit .env.local with your own shopify store credentials
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-# Models
-
-### subject to change
-
-Product Model:
-
+# Functionality and Development
 ```
-class Product(models.Model):
-    category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
-    created_by = models.ForeignKey(User, related_name='product_creator', on_delete=models.CASCADE)
-    name = models.CharField(max_length=255, db_index=True)
-    description = models.TextField(blank=True)
-    image = models.ImageField(upload_to='images/', blank=True)
-    slug = models.SlugField(max_length=255)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    in_stock = models.BooleanField(default=True)
-    is_active = models.BooleanField(default=True)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
-    objects = models.Manager()
-    products = ProductManager()
+- client needed a website to sell products and display information about their event
+- I leveraged Shopify's storefront api to create a custom ecommerce experience
+- Nextjs was used to create a static site that would be able to fetch data from the Shopify api and strapi api
+- Strapi was used to create a headless cms that would allow the client to update their event information, while also allowing me to fetch the data from the cms to display on the website
+- two graphql queries were created to fetch data from the cms and the shopify api
+- all custom tailwindcss components were created to style the website and to display the data from the graphql queries
+- the website is fully responsive and mobile friendly
+- the website is fully functional and is currently live at https://twisteddreamshaunt.com/
 ```
-
-ProductImage Model:
-
-```
-class ProductImage(models.Model):
-    url = models.ImageField(upload_to='images/', blank=True)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-```
-
-Catergory Model:
-
-```
-class Category(models.Model):
-    name = models.CharField(max_length=255, db_index=True)
-    slug = models.SlugField(max_length=255, unique=True)
-```
-
-Order Model:
-
-```
-class Order(models.Model):
-    order_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    items = models.ManyToManyField(Product)
-    ordered_date = models.DateTimeField(auto_now_add=True)
-    ordered_date_updated = models.DateTimeField(auto_now=True)
-    ordered_by = models.CharField(max_length=50)
-    ordered_address = models.CharField(max_length=100)
-    ordered_city = models.CharField(max_length=50)
-    ordered_state = models.CharField(max_length=50)
-    ordered_zip = models.CharField(max_length=10)
-    ordered_phone = models.CharField(max_length=10)
-    ordered_email = models.EmailField()
-    ordered_total = models.DecimalField(max_digits=10, decimal_places=2)
-    ordered_status = models.CharField(max_length=50)
-```
-
-ProductReview Model:
-
-```
-class ProductReview(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    title = models.CharField(max_length=255)
-    content = models.TextField()
-    rating = models.IntegerField(default=0)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
-    active = models.BooleanField(default=True)
-
-```
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-# Functionality
-
-- In this app we will access a database of products and display them on the index page
-- User will Be able to view a directory of products and browse any for full information
-- User will be able to add items to their cart session
-- User will be able to update their items in the cart summary
-- User will be able to delete their items in the cart summary
-- User will be able to sign up or log in
-- if user is logged in they can
-
-        - can view products
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 # Current State
-
+```
 - User is currently able to visit the site and see a directory of products
 
 - user is able to log in through google strategy OAuth or django authentication
@@ -166,29 +72,64 @@ class ProductReview(models.Model):
 - if user is logged in on the product they are viewing they are able to add a comment
 
 - user will be able to see their comments added to the product they commented on
-
+```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Roadmap and future Implementations
 
 ```
 
+- add QR code ticketing system to allow users to scan their tickets on their phone
+
+- add gallery functionality to allow users to view photos from past events
+
+- add a blog section to allow users to view blog posts
+
+- add a blog section to allow users to create blog posts
+
+- add a blog section to allow users to edit blog posts
+
+- add a blog section to allow users to delete blog posts
+
+- add a blog section to allow users to comment on blog posts
+
+- add integration with google analytics to allow users to view analytics on their website
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-# User Story
+# Routes
 
-- As a user, I should be able to see directory of Running Races/Events on Index
-- As a user, I should be able to click any of the featured Race for their full description/data on index page
-- As a user, I should be able to navigate the navigation links to sort events by race type on index and Results/filtered
-- As a user, On the Results/filtered page I should be able to see a directory of event filtered by event type
-- As a user, I should be able to click on any Race/Event to see their complete data on the Results/Filtered page
-- As a user, On the show page I should be able to see all an Events data
-- As a user, On the show page I should be able to update the event data
-- As a user, On the show page I should be able add a review for the event
-- As a user, I could contribute to the database of events by creating another race event on the database on the head of the page
-- As a user, I should be able to log in on the header and view and edit my reviews
+```
+- get '/' --> renders home page
+
+- get '/store' --> renders products page
+
+- get '/store/[product]' --> renders product show page
+
+- get '/store/[category]' --> renders category page
+
+- get '/cart/[id]' --> renders cart page
+
+- get '/checkout' --> renders checkout page
+
+- get '/about' --> renders about page
+
+- get '/contact' --> renders contact page
+
+- get '/gallery' --> renders gallery page
+
+- get '/gallery/[year]' --> renders gallery year page
+
+- get '/gallery/[year]/[album]' --> renders gallery album page
+
+- get '/gallery/[year]/[album]/[image]' --> renders gallery image page
+
+- get '/admin' --> renders admin page
+
+- get '/admin/[page]' --> renders admin page
+
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -197,12 +138,15 @@ class ProductReview(models.Model):
 - HTML
 - CSS
 - TailwindCSS
-- JavaScript
-- Django
-- Postgresql
-- SQL
-- DTL
-- OAuth 2.0
+- Typescript
+- Nextjs
+- shopify storefront api
+- strapi
+- graphql
+- react
+-  react-query
+- swiper
+  
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -212,27 +156,36 @@ class ProductReview(models.Model):
 
 - **[Leaflet API](https://leafletjs.com/SlavaUkraini/)**.
 - **[mapbox API](https://leafletjs.com/SlavaUkraini/)**.
+- **[Shopify Storefront API](https://shopify.dev/docs/storefront-api)**.
+- **[Strapi API](https://strapi.io/)**.
+- **[Graphql API](https://graphql.org/)**.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 
 # KmacShop ScreenShots
 
-|              Index/Home              |          Category/Filtered           |
+|              Index/Home              |          Store Page           |
 | :----------------------------------: | :----------------------------------: |
-| ![](https://i.imgur.com/bGD2s2z.jpg) | ![](https://i.imgur.com/haKGQ6J.png) |
+| ![](https://i.imgur.com/F6LR7UT.jpg) | ![](https://i.imgur.com/YTHRRN6.jpg) |
 
 |             Product Show             |             Cart Summary             |
 | :----------------------------------: | :----------------------------------: |
-| ![](https://i.imgur.com/cpQWQEo.png) | ![](https://i.imgur.com/PajTdjV.png) |
-|             User Profile             |               Checkout               |
-|     :-------------------------:      |     :-------------------------:      |
+| ![](https://i.imgur.com/VaDycAB.jpg) | ![](https://i.imgur.com/EzpncJ4.jpg) |
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-# Resources/Links
 
-```
+# KmacShop WireFrame 
 
-```
+|              Index/Home              |          Store           |
+| :----------------------------------: | :----------------------------------: |
+| ![](https://i.imgur.com/NhfcEpd.png) | ![](https://i.imgur.com/u3oa9GA.png) |
+
+|             Product Show             |             Current ERD              |
+| :----------------------------------: | :----------------------------------: |
+| ![](https://i.imgur.com/253u25t.png) | ![](https://i.imgur.com/DKp0AQc.png) |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
