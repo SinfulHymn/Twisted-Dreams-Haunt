@@ -34,7 +34,7 @@ const ContactLayout = () => {
         </div> */}
         <div className="container mx-auto">
           <div className="grid grid-cols-12 ">
-            <div className=" relative mb-12 border col-span-9 flex flex-col">
+            <div className=" relative mb-12  col-span-9 flex flex-col">
               <div className=" mb-7 pb-3 border-b border-gray-800">
                 Get in Touch with us
               </div>
