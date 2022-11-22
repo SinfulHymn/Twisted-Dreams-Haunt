@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
                     <div className="mb-4 w-full relative overflow-hidden">
                         <div className="h-full w-full overflow-hidden bg-black rounded-lg">
                             <Image
-                                className=" rounded-lg object-contain h-[150px] xs:h-[175px] sm:h-[240px] md:h-[200px] lg:h-[200px] xl:h-[280px] 2xl:h-[300px] w-full"
+                                className=" rounded-lg object-contain h-[300px] xs:h-[200px] sm:h-[260px] md:h-[280px] lg:h-[300px] xl:h-[320px] 2xl:h-[340px] 3xl:h-[360px] w-full"
                                 src={productImage}
                                 alt={title}
                                 width={500}
