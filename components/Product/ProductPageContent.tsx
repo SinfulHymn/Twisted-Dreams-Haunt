@@ -6,7 +6,7 @@ import RecommendedList from "./RecommendedList";
 // testing
 
 export default function ProductPageContent({ product }) {
-  // console.log(product);
+  console.log(product.images.edges[0].node.originalSrc);
   const images = [];
 
   // product.images.edges.map((image, i) => {
@@ -33,6 +33,7 @@ export default function ProductPageContent({ product }) {
                 src={product.images.edges[0].node.originalSrc}
                 alt={product.images.edges[0].node.altText}
                 fill
+                sizes="100%"
                 className="object-cover"
               />
             </div>
