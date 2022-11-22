@@ -6,7 +6,7 @@ import RecommendedList from "./RecommendedList";
 // testing
 
 export default function ProductPageContent({ product }) {
-  console.log(product);
+  // console.log(product);
   const images = [];
 
   // product.images.edges.map((image, i) => {
