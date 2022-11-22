@@ -10,7 +10,7 @@ const Banner = ({title}) => {
 
         <div className="absolute w-full h-full bg-black bg-opacity-70 z-10"></div>
         <div className="absolute w-full h-full flex justify-center items-center z-20">
-          <h1 className="text-4xl sm:text-6xl text-textlogo font-custom2 font-bold text-center ">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl  xl:text-5xl 2xl:text-6xl text-textlogo font-custom2 font-bold text-center ">
             {title}
           </h1>
         </div>

@@ -3,7 +3,7 @@ import ProductCard from "@components/Store/ProductCard"
 const RecommendedList = ({ products, current }) => {
   return (
     <div className="px-10 container mx-auto">
-      <div className="mx-auto pt-16 pb-2 px-4 sm:py-24 sm:px-6 md:pt-10 md:pb-2 lg:px-8 lg:pt-20 lg:pb-4">
+      <div className="mx-auto pt-16 pb-2 px-4 sm:py-24 sm:px-6 md:pt-10 md:pb-2 lg:px-8 lg:py-8">
         <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white">
           Recommended Products
         </h2>
