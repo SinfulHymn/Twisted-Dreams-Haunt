@@ -13,8 +13,6 @@ type Props = {
 
 const Layout = ({ children, title }: Props) => {
     const router = useRouter();
-    console.log('this is the router',router)
-    // console.log(router.query);
 
     return (
         <>

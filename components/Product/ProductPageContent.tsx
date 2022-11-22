@@ -6,7 +6,7 @@ import RecommendedList from "./RecommendedList"
 // testing
 
 export default function ProductPageContent({ product }) {
-
+    console.log(product)
     const images = []
 
     product.images.edges.map((image, i) => {
@@ -14,7 +14,7 @@ export default function ProductPageContent({ product }) {
             <SwiperSlide key={`slide-${i}`}>
                 <Image
                     src={image.node.originalSrc}
-                    alt={image.node.altText}
+                    alt={(image.node.altText)|| "Product Image"}
                     fill
                     className="object-cover" />
             </SwiperSlide>
