@@ -12,7 +12,7 @@ const ProductCard = ({ product }) => {
     return (
 
         <div className="p-3 md:p-4 lg:p-6 bg-[#050910ef] rounded-xl">
-            <Link href={`/store/products/${handle}`}>
+            <Link className="" href={`/store/products/${handle}`}>
                 <div className="relative flex flex-grow flex-col">
                     <div className="mb-4 w-full relative overflow-hidden">
                         <div className="h-full w-full overflow-hidden bg-black rounded-lg">
@@ -28,7 +28,7 @@ const ProductCard = ({ product }) => {
                     </div>
                     <div className="flex flex-col justify-between">
                         <div
-                            className="block text-gray-200 font-semibold font-sans text-base lg:text-xl pt-0.5 mb-1"
+                            className="block hover:text-main-red text-gray-200 font-semibold font-sans text-base lg:text-xl pt-0.5 mb-1"
                         >{title}</div>
                         <div className="mt-2">
                             <span className="font-semibold font-sans text-xl lg:text-2xl text-main-red">{formatter.format(amount)}</span>
