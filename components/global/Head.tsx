@@ -8,7 +8,7 @@ const AppHead = ({ title }) => {
             <link rel="manifest" href="/images/favicon/site.webmanifest" />
             <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#000000" />
             <meta name="msapplication-TileColor" content="#8b8b8b" />
-            <meta name="theme-color" content="#ffffff" />
+            {/* <meta name="theme-color" content="#ffffff" /> */}
             <title>Twisted Dreams {title}</title>
         </Head>
     )
