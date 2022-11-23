@@ -11,7 +11,7 @@ const ProductList = ({ products }) => {
       <div className="text-2xl xl:text-3xl 2xl:text-4xl font-custom2 font-bold text-accent-orange">
         Products
       </div>
-      <div className="my-4 sm:my-6 grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4 xl:gap-6">
+      <div className="my-4 sm:my-6 grid grid-cols-2 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4 xl:gap-6">
         {products.map((product) => (
           <ProductCard product={product} key={product.node.id} />
         ))}
