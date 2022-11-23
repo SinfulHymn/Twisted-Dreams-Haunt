@@ -12,7 +12,7 @@ const ProductList = ({ products }) => {
         Products
       </div>
       <div className="my-4 sm:my-6 grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4 xl:gap-6">
-        {products.reverse().map((product) => (
+        {products.map((product) => (
           <ProductCard product={product} key={product.node.id} />
         ))}
       </div>

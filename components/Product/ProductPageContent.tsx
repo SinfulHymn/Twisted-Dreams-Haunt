@@ -26,8 +26,9 @@ export default function ProductPageContent({ product }) {
             className="rounded-lg object-contain h-[300px] xs:h-[300px] sm:h-[550px] md:h-[700px] lg:h-[600px] xl:h-[600px] 2xl:h-[600px] 3xl:h-[600px] w-full"
             src={image.node.originalSrc}
             alt={image.node.altText || "Product Image"}
-            width={800}
-            height={800}
+            width={1000}
+            height={1000}
+            quality={100}
           />
         </div>
       </SwiperSlide>
