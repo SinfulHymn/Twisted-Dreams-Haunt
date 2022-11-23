@@ -11,13 +11,13 @@ const ProductCard = ({ product }) => {
 
     return (
         // 050910ef
-        <div className="p-3 md:p-4 lg:p-6 bg-[#4d3112ab] rounded-xl">
+        <div className="p-3 md:p-4 lg:p-6 bg-[#8657208e] rounded-xl">
             <Link className="" href={`/store/products/${handle}`}>
                 <div className="relative flex flex-grow flex-col">
                     <div className="mb-4 w-full relative overflow-hidden">
                         <div className="h-full w-full overflow-hidden bg-black rounded-lg">
                             <Image
-                                className=" rounded-lg object-contain  h-[240px]  sm:h-[260px] md:h-[280px] lg:h-[300px] xl:h-[320px] 2xl:h-[340px] 3xl:h-[360px] w-full"
+                                className=" rounded-lg object-contain  h-[220px]  sm:h-[260px] md:h-[280px] lg:h-[300px] xl:h-[320px] 2xl:h-[340px] 3xl:h-[360px] w-full"
                                 src={productImage}
                                 alt={title}
                                 width={500}
