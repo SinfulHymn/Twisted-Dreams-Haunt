@@ -55,9 +55,10 @@ export default function ProductForm({ product }) {
 
 
     return (
-        <div className="rounded-xl p-8 sm:p-10 m-4 bg-[#09111ae2] flex flex-col w-full md:w-1/2 xl:w-6/12 2xl:w-6/12 ">
-            <h2 className="text-2xl sm:text-3xl font-bold dark:text-white">{product.title}</h2>
+        <div className="bg-[#09111ae2] flex flex-col w-full md:w-1/2 rounded-xl p-8 m-4  md:p-8   relative overflow-hidden">
+            <h2 className="text-2xl lg:text-3xl font-bold dark:text-white">{product.title}</h2>
             <span className="text-2xl mt-2 pb-3 text-main-red font-semibold">{formatter.format(product.variants.edges[0].node.priceV2.amount)}</span>
+            <div className="">
             {
                 product.options.map(({ name, values }) => (
                     <ProductOptions
@@ -69,6 +70,7 @@ export default function ProductForm({ product }) {
                     />
                 ))
             }
+            </div>
             <button
                 onClick={() => {
                     addToCart(selectedVariant);
