@@ -10,8 +10,8 @@ const ProductCard = ({ product }) => {
     const productImage = images.edges[0] ? images.edges[0].node.originalSrc : "/images/placeholder.jpg";
 
     return (
-
-        <div className="p-3 md:p-4 lg:p-6 bg-[#050910ef] rounded-xl">
+        // 050910ef
+        <div className="p-3 md:p-4 lg:p-6 bg-[#4d3112ab] rounded-xl">
             <Link className="" href={`/store/products/${handle}`}>
                 <div className="relative flex flex-grow flex-col">
                     <div className="mb-4 w-full relative overflow-hidden">
