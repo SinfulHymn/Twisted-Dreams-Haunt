@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "@components/Index/Map.module.css";
 import Banner from "@components/global/Banner";
 const center = [33.8529527, -118.0314395];
-const zoom = 15;
+const zoom = 10;
 
 const ContactLayout = () => {
   return (
@@ -39,7 +39,11 @@ const ContactLayout = () => {
                 Get in Touch with us
               </div>
               <div className="mb-12">
-              <p className="mb-3 font-light text-gray-500 dark:text-gray-400">Fill out all required fields to send a message. You have to login to your wordpress account to post any comment. Please don´t spam, thank you!</p>
+                <p className="mb-3 font-light text-gray-500 dark:text-gray-400">
+                  Fill out all required fields to send a message. You have to
+                  login to your wordpress account to post any comment. Please
+                  don´t spam, thank you!
+                </p>
               </div>
               <div>
                 <form className="flex flex-col">
@@ -70,7 +74,7 @@ const ContactLayout = () => {
                       type="text"
                       placeholder="Subject"
                     />
-                    
+
                     <label className="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-200">
                       Message
                     </label>
@@ -82,16 +86,8 @@ const ContactLayout = () => {
                     <button className="mt-4 bg-main-red text-white rounded-lg px-3 py-2 text-sm focus:outline-none hover:bg-main-red-dark">
                       Send
                     </button>
-
-
-
-
-
                   </div>
                 </form>
-
-
-
               </div>
             </div>
             <div className="border col-span-3">tsaddfa</div>
@@ -108,8 +104,8 @@ const ContactLayout = () => {
         {({ TileLayer, Marker, Popup }) => (
           <>
             <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              url={`https://{s}.tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png?apikey=${process.env.NEXT_PUBLIC_THUNDERMAP}`}
+              // attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
             />
 
             <Marker position={center}>
@@ -119,13 +115,15 @@ const ContactLayout = () => {
                   href={"https://goo.gl/maps/Vye9xaDydMJKiuY36"}
                 >
                   <Image
-                    className="max-h-[6rem] w-auto object-center"
+                    className="max-h-[5rem] w-auto object-center"
                     src="/images/tdh-small-web.png"
                     alt="Twisted Dreams Haunt"
                     width={400}
                     height={400}
                   />
-                  <span className="font-custom">Twisted Dreams</span>
+                  <span className="font-custom text-accent-orange">
+                    Twisted Dreams
+                  </span>
                 </Link>
               </Popup>
             </Marker>

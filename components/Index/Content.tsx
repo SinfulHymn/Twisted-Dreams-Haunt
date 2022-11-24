@@ -7,8 +7,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
-const center = [33.8529527, -118.0314395]
-const zoom = 12
+const center = [33.8529527, -118.0314395];
+const zoom = 10;
+
 
 function DisplayPosition({ map }) {
   const [position, setPosition] = useState(() => map.getCenter())
@@ -92,7 +93,7 @@ const Content = () => {
             <>
               <TileLayer
                 url={`https://{s}.tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png?apikey=${process.env.NEXT_PUBLIC_THUNDERMAP}`}
-                attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+                // attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
               />
 
 
