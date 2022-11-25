@@ -11,20 +11,71 @@ const AboutLayout = () => {
     <>
       <Banner title={"About"} />
 
-      <div className="text-white mx-auto container flex flex-col justify-center flex-grow">
+      <div className="text-white mx-auto container flex flex-col justify-center flex-grow  border-red-500 p-6">
         {/* make a div that is an about us section */}
-        <div className="flex flex-col justify-center items-center py-6">
-          <h1 className="text-4xl sm:text-6xl text-textlogo font-custom2 font-bold text-center ">
-            About Us
-          </h1>
-          <p className="text-center text-xl sm:text-2xl font-custom2 text-textlogo">
-            Twisted Dreams Haunt is a haunted house located in the city of Buena
-            Park, California. We are an organization that is dedicated to
-            providing a fun, frightful, and safe environment for our guests. We
-            are a group of friends who have been working together for over 20
-            years to bring you the best haunted house experience in Orange
-            County California.
-          </p>
+        <div className="grid grid-cols-2 gap-y-10 gap-x-10 ">
+          <div className=" mx-auto  w-8/12 border-red-500">
+            <Image
+              src="/images/about1.jpg"
+              alt="About Us"
+              width={500}
+              height={500}
+              className=" object-contain  h-full w-full"
+            />
+
+          </div>
+          <div className="bg-galleryButton rounded-xl flex-1 p-6 space-y-6 prose lg:prose-xl">
+            <h1 className=" text-4xl text-accent-orange font-custom2 font-bold border-b border-b-main-red just">
+              About Us
+            </h1>
+            <p className="text-lg sm:text-xl  font-semibold text-textlogo  pro">
+              Twisted Dreams Haunt is a haunted house located in the city of
+              Buena Park, California. We are an organization that is dedicated
+              to providing a fun, frightful, and safe environment for our
+              guests. We are a group of friends who have been working together
+              for over 20 years to bring you the best haunted house experience
+              in Orange County California.
+            </p>
+            <p className=" text-lg sm:text-2xl font-custom2 text-textlogo">
+              Twisted Dreams Haunt is a haunted house located in the city of
+              Buena Park, California. We are an organization that is dedicated
+              to providing a fun, frightful, and safe environment for our
+              guests. We are a group of friends who have been working together
+              for over 20 years to bring you the best haunted house experience
+              in Orange County California.
+            </p>
+          </div>
+          <div className="bg-galleryButton rounded-xl flex-1 p-6 space-y-6">
+            <h1 className=" text-4xl text-accent-orange font-custom2 font-bold border-b border-b-main-red just">
+              About Us
+            </h1>
+            <p className="text-lg sm:text-2xl font-custom2 text-textlogo">
+              Twisted Dreams Haunt is a haunted house located in the city of
+              Buena Park, California. We are an organization that is dedicated
+              to providing a fun, frightful, and safe environment for our
+              guests. We are a group of friends who have been working together
+              for over 20 years to bring you the best haunted house experience
+              in Orange County California.
+            </p>
+            <p className=" text-lg sm:text-2xl font-custom2 text-textlogo">
+              Twisted Dreams Haunt is a haunted house located in the city of
+              Buena Park, California. We are an organization that is dedicated
+              to providing a fun, frightful, and safe environment for our
+              guests. We are a group of friends who have been working together
+              for over 20 years to bring you the best haunted house experience
+              in Orange County California.
+            </p>
+          </div>
+          <div className=" mx-auto  w-8/12 border-red-500">
+            <Image
+              src="/images/about1.jpg"
+              alt="About Us"
+              width={500}
+              height={500}
+              className=" object-contain  h-full w-full"
+            />
+
+          </div>
         </div>
       </div>
 

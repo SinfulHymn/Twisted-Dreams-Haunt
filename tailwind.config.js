@@ -39,7 +39,9 @@ module.exports = {
         custom: ["AnotherDanger", "sans-serif"],
         custom2: ['Cinzel', "sans-serif"],
       },
-      plugins: [],
+      plugins: [
+        require('@tailwindcss/typography'),
+      ],
     },
   },
 };

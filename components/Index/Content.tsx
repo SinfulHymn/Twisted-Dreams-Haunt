@@ -47,12 +47,12 @@ const Content = () => {
   return (
     <>
 
-      <div className="container mx-auto p-2 sm:p-4 flex-grow">
-        <div className='flex flex-col justify-center items-center '>
-          <div className=' py-3 w-full xl:w-3/5 flex justify-center'>
+      <div className="container mx-auto p-2 sm:p-5 flex-grow border">
+        <div className='flex flex-col sm:flex-row justify-center items-center border'>
+          <div className='  w-full xl:w-3/5 flex justify-center border'>
             <ReactPlayer />
           </div>
-          <div className=' w-fit flex justify-center items-center '>
+          <div className=' w-fit flex justify-center items-center border'>
             <Calendar
               onChange={onChange}
               value={value}

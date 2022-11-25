@@ -8,23 +8,11 @@ const zoom = 10;
 
 const AboutLayout = () => {
   return (
-    <div className="grow">
+    <>
       <Banner title={"Gallery"} />
       <div className="text-white mx-auto container flex flex-col justify-center flex-grow">
         {/* make a div that is an about us section */}
-        <div className="flex flex-col justify-center items-center py-6">
-          <h1 className="text-4xl sm:text-6xl text-textlogo font-custom2 font-bold text-center ">
-            About Us
-          </h1>
-          <p className="text-center text-xl sm:text-2xl font-custom2 text-textlogo">
-            Twisted Dreams Haunt is a haunted house located in the city of Buena
-            Park, California. We are an organization that is dedicated to
-            providing a fun, frightful, and safe environment for our guests. We
-            are a group of friends who have been working together for over 20
-            years to bring you the best haunted house experience in Orange
-            County California.
-          </p>
-        </div>
+        
       </div>
       <Map
         className={styles.homeMap}
@@ -61,7 +49,7 @@ const AboutLayout = () => {
           </>
         )}
       </Map>
-    </div>
+    </>
   );
 };
 
