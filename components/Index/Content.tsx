@@ -43,12 +43,30 @@ const Content = () => {
 
   return (
     <>
-      <div className="container mx-auto flex-grow border  p-2 sm:p-5">
-        <div className="flex flex-col items-center justify-center space-x-6 border  xl:flex-row">
-          <div className="  flex w-full justify-center border xl:w-3/5">
-            <ReactPlayer />
+      <div className=" mx-auto flex-grow border  p-2 sm:p-5">
+        {/* <div className="mx-auto flex w-5/12 space-x-6 border py-6">
+          <div className="relative h-72 w-[500px] basis-3/4">
+            <ReactPlayer
+              width={"100%"}
+              height={"100%"}
+              className="absolute top-0 left-0"
+            />
           </div>
-          <div className=" flex w-fit items-center justify-center border">
+          <div className="basis- flex flex-col items-center justify-center border text-[#BABABA]">
+            <h3 className="font-custom2 text-xl font-bold">
+              ABOUT TWISTED DREAMS HAUNT
+            </h3>
+            <h4 className="text-center">
+              Experience Twisted Dreams Haunt, Buena park's Favorite Halloween
+              Tradition. Halloween lives here!
+            </h4>
+          </div>
+        </div> */}
+        <div className="flex flex-col items-center justify-center space-x-6 border sm:space-y-6  xl:flex-row">
+          <div className="flex justify-center border xl:w-3/5">
+            <ReactPlayer width={900} height={440} className="" />
+          </div>
+          <div className=" flex items-center justify-center border">
             <Calendar
               onChange={onChange}
               value={value}

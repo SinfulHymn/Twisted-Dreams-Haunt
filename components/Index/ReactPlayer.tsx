@@ -1,11 +1,12 @@
 import ReactPlayer from "react-player";
 
-const ReactPlayerComponent = () => {
+const ReactPlayerComponent = ({ width, height, className }) => {
   return (
     <ReactPlayer
       url="https://www.youtube.com/watch?v=l9fdeRmsnMA"
-      width={900}
-      height={440}
+      className={className}
+      width={width}
+      height={height}
       controls={true}
     />
   );
