@@ -39,7 +39,7 @@ const VideoHero = () => {
             height={500}
             className="absolute w-[200px] sm:w-[240px] opacity-[.92] lg:w-[320px]"
             // quality={100}
-            
+
             sizes="(max-width: 640px) 100vw, 640px"
           />
         </div>

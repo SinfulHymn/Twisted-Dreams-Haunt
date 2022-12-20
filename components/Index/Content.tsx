@@ -48,7 +48,7 @@ const Content = () => {
     <>
 
       <div className="container mx-auto p-2 sm:p-5 flex-grow border">
-        <div className='flex flex-col sm:flex-row justify-center items-center border'>
+        <div className='flex flex-col xl:flex-row justify-center items-center border'>
           <div className='  w-full xl:w-3/5 flex justify-center border'>
             <ReactPlayer />
           </div>
@@ -57,8 +57,8 @@ const Content = () => {
               onChange={onChange}
               value={value}
               calendarType="US"
-              minDate={new Date(2022, 9, 21)}
-              maxDate={new Date(2022, 10, 0)}
+              minDate={new Date(2023, 9, 21)}
+              maxDate={new Date(2023, 10, 0)}
               minDetail="month"
               showNeighboringMonth={true}
               showNavigation={true}
