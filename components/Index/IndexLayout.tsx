@@ -3,13 +3,12 @@ import VideoHero from "./VideoHero";
 import Content from "./Content";
 
 const IndexLayout = () => {
-
-    return (
-        <>
-            <VideoHero />
-            <Content />
-        </>
-    );
-}
+  return (
+    <>
+      <VideoHero />
+      <Content />
+    </>
+  );
+};
 
 export default IndexLayout;

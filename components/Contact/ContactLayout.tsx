@@ -11,7 +11,7 @@ const ContactLayout = () => {
     <>
       <Banner title={"Contact"} />
 
-      <div className="text-white mx-auto container flex flex-col justify-center flex-grow">
+      <div className="container mx-auto flex flex-grow flex-col justify-center text-white">
         {/* make a div that contains the address 
         <div className="flex flex-col justify-center items-center py-6">
           <div className="flex flex-col justify-center items-center">
@@ -34,8 +34,8 @@ const ContactLayout = () => {
         </div> */}
         <div className="container mx-auto">
           <div className="grid grid-cols-12 ">
-            <div className=" relative mb-12  col-span-9 flex flex-col">
-              <div className=" mb-7 pb-3 border-b border-gray-800">
+            <div className=" relative col-span-9  mb-12 flex flex-col">
+              <div className=" mb-7 border-b border-gray-800 pb-3">
                 Get in Touch with us
               </div>
               <div className="mb-12">
@@ -47,12 +47,12 @@ const ContactLayout = () => {
               </div>
               <div>
                 <form className="flex flex-col">
-                  <div className="flex flex-col mb-4">
+                  <div className="mb-4 flex flex-col">
                     <label className="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-200">
                       Name
                     </label>
                     <input
-                      className="border rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-main-red"
+                      className="rounded-lg border px-3 py-2 text-sm focus:border-main-red focus:outline-none"
                       type="text"
                       placeholder="Your name"
                     />
@@ -61,7 +61,7 @@ const ContactLayout = () => {
                       Email
                     </label>
                     <input
-                      className="border rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-main-red"
+                      className="rounded-lg border px-3 py-2 text-sm focus:border-main-red focus:outline-none"
                       type="email"
                       placeholder="Your email"
                     />
@@ -70,7 +70,7 @@ const ContactLayout = () => {
                       Subject
                     </label>
                     <input
-                      className="border rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-main-red"
+                      className="rounded-lg border px-3 py-2 text-sm focus:border-main-red focus:outline-none"
                       type="text"
                       placeholder="Subject"
                     />
@@ -79,18 +79,18 @@ const ContactLayout = () => {
                       Message
                     </label>
                     <textarea
-                      className="border rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-main-red"
+                      className="rounded-lg border px-3 py-2 text-sm focus:border-main-red focus:outline-none"
                       placeholder="Your message"
                     ></textarea>
 
-                    <button className="mt-4 bg-main-red text-white rounded-lg px-3 py-2 text-sm focus:outline-none hover:bg-main-red-dark">
+                    <button className="hover:bg-main-red-dark mt-4 rounded-lg bg-main-red px-3 py-2 text-sm text-white focus:outline-none">
                       Send
                     </button>
                   </div>
                 </form>
               </div>
             </div>
-            <div className="border col-span-3">tsaddfa</div>
+            <div className="col-span-3 border">tsaddfa</div>
           </div>
         </div>
       </div>

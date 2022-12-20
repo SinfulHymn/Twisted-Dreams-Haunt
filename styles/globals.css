@@ -23,9 +23,8 @@ body {
   }
 }
 
-
 .react-calendar {
-  width: 60% ;
+  width: 60%;
   max-width: 100%;
   background: #1a1a13;
   line-height: 1.125em;
@@ -35,27 +34,26 @@ body {
   .react-calendar {
     min-width: 100%;
   }
- }
- /*Tablets Device*/
+}
+/*Tablets Device*/
 @media only screen and (max-width: 991px) {
   .react-calendar {
     min-width: 100%;
   }
- }
- 
-@media only screen and (max-width: 1024px) { 
+}
+
+@media only screen and (max-width: 1024px) {
   .react-calendar {
     min-width: 100%;
   }
- }
+}
 
- /*large  Device*/
+/*large  Device*/
 @media only screen and (max-width: 1200px) {
   .react-calendar {
     min-width: 100%;
   }
- }
-
+}
 
 .react-calendar__tile {
   background: #441311 !important;
@@ -102,7 +100,7 @@ body {
   .react-calendar__tile {
     font-size: large;
   }
- }
+}
 .react-calendar__navigation__label__labelText {
   font-size: 1.5em;
   font-weight: bold;
@@ -111,7 +109,7 @@ body {
   line-height: 1.5em;
   font-family: Cinzel;
 }
-@media only screen and (max-width: 475px){
+@media only screen and (max-width: 475px) {
   .react-calendar__navigation__label__labelText {
     font-size: 1.3em;
   }
@@ -120,9 +118,6 @@ body {
   background-color: #441311;
 }
 
-
-
-
-.logo-fix{
+.logo-fix {
   max-height: 60px;
 }

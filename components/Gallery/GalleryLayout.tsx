@@ -10,9 +10,8 @@ const AboutLayout = () => {
   return (
     <>
       <Banner title={"Gallery"} />
-      <div className="text-white mx-auto container flex flex-col justify-center flex-grow">
+      <div className="container mx-auto flex flex-grow flex-col justify-center text-white">
         {/* make a div that is an about us section */}
-        
       </div>
       <Map
         className={styles.homeMap}

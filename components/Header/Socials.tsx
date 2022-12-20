@@ -1,7 +1,6 @@
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaTiktok, FaShoppingCart } from "react-icons/fa";
 import CartButton from "./CartButton";
-import Link from "next/link";
 
 const Socials = () => {
   return (

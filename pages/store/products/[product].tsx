@@ -1,34 +1,30 @@
-import Layout from "@components/global/Layout"
+import Layout from "@components/global/Layout";
 import { getAllProducts, getProduct } from "@lib/Shopifyql";
 import ProductLayout from "@components/Product/ProductLayout";
 
-
 export default function ProductPage({ product }) {
   return (
-      <Layout title="- Product">
-        <ProductLayout product={product} />
-      </Layout>
-      
-  )
+    <Layout title="- Product">
+      <ProductLayout product={product} />
+    </Layout>
+  );
 }
 
- 
 export async function getStaticPaths() {
-
   const products = await getAllProducts();
 
-  const paths = products.map(item => {
+  const paths = products.map((item) => {
     const product = String(item.node.handle);
 
     return {
-      params: { product }
-    }
-  })
+      params: { product },
+    };
+  });
 
   return {
     paths,
-    fallback: false
-  }
+    fallback: false,
+  };
 }
 
 export async function getStaticProps({ params }) {
@@ -36,7 +32,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      product
-    }
-  }
+      product,
+    },
+  };
 }

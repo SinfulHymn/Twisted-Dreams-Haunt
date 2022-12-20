@@ -1,5 +1,6 @@
 const domain = process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN;
-const storefrontAccessToken = process.env.NEXT_PUBLIC_SHOPIFY_STORE_FRONT_ACCESS_TOKEN;
+const storefrontAccessToken =
+  process.env.NEXT_PUBLIC_SHOPIFY_STORE_FRONT_ACCESS_TOKEN;
 
 async function ShopifyData(query) {
   const URL = `https://${domain}/api/2022-07/graphql.json`;

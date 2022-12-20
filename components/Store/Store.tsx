@@ -4,8 +4,8 @@ import Banner from "@components/global/Banner";
 
 const Store = ({ products }) => {
   return (
-    <div className="relative text-white h-full w-full  z-0">
-        <Banner title={"Twisted Dreams Store"}/>
+    <div className="relative z-0 h-full w-full  text-white">
+      <Banner title={"Twisted Dreams Store"} />
       <ProductList products={products} />
     </div>
   );
