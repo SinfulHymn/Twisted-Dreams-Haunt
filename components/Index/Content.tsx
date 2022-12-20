@@ -43,8 +43,8 @@ const Content = () => {
 
   return (
     <>
-      <div className="container mx-auto flex-grow border p-2 sm:p-5">
-        <div className="flex flex-col items-center justify-center border xl:flex-row">
+      <div className="container mx-auto flex-grow border  p-2 sm:p-5">
+        <div className="flex flex-col items-center justify-center space-x-6 border  xl:flex-row">
           <div className="  flex w-full justify-center border xl:w-3/5">
             <ReactPlayer />
           </div>
@@ -77,7 +77,7 @@ const Content = () => {
                 (date.getDate() === 30 && date.getMonth() === 9) ||
                 (date.getDate() === 28 && date.getMonth() === 9) ||
                 (date.getDate() === 29 && date.getMonth() === 9) ? (
-                  <div className=" lg:text-s text-[10px] leading-none text-red-500 ">
+                  <div className=" text-[10px] leading-none text-red-500 lg:text-[12px] ">
                     Twisted Dreams Haunt
                   </div>
                 ) : null
