@@ -32,20 +32,21 @@ const VideoHero = () => {
           videoSrc="/video/TwistedDreamsHaunt.mp4"
         />
 
-        <div className="absolute z-30 flex h-full w-full items-center justify-center ">
+        <div className="absolute z-30 flex h-full w-full items-center justify-center border ">
           <Image
             src={"/images/tdh-small-web.png"}
             alt={"banner"}
             width={500}
             height={500}
-            className="absolute w-[200px] opacity-[.92] sm:w-[240px] lg:w-[320px]"
+            className="absolute w-[200px] pb-8 opacity-[.92] sm:w-[240px] lg:w-[320px]"
             // quality={100}
 
             sizes="(max-width: 640px) 100vw, 640px"
           />
         </div>
+        <div className="absolute bottom-0 right-0 left-0 z-30 h-20 bg-black bg-opacity-50"></div>
         <div className="absolute bottom-4 right-0 left-0 z-40 px-10">
-          <h1 className="text-center font-custom text-4xl font-bold text-textlogo sm:text-6xl ">
+          <h1 className="text-center font-custom text-4xl font-bold text-textlogo sm:text-5xl md:text-5xl">
             Thank you for a great Haunt!
           </h1>
         </div>
