@@ -5,6 +5,7 @@ import AutoPlaySilentVideo from "./VideoMutedFix";
 const VideoHero = () => {
   return (
     <>
+      {/* changes  */}
       {/* structure: everything inside here is relative to this div
                             min-height 500px mobile
                             min-height non mobile 600px
