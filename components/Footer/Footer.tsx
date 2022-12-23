@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <div className="flex items-center justify-center border-y border-red-600 py-0.5 font-custom2 font-extrabold tracking-tighter">
         <p className="text-xs text-white md:text-base">
-          <span className="text-sm text-red-600 md:text-xl">WARNING! </span>
+          <span className="text-xs text-red-600 md:text-xl">WARNING! </span>
           Event may be too intense for children 12 and under.
         </p>
       </div>

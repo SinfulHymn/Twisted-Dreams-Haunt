@@ -56,17 +56,32 @@ const Navbar = (): React.ReactElement => {
             <SocialsMobile />
             <ul className="flex flex-col items-center justify-between font-custom2 text-xl font-medium lg:flex-row">
               <li>
-                <Link href={"/"} className="block p-4 hover:text-main-red">
+                <Link
+                  onClick={() => {
+                    setOpen(false);
+                  }}
+                  href={"/"}
+                  className="block p-4 hover:text-main-red"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href={"/store"} className="block p-4 hover:text-main-red">
+                <Link
+                  onClick={() => {
+                    setOpen(false);
+                  }}
+                  href={"/store"}
+                  className="block p-4 hover:text-main-red"
+                >
                   Store
                 </Link>
               </li>
               <li>
                 <Link
+                  onClick={() => {
+                    setOpen(false);
+                  }}
                   href={"/gallery"}
                   className="block p-4 hover:text-main-red"
                 >
@@ -74,12 +89,21 @@ const Navbar = (): React.ReactElement => {
                 </Link>
               </li>
               <li>
-                <Link href={"/about"} className="block p-4 hover:text-main-red">
+                <Link
+                  onClick={() => {
+                    setOpen(false);
+                  }}
+                  href={"/about"}
+                  className="block p-4 hover:text-main-red"
+                >
                   About
                 </Link>
               </li>
               <li>
                 <Link
+                  onClick={() => {
+                    setOpen(false);
+                  }}
                   href={"/contact"}
                   className="block p-4 hover:text-main-red"
                 >
