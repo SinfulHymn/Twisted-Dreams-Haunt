@@ -114,7 +114,7 @@ const Content = () => {
           </div>
           <div className="order-1 hidden w-[0%] md:block md:w-[40%]">
             <div className="flex flex-col items-center justify-center p-4 text-[#BABABA]">
-              <h3 className="mb-4 text-center font-custom2 text-xl font-bold lg:text-2xl">
+              <h3 className="mb-4 text-center font-custom2 text-xl font-bold text-main-orange lg:text-3xl">
                 2023 Halloween Haunt
               </h3>
               <h4 className="px-6 text-left leading-normal sm:px-2">
@@ -164,7 +164,7 @@ const Content = () => {
           </div>
           <div className="hidden w-[40%] md:block">
             <div className="flex flex-col items-center justify-center p-4 text-[#BABABA]">
-              <h3 className="mb-4 text-center font-custom2 text-xl font-bold lg:text-2xl">
+              <h3 className="mb-4 text-center font-custom2 text-xl font-bold text-main-orange lg:text-3xl">
                 2023 Halloween Haunt
               </h3>
               <h4 className="px-6 text-left leading-normal sm:px-2">
@@ -213,7 +213,7 @@ const Content = () => {
           </div>
           <div className="order-1 hidden w-[40%] md:block">
             <div className="flex flex-col items-center justify-center p-4 text-[#BABABA]">
-              <h3 className="mb-4 text-center font-custom2 text-xl font-bold lg:text-2xl">
+              <h3 className="mb-4 text-center font-custom2 text-xl font-bold text-main-orange lg:text-3xl">
                 2023 Halloween Haunt
               </h3>
               <h4 className="px-6 text-left leading-normal sm:px-2">
