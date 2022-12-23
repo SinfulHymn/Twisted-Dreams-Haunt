@@ -44,8 +44,8 @@ const Content = () => {
   return (
     <>
       <div className=" w-full bg-zinc-900">
-        <div className="flex h-full flex-col items-center justify-center border border-pink-400 p-1">
-          <h1 className=" font-custom2 text-lg font-extrabold text-[#BABABA] sm:text-2xl md:text-3xl">
+        <div className="flex h-full flex-col items-center justify-center  p-1.5 text-center">
+          <h1 className=" font-custom2 text-xl font-extrabold text-[#BABABA] sm:text-2xl md:text-3xl">
             Buena Park's Favorite Halloween Tradition.
           </h1>
           <h2 className=" font-custom2 text-base font-bold text-[#EA6112] sm:text-xl md:text-2xl">
@@ -53,10 +53,10 @@ const Content = () => {
           </h2>
         </div>
       </div>
-      <div className="mx-auto flex-grow p-2 sm:p-5">
-        <div className="flex w-full border border-green-400 py-4">
-          <div className="mx-auto flex flex-col items-center justify-center border border-red-400 md:flex-row lg:w-9/12 lg:max-w-[892px] xl:w-8/12 xl:max-w-[1140px]">
-            <div className="relative w-full border border-violet-300 md:w-1/2">
+      <div className="mx-auto flex-grow p-4 sm:p-5">
+        <div className="flex w-full py-0 sm:py-4">
+          <div className="mx-auto flex flex-col items-center justify-center md:flex-row lg:w-9/12 lg:max-w-[892px] xl:w-8/12 xl:max-w-[1140px]">
+            <div className="relative w-full  md:w-1/2">
               <div className="relative pt-[56.25%]">
                 <ReactPlayer
                   width={"100%"}
@@ -65,11 +65,11 @@ const Content = () => {
                 />
               </div>
             </div>
-            <div className="flex w-full flex-col items-center justify-center border border-purple-500 px-4 text-[#BABABA] md:w-1/2">
-              <h3 className="mb-4 font-custom2 text-xl font-bold lg:text-2xl">
+            <div className="flex w-full flex-col items-center justify-center p-4 text-[#BABABA] md:w-1/2">
+              <h3 className="mb-4 text-center font-custom2 text-xl font-bold lg:text-2xl">
                 about twisted dreams haunt
               </h3>
-              <h4 className="px-6 text-left leading-relaxed">
+              <h4 className="px-6 text-left leading-normal sm:px-2">
                 Experience Twisted Dreams Haunt, Buena park's Favorite Halloween
                 Tradition. Halloween lives here!
               </h4>
