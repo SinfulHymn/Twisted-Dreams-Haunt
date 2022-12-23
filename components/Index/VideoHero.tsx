@@ -44,38 +44,36 @@ const VideoHero = () => {
             sizes="(max-width: 640px) 100vw, 640px"
           />
         </div>
-        <div className="absolute bottom-0 right-0 left-0 z-30 h-20 bg-black bg-opacity-50">
+        <div className="absolute bottom-0 right-0 left-0 z-30 bg-black bg-opacity-50">
           {/* a div with two divs with text and spacing between them*/}
           <div className="relative flex h-full flex-col justify-center ">
-            <div className="flex h-full items-center justify-center space-x-10  p-4">
-              <h1 className="w-8/12 overflow-hidden text-center text-xs font-bold text-[#BABABA] sm:text-sm md:w-1/3 md:text-lg lg:w-4/12 lg:text-xl ">
-                <span className=" pr-1 text-xl font-black">"</span>
-                Twisted Dreams Haunt is a Gritty Grindhouse Nightmare Come to
-                Life
-                <span className=" pl-1 text-xl font-black">"</span>
-              </h1>
+            <div className="flex h-full items-center justify-center space-x-10 border border-purple-600 px-4 py-1">
+              <div className="flex items-center justify-center border border-yellow-400 ">
+                <h1 className="w-6/12 overflow-hidden border border-pink-500 text-center text-xs font-bold   text-[#BABABA] sm:text-base md:w-7/12 md:text-xl ">
+                  "Twisted Dreams Haunt is a Gritty Grindhouse Nightmare Come to
+                  Life"
+                </h1>
 
-              <a
-                href="https://www.haunting.net/twisted-dreams-haunt-2022/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xl font-bold text-[#BABABA]"
-              >
-                <Image
-                  src="/images/Hauntingnet.gif"
-                  alt="Haunting.net"
-                  width={100}
-                  height={100}
-                  className=" w-[180px] opacity-[.92] sm:w-[240px] lg:w-[300px]"
-                  // quality={100}
-
-                  sizes="(max-width: 640px) 100vw, 640px"
-                />
-              </a>
-              {/* nextjs Image with the Hauntingnet file */}
+                <a
+                  href="https://www.haunting.net/twisted-dreams-haunt-2022/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex w-6/12  items-center  justify-center  border text-xl font-bold text-[#BABABA]"
+                >
+                  <Image
+                    src="/images/Hauntingnet.gif"
+                    alt="Haunting.net"
+                    width={100}
+                    height={100}
+                    className=" h-full w-full opacity-[.92] md:w-[300px] "
+                    sizes="(max-width: 640px) 100vw, 640px"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
+        {/* thank you message */}
         {/* <div className="absolute bottom-4 right-0 left-0 z-40 px-10">
           <h1 className="text-center font-custom text-4xl font-bold text-textlogo sm:text-5xl md:text-5xl">
             Thank you for a great Haunt!

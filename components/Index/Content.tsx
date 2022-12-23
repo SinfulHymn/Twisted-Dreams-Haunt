@@ -43,31 +43,37 @@ const Content = () => {
 
   return (
     <>
-      <div className=" mx-auto flex-grow border  p-2 sm:p-5">
-        {/* <div className="mx-auto flex w-5/12 space-x-6 border py-6">
-          <div className="relative h-72 w-[500px] basis-3/4">
-            <ReactPlayer
-              width={"100%"}
-              height={"100%"}
-              className="absolute top-0 left-0"
-            />
+      <div className="mx-auto flex-grow p-2 sm:p-5">
+        <div className="flex w-full border border-green-400 py-4">
+          <div className="mx-auto flex flex-col items-center justify-center border border-red-400 md:flex-row lg:w-9/12 lg:max-w-[892px] xl:w-8/12 xl:max-w-[1140px]">
+            <div className="relative w-full border border-violet-300 md:w-1/2">
+              <div className="relative pt-[56.25%]">
+                <ReactPlayer
+                  width={"100%"}
+                  height={"100%"}
+                  className="absolute top-0 left-0"
+                />
+              </div>
+            </div>
+            <div className="flex w-full flex-col items-center justify-center border border-purple-500 px-4 text-[#BABABA] md:w-1/2">
+              <h3 className="mb-4 font-custom2 text-xl font-bold lg:text-2xl">
+                about twisted dreams haunt
+              </h3>
+              <h4 className="px-6 text-left leading-relaxed">
+                Experience Twisted Dreams Haunt, Buena park's Favorite Halloween
+                Tradition. Halloween lives here!
+              </h4>
+            </div>
           </div>
-          <div className="basis- flex flex-col items-center justify-center border text-[#BABABA]">
-            <h3 className="font-custom2 text-xl font-bold">
-              ABOUT TWISTED DREAMS HAUNT
-            </h3>
-            <h4 className="text-center">
-              Experience Twisted Dreams Haunt, Buena park's Favorite Halloween
-              Tradition. Halloween lives here!
-            </h4>
-          </div>
-        </div> */}
-        <div className="flex flex-col items-center justify-center space-x-6 border sm:space-y-6  xl:flex-row">
-          <div className="flex justify-center border xl:w-3/5">
+        </div>
+
+        <div className="flex flex-col items-center justify-center space-x-6 border sm:space-y-6 xl:flex-row">
+          {/* <div className="flex justify-center border xl:w-3/5">
             <ReactPlayer width={900} height={440} className="" />
-          </div>
-          <div className=" flex items-center justify-center border">
+          </div> */}
+          <div className=" flex h-full items-center justify-center ">
             <Calendar
+              className="flex flex-col items-center justify-center"
               onChange={onChange}
               value={value}
               calendarType="US"
@@ -107,9 +113,6 @@ const Content = () => {
           </div>
         </div>
       </div>
-      {/* TODO: 
-  add external state to recenter map
-*/}
 
       <Map
         className={styles.homeMap}

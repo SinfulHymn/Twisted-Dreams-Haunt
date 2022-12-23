@@ -4,23 +4,21 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     screens: {
-      'xs': '475px',
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
-      '3xl': '1920px',
+      xs: "475px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+      "3xl": "1920px",
     },
-    
-    extend: {
-      
 
+    extend: {
       colors: {
-        'accent-orange':'#dd7a0a',
+        "accent-orange": "#dd7a0a",
         primary: "#000000",
         secondary: "#3D0000",
         textlogo: "#eecfb4",
@@ -37,11 +35,9 @@ module.exports = {
       },
       fontFamily: {
         custom: ["AnotherDanger", "sans-serif"],
-        custom2: ['Cinzel', "sans-serif"],
+        custom2: ["Cinzel", "sans-serif"],
       },
-      plugins: [
-        require('@tailwindcss/typography'),
-      ],
+      plugins: [require("@tailwindcss/typography")],
     },
   },
 };
