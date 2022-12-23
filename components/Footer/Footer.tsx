@@ -5,9 +5,9 @@ import Socials from "./Socials";
 const Footer = () => {
   return (
     <>
-      <div className="flex items-center justify-center border-y border-red-600 py-0.5 font-custom2 font-bold tracking-tighter">
-        <p className="text-white">
-          <span className="text-xl text-red-600">WARNING! </span>
+      <div className="flex items-center justify-center border-y border-red-600 py-0.5 font-custom2 font-extrabold tracking-tighter">
+        <p className="text-xs text-white md:text-base">
+          <span className="text-sm text-red-600 md:text-xl">WARNING! </span>
           Event may be too intense for children 12 and under.
         </p>
       </div>
@@ -31,14 +31,14 @@ const Footer = () => {
                 Sign Your Waiver
               </Link>
 
-              <p className="block p-2 text-3xl font-medium text-[#9d6524]">
+              <p className="block p-2 text-3xl font-medium text-main-orange">
                 Twisted Dreams Haunted House
               </p>
               <Socials></Socials>
             </div>
 
             <div className="text-lg font-semibold leading-6 sm:text-lg">
-              <p className="px-12 py-2 text-[#9d6524]">
+              <p className="px-12 py-2 text-main-orange">
                 Your Neighborly Haunt in Orange County
               </p>
               <p className="px-10 py-2 hover:text-main-red">
@@ -56,13 +56,13 @@ const Footer = () => {
               <Link
                 href="https://github.com/Kmachappy"
                 target="_blank"
-                className="font-medium text-textlogo hover:text-main-red"
+                className="font-medium text-main-orange hover:text-main-red"
                 rel="noreferrer"
               >
                 alejandro rojas &#127875;
               </Link>
             </p>
-            <p className="text-[#9d6524]">
+            <p className="text-main-orange">
               Copyright © 2022 Twisted Dreams Haunted House
             </p>
           </div>
