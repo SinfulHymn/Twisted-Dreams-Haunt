@@ -48,7 +48,7 @@ const Layout = ({ children, title }: Props) => {
         <main className="relative flex flex-grow flex-col pt-[60px]">
           <Image
             fill
-            className="-z-50 object-contain"
+            className="-z-50  object-contain"
             src="/images/tdh-small-web.png"
             alt="TDH"
             quality={100}

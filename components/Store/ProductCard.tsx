@@ -12,7 +12,7 @@ const ProductCard = ({ product }) => {
 
   return (
     // 050910ef
-    <div className="rounded-xl bg-[#8657208e] p-3 md:p-4 lg:p-6">
+    <div className="rounded-xl bg-zinc-900 bg-opacity-90 p-3 md:p-4 lg:p-6">
       <Link className="" href={`/store/products/${handle}`}>
         <div className="relative flex flex-grow flex-col">
           <div className="relative mb-4 w-full overflow-hidden">

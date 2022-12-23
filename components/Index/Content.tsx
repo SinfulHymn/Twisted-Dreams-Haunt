@@ -86,15 +86,15 @@ const Content = () => {
 
       <div className="">
         <div className="flex min-h-[400px]">
-          <div className="relative order-2 w-[60%]">
+          <div className="relative order-2 w-[100%] md:w-[60%]">
             <Image
               src={"/images/tdh-index-2.jpg"}
               alt="Twisted Dreams Haunt"
-              className="object-cover object-[20%_20%]"
+              className="object-cover object-[50%_0%] md:object-[20%_20%]"
               fill
-            ></Image>
+            />
           </div>
-          <div className="order-1 w-[40%]">
+          <div className="order-1 hidden w-[0%] md:block md:w-[40%]">
             <div className="flex flex-col items-center justify-center p-4 text-[#BABABA]">
               <h3 className="mb-4 text-center font-custom2 text-xl font-bold lg:text-2xl">
                 2023 Halloween Haunt
@@ -120,15 +120,38 @@ const Content = () => {
           </div>
         </div>
         <div className="flex min-h-[390px]">
-          <div className="relative w-[60%]">
+          <div className="relative w-[100%] md:w-[60%]">
             <Image
               src={"/images/tdh-index-1.jpg"}
               alt="Twisted Dreams Haunt"
-              className="object-cover object-[20%_20%]"
+              className="object-cover object-[50%_0%] md:object-[20%_20%]"
               fill
-            ></Image>
+            />
+            {/* transparent div with text */}
+
+            <div className="absolute bottom-0 left-0 h-1/4 w-full overflow-hidden bg-[#000000] bg-opacity-50 md:hidden">
+              <div className="flex h-full flex-col items-center justify-center p-2 text-[#BABABA]">
+                <h4 className="truncate whitespace-normal px-6 text-left text-sm leading-normal  sm:px-2">
+                  Twisted Dreams Haunt is Buena Park's favorite Halloween
+                  tradition. We are a family owned and operated haunt that has
+                  been scaring the community for over 10 years. We are located
+                  in the heart of Buena Park, California. We are a 501(c)(3)
+                  non-profit organization that donates all proceeds to local
+                  charities. We are a family friendly haunt that is fun for all
+                  ages. We are open every Friday and Saturday in October from
+                  7pm to 11pm. We are located at 7000 Beach Blvd. Buena Park, CA
+                  90620. We are located in the parking lot of the Buena Park
+                  Community Center. We are a 501(c)(3) non-profit organization
+                  that donates all proceeds to local charities. We are a family
+                  friendly haunt that is fun for all ages. We are open every
+                  Friday and Saturday in October from 7pm to 11pm. We are
+                  located at 7000 Beach Blvd. Buena Park, CA 90620. We are
+                  located in the parking lot of the Buena Park Community Center.
+                </h4>
+              </div>
+            </div>
           </div>
-          <div className="w-[40%]">
+          <div className="hidden w-[40%] md:block">
             <div className="flex flex-col items-center justify-center p-4 text-[#BABABA]">
               <h3 className="mb-4 text-center font-custom2 text-xl font-bold lg:text-2xl">
                 2023 Halloween Haunt
@@ -154,15 +177,15 @@ const Content = () => {
           </div>
         </div>
         <div className="flex min-h-[390px]">
-          <div className="relative order-2 w-[60%]">
+          <div className="relative order-2 w-[100%] md:w-[60%]">
             <Image
               src={"/images/tdh-index-2variant.jpg"}
               alt="Twisted Dreams Haunt"
-              className="object-cover object-[20%_20%]"
+              className="object-cover object-[50%_0%] md:object-[20%_20%]"
               fill
-            ></Image>
+            />
           </div>
-          <div className="order-1 w-[40%]">
+          <div className="order-1 hidden w-[40%] md:block">
             <div className="flex flex-col items-center justify-center p-4 text-[#BABABA]">
               <h3 className="mb-4 text-center font-custom2 text-xl font-bold lg:text-2xl">
                 2023 Halloween Haunt

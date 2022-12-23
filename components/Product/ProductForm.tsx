@@ -50,7 +50,7 @@ export default function ProductForm({ product }) {
   }
 
   return (
-    <div className="relative m-4 flex w-full flex-col overflow-hidden rounded-xl bg-[#09111ae2]  p-8   md:w-1/2 md:p-9">
+    <div className="relative m-4 flex w-full flex-col overflow-hidden rounded-xl bg-zinc-900  p-8   md:w-1/2 md:p-9">
       <h2 className="text-2xl font-bold dark:text-white lg:text-3xl">
         {product.title}
       </h2>

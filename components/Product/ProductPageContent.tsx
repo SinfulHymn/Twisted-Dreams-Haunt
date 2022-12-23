@@ -35,9 +35,9 @@ export default function ProductPageContent({ product }) {
   return (
     <>
       <div className="flex flex-grow flex-col pt-6 ">
-        <div className="mx-auto w-11/12 rounded-lg bg-[#050910e2] py-1 pb-6  xs:py-2 sm:py-4  md:py-6 lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+        <div className="mx-auto w-11/12 rounded-lg bg-zinc-700 bg-opacity-60 py-1 pb-6  xs:py-2 sm:py-4  md:py-6 lg:w-11/12 xl:w-9/12 2xl:w-8/12">
           <div className="mx-auto mt-4 mb-10 flex w-11/12 flex-col  items-center     justify-center space-y-8 md:flex-row md:space-y-0 md:space-x-4 lg:max-w-6xl lg:space-x-16 xl:space-x-8 2xl:space-x-10 3xl:space-x-14 ">
-            <div className=" w-full grow overflow-hidden rounded-lg bg-[#09111ae2] text-white shadow-2xl sm:my-auto md:w-1/2">
+            <div className=" w-full grow overflow-hidden rounded-lg bg-zinc-900 text-white shadow-2xl sm:my-auto md:w-1/2">
               <Swiper
                 loop={true}
                 zoom={true}
@@ -60,7 +60,7 @@ export default function ProductPageContent({ product }) {
             <ProductForm product={product} />
           </div>
 
-          <div className="mx-auto  w-11/12 rounded-xl bg-[#09111ae2] p-8 shadow-2xl dark:text-white 3xl:max-w-4xl ">
+          <div className="mx-auto w-11/12 rounded-xl bg-zinc-900 p-8 text-white shadow-2xl dark:text-white 3xl:max-w-4xl ">
             <p className="border-b border-orange-600 text-xl font-medium">
               Product Description
             </p>
