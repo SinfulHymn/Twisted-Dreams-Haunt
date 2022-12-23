@@ -66,8 +66,8 @@ export default function EmailComponent() {
     <form action="">
       <div className="grid grid-cols-12 gap-4 ">
         <div className="col-span-12 flex flex-col space-y-8 lg:col-span-5">
-          <div className="font-bold">
-            <label htmlFor="name" className="block">
+          <div className="font-bold text-main-red">
+            <label htmlFor="name" className="block text-main-orange">
               Name
             </label>
             <div className="mt-2">
@@ -79,7 +79,7 @@ export default function EmailComponent() {
                 type="text"
                 name="name"
                 id="name"
-                className="block h-[50px] w-full rounded-sm border-main-orange p-4 placeholder-main-orange shadow-sm focus:border-main-orange focus:ring-main-orange"
+                className="block h-[50px] w-full rounded-sm border-main-orange p-4 placeholder-main-red shadow-sm focus:border-main-orange focus:ring-main-orange"
               />
             </div>
             {!form.name &&
@@ -87,14 +87,14 @@ export default function EmailComponent() {
               form.status != "" && <RequiredMessage />}
           </div>
 
-          <div className="font-bold">
+          <div className="font-bold text-main-red">
             <label
               htmlFor="email"
               className="block  font-semibold text-main-orange"
             >
               Email
             </label>
-            <div className="mt-2">
+            <div className="mt-2 text-main-red">
               <input
                 placeholder="Enter your email"
                 value={form.email}
@@ -102,7 +102,7 @@ export default function EmailComponent() {
                 type="email"
                 name="email"
                 id="email"
-                className="block h-[50px] w-full rounded-sm border-main-orange p-4 placeholder-main-orange shadow-sm focus:border-main-orange focus:ring-main-orange"
+                className="block h-[50px] w-full rounded-sm border-main-orange p-4 placeholder-main-red shadow-sm focus:border-main-orange focus:ring-main-orange"
               />
               {!form.email &&
                 form.status != "Message Sent Successfully" &&
@@ -110,7 +110,7 @@ export default function EmailComponent() {
             </div>
           </div>
 
-          <div className="font-bold">
+          <div className="font-bold text-main-red">
             <label htmlFor="subject" className="block text-main-orange">
               Subject
             </label>
@@ -122,7 +122,7 @@ export default function EmailComponent() {
                 type="text"
                 name="subject"
                 id="subject"
-                className="block h-[50px] w-full rounded-sm  border-main-orange p-4 placeholder-main-orange shadow-sm focus:border-main-orange focus:ring-main-orange"
+                className="block h-[50px] w-full rounded-sm  border-main-orange p-4 placeholder-main-red shadow-sm focus:border-main-orange focus:ring-main-orange"
               />
               {!form.subject &&
                 form.status != "Message Sent Successfully" &&
@@ -131,8 +131,8 @@ export default function EmailComponent() {
           </div>
         </div>
 
-        <div className="col-span-12 text-lg font-bold text-main-orange lg:col-span-7">
-          <label htmlFor="message" className="block">
+        <div className="col-span-12 text-lg font-bold text-main-red lg:col-span-7">
+          <label htmlFor="message" className="block text-main-orange">
             Message
           </label>
           <div className="mt-1">
@@ -143,7 +143,7 @@ export default function EmailComponent() {
               placeholder="Enter your message"
               value={form.message}
               onChange={handleForm}
-              className="block h-[278px] w-full rounded-sm border-main-orange p-4 placeholder-main-orange shadow-sm focus:border-main-orange focus:ring-main-orange"
+              className="block h-[278px] w-full rounded-sm border-main-orange p-4 placeholder-main-red shadow-sm focus:border-main-orange focus:ring-main-orange"
             />
             {!form.message &&
               form.status != "Message Sent Successfully" &&
@@ -155,7 +155,7 @@ export default function EmailComponent() {
         <button
           type="submit"
           onClick={handleSubmit}
-          className="mt-5 rounded-sm bg-main-orange py-3 px-5 text-lg font-bold text-white"
+          className="mt-5 rounded-sm bg-main-red py-3 px-5 text-lg font-bold text-white"
         >
           Send Message
         </button>

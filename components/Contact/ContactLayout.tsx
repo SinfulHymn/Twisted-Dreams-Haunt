@@ -35,7 +35,7 @@ const ContactLayout = () => {
 
             <hr className="my-4 h-px border-0 bg-main-orange "></hr>
 
-            <div className="flex w-full flex-col whitespace-pre-line border border-main-orange py-4 px-2 text-sm lg:flex-wrap">
+            <div className="flex flex-col whitespace-pre-line border border-main-orange py-4 px-2 text-sm lg:flex-wrap">
               <p className="mb-6 w-full whitespace-pre-line font-bold">
                 If you are in the middle of something and you don’t want to miss
                 that important call.
@@ -43,21 +43,39 @@ const ContactLayout = () => {
               <div className="space-y-6 font-bold">
                 <p className="flex lg:flex-col">
                   Email:{" "}
-                  <a className="ml-4 text-main-red ">
+                  <a
+                    href="mailto:contact@twisteddreamshaunt.com"
+                    className="ml-4 text-main-red "
+                  >
                     contact@twisteddreamshaunt.com
                   </a>
                 </p>
                 <p className="flex lg:flex-col">
                   Phone:{" "}
-                  <a className="ml-4 text-main-red">+1 (818) 645 - 7172</a>
+                  <a
+                    href="tel:+1 (888) 888 - 8888"
+                    className="ml-4 text-main-red"
+                  >
+                    +1 (888) 888 - 8888
+                  </a>
                 </p>
                 <p className="flex lg:flex-col">
                   Fax:{" "}
-                  <a className="ml-4 text-main-red">support@bigguyauto.com</a>
+                  <a
+                    href="tel:+1 (888) 888 - 8888"
+                    className="ml-4 text-main-red"
+                  >
+                    +1 (888) 888 - 8888
+                  </a>
                 </p>
                 <p className="flex lg:flex-col">
-                  Email:{" "}
-                  <a className="ml-4 text-main-red">support@bigguyauto.com</a>
+                  website:{" "}
+                  <a
+                    href="https://twisteddreamshaunt.com"
+                    className="ml-4 text-main-red"
+                  >
+                    Twisteddreamshaunt.com
+                  </a>
                 </p>
               </div>
             </div>
