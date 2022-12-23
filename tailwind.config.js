@@ -18,6 +18,7 @@ module.exports = {
 
     extend: {
       colors: {
+        "main-orange": "#EA6112",
         "accent-orange": "#dd7a0a",
         primary: "#000000",
         secondary: "#3D0000",

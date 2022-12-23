@@ -1,8 +1,11 @@
-import Map from "@components/Index/MapSSRfix";
 import Image from "next/image";
 import Link from "next/link";
+
+import Map from "@components/Index/MapSSRfix";
 import styles from "@components/Index/Map.module.css";
 import Banner from "@components/global/Banner";
+import EmailComponent from "@components/Contact/EmailComponent";
+
 const center = [33.8529527, -118.0314395];
 const zoom = 10;
 
@@ -11,86 +14,53 @@ const ContactLayout = () => {
     <>
       <Banner title={"Contact"} />
 
-      <div className="container mx-auto flex flex-grow flex-col justify-center text-white">
-        {/* make a div that contains the address 
-        <div className="flex flex-col justify-center items-center py-6">
-          <div className="flex flex-col justify-center items-center">
-            <p className="text-2xl sm:text-4xl text-textlogo font-bold font-custom2 text-center leading-normal">
-              Email: 
-              <br />
-              <span className="text-">
-                Twisted Dreams
-                <br />
-                Haunt House
-              </span>
-              <br />
-              is hosted at
-              <br />
-              5815 panama drive
-              <br />
-              Buena Park, CA 90621
-            </p>
+      <div className="py-5 px-4 font-custom2 text-main-orange lg:py-10 lg:px-2">
+        <div className="container mx-auto grid grid-cols-12 gap-5">
+          <div className="col-span-12 space-y-6 lg:col-span-9">
+            <div className="text-2xl font-extrabold">
+              Leave a Message
+              <hr className="my-4 h-px border-0 bg-main-orange"></hr>
+            </div>
+
+            <div>
+              <p className=" text-xl font-extrabold">Get in touch with us!</p>
+            </div>
+
+            <div>
+              <EmailComponent />
+            </div>
           </div>
-        </div> */}
-        <div className="container mx-auto">
-          <div className="grid grid-cols-12 ">
-            <div className=" relative col-span-9  mb-12 flex flex-col">
-              <div className=" mb-7 border-b border-gray-800 pb-3">
-                Get in Touch with us
-              </div>
-              <div className="mb-12">
-                <p className="mb-3 font-light text-gray-500 dark:text-gray-400">
-                  Fill out all required fields to send a message. You have to
-                  login to your wordpress account to post any comment. Please
-                  don´t spam, thank you!
+          <div className="col-span-12 lg:col-span-3">
+            <div className="text-2xl font-extrabold">Company Info</div>
+
+            <hr className="my-4 h-px border-0 bg-main-orange "></hr>
+
+            <div className="flex w-full flex-col whitespace-pre-line border border-main-orange py-4 px-2 text-sm lg:flex-wrap">
+              <p className="mb-6 w-full whitespace-pre-line font-bold">
+                If you are in the middle of something and you don’t want to miss
+                that important call.
+              </p>
+              <div className="space-y-6 font-bold">
+                <p className="flex lg:flex-col">
+                  Email:{" "}
+                  <a className="ml-4 text-main-red ">
+                    contact@twisteddreamshaunt.com
+                  </a>
+                </p>
+                <p className="flex lg:flex-col">
+                  Phone:{" "}
+                  <a className="ml-4 text-main-red">+1 (818) 645 - 7172</a>
+                </p>
+                <p className="flex lg:flex-col">
+                  Fax:{" "}
+                  <a className="ml-4 text-main-red">support@bigguyauto.com</a>
+                </p>
+                <p className="flex lg:flex-col">
+                  Email:{" "}
+                  <a className="ml-4 text-main-red">support@bigguyauto.com</a>
                 </p>
               </div>
-              <div>
-                <form className="flex flex-col">
-                  <div className="mb-4 flex flex-col">
-                    <label className="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-200">
-                      Name
-                    </label>
-                    <input
-                      className="rounded-lg border px-3 py-2 text-sm focus:border-main-red focus:outline-none"
-                      type="text"
-                      placeholder="Your name"
-                    />
-
-                    <label className="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-200">
-                      Email
-                    </label>
-                    <input
-                      className="rounded-lg border px-3 py-2 text-sm focus:border-main-red focus:outline-none"
-                      type="email"
-                      placeholder="Your email"
-                    />
-
-                    <label className="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-200">
-                      Subject
-                    </label>
-                    <input
-                      className="rounded-lg border px-3 py-2 text-sm focus:border-main-red focus:outline-none"
-                      type="text"
-                      placeholder="Subject"
-                    />
-
-                    <label className="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-200">
-                      Message
-                    </label>
-                    <textarea
-                      className="rounded-lg border px-3 py-2 text-sm focus:border-main-red focus:outline-none"
-                      placeholder="Your message"
-                    ></textarea>
-
-                    <button className="hover:bg-main-red-dark mt-4 rounded-lg bg-main-red px-3 py-2 text-sm text-white focus:outline-none">
-                      Send
-                    </button>
-                  </div>
-                </form>
-              </div>
             </div>
-            <div className="col-span-3 border">tsaddfa</div>
           </div>
         </div>
       </div>

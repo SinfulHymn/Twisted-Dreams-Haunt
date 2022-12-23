@@ -78,7 +78,7 @@ const Content = () => {
 
       <div className=" w-full bg-zinc-900">
         <div className="flex h-full flex-col items-center justify-center  p-1.5 text-center">
-          <h2 className="font-custom2 text-4xl font-bold text-[#EA6112]">
+          <h2 className="font-custom2 text-4xl font-bold text-main-orange">
             2023 Halloween Haunt! Coming Soon!
           </h2>
         </div>
