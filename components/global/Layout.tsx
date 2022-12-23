@@ -13,6 +13,32 @@ type Props = {
 
 const Layout = ({ children, title }: Props) => {
   const router = useRouter();
+  console.log(router.pathname);
+
+  const resolveTitle = () => {
+    switch (router.pathname) {
+      case "/":
+        return "Twisted Dreams Haunted House";
+      case "/about":
+        return "About Twisted Dreams Haunted House";
+      case "/tickets":
+        return "Tickets for Twisted Dreams Haunted House";
+      case "/contact":
+        return "Contact Twisted Dreams Haunted House";
+      case "/gallery":
+        return "Gallery for Twisted Dreams Haunted House";
+      case "/faq":
+        return "FAQ for Twisted Dreams Haunted House";
+      case "/privacy":
+        return "Privacy Policy for Twisted Dreams Haunted House";
+      case "/terms":
+        return "Terms of Service for Twisted Dreams Haunted House";
+      case "/store":
+        return "Store for Twisted Dreams Haunted House";
+      default:
+        return "Twisted Dreams Haunted House";
+    } // end switch
+  }; // end resolveTitle
 
   return (
     <>

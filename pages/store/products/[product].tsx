@@ -3,11 +3,7 @@ import { getAllProducts, getProduct } from "@lib/Shopifyql";
 import ProductLayout from "@components/Product/ProductLayout";
 
 export default function ProductPage({ product }) {
-  return (
-    <Layout title="- Product">
-      <ProductLayout product={product} />
-    </Layout>
-  );
+  return <ProductLayout product={product} />;
 }
 
 export async function getStaticPaths() {

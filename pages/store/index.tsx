@@ -4,11 +4,7 @@ import { getProductsInCollection } from "@lib/Shopifyql";
 
 export default function Index({ products }) {
   console.log(products);
-  return (
-    <Layout title="- Store">
-      <Store products={products} />
-    </Layout>
-  );
+  return <Store products={products} />;
 }
 
 export const getServerSideProps = async () => {
