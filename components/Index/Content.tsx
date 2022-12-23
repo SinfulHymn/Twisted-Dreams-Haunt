@@ -53,77 +53,72 @@ const Content = () => {
           </h2>
         </div>
       </div>
-      <div className="mx-auto flex-grow p-4 sm:p-5">
-        <div className="flex w-full py-0 sm:py-4">
-          <div className="mx-auto flex flex-col items-center justify-center md:flex-row lg:w-9/12 lg:max-w-[892px] xl:w-8/12 xl:max-w-[1140px]">
-            <div className="relative w-full  md:w-1/2">
-              <div className="relative pt-[56.25%]">
-                <ReactPlayer
-                  width={"100%"}
-                  height={"100%"}
-                  className="absolute top-0 left-0"
-                />
-              </div>
-            </div>
-            <div className="flex w-full flex-col items-center justify-center p-4 text-[#BABABA] md:w-1/2">
-              <h3 className="mb-4 text-center font-custom2 text-xl font-bold lg:text-2xl">
-                about twisted dreams haunt
-              </h3>
-              <h4 className="px-6 text-left leading-normal sm:px-2">
-                Experience Twisted Dreams Haunt, Buena park's Favorite Halloween
-                Tradition. Halloween lives here!
-              </h4>
+      <div className="py-4">
+        <div className="mx-auto flex flex-col items-center justify-center md:flex-row lg:w-9/12 lg:max-w-[892px] xl:w-8/12 xl:max-w-[1140px]">
+          <div className="relative w-full  md:w-1/2">
+            <div className="relative pt-[56.25%]">
+              <ReactPlayer
+                width={"100%"}
+                height={"100%"}
+                className="absolute top-0 left-0"
+              />
             </div>
           </div>
-        </div>
-
-        <div className="flex flex-col items-center justify-center space-x-6 border sm:space-y-6 xl:flex-row">
-          {/* <div className="flex justify-center border xl:w-3/5">
-            <ReactPlayer width={900} height={440} className="" />
-          </div> */}
-          <div className=" flex h-full items-center justify-center ">
-            <Calendar
-              className="flex flex-col items-center justify-center"
-              onChange={onChange}
-              value={value}
-              calendarType="US"
-              minDate={new Date(2023, 9, 21)}
-              maxDate={new Date(2023, 10, 0)}
-              minDetail="month"
-              showNeighboringMonth={true}
-              showNavigation={true}
-              prevLabel={null}
-              nextLabel={null}
-              next2Label={null}
-              prev2Label={null}
-              tileClassName="relative"
-              tileDisabled={({ date, view }) =>
-                (view === "month" && date.getDay() === 2) ||
-                date.getDay() === 3 ||
-                date.getDay() === 4 ||
-                date.getDate() == 24
-              }
-              tileContent={({ date, view }) =>
-                (view === "month" && date.getDate() === 21) ||
-                date.getDate() === 22 ||
-                date.getDate() === 23 ||
-                date.getDate() === 31 ||
-                (date.getDate() === 30 && date.getMonth() === 9) ||
-                (date.getDate() === 28 && date.getMonth() === 9) ||
-                (date.getDate() === 29 && date.getMonth() === 9) ? (
-                  <div className=" text-[10px] leading-none text-red-500 lg:text-[12px] ">
-                    Twisted Dreams Haunt
-                  </div>
-                ) : null
-              }
-            />
-            {/* <div className='bg-[#441311] h-28 right-80 left-80 absolute opacity-90  -rotate-12 text-center content-center center'>
-              <span className='h-10 top-0 bottom text-white text-4xl font-custom'>Come back next year</span>
-            </div> */}
+          <div className="flex w-full flex-col items-center justify-center p-4 text-[#BABABA] md:w-1/2">
+            <h3 className="mb-4 text-center font-custom2 text-xl font-bold lg:text-2xl">
+              about twisted dreams haunt
+            </h3>
+            <h4 className="px-6 text-left leading-normal sm:px-2">
+              Experience Twisted Dreams Haunt, Buena park's Favorite Halloween
+              Tradition. Halloween lives here!
+            </h4>
           </div>
         </div>
       </div>
 
+      <div className=" w-full bg-zinc-900">
+        <div className="flex h-full flex-col items-center justify-center  p-1.5 text-center">
+          <h2 className="font-custom2 text-4xl font-bold text-[#EA6112]">
+            2023 Halloween Haunt! Coming Soon!
+          </h2>
+        </div>
+      </div>
+
+      <div className="">
+        <div className="flex min-h-[390px]">
+          <div className="relative order-2 w-[60%]">
+            <Image
+              src={"/images/tdh-index-2.jpg"}
+              alt="Twisted Dreams Haunt"
+              className="object-cover"
+              fill
+            ></Image>
+          </div>
+          <div className="order-1 w-[40%]"></div>
+        </div>
+        <div className="flex min-h-[390px]">
+          <div className="relative w-[60%]">
+            <Image
+              src={"/images/tdh-index-1.jpg"}
+              alt="Twisted Dreams Haunt"
+              className="object-cover"
+              fill
+            ></Image>
+          </div>
+          <div></div>
+        </div>
+        <div className="flex min-h-[390px]">
+          <div className="relative order-2 w-[60%]">
+            <Image
+              src={"/images/tdh-index4.jpg"}
+              alt="Twisted Dreams Haunt"
+              className="object-cover"
+              fill
+            ></Image>
+          </div>
+          <div className="order-1 w-[40%]"></div>
+        </div>
+      </div>
       <Map
         className={styles.homeMap}
         center={center}
@@ -162,3 +157,49 @@ const Content = () => {
 };
 
 export default Content;
+
+{
+  /* <div className="flex flex-col items-center justify-center space-x-6 border sm:space-y-6 xl:flex-row">
+          
+          <div className=" flex h-full items-center justify-center ">
+            <Calendar
+              className="flex flex-col items-center justify-center"
+              onChange={onChange}
+              value={value}
+              calendarType="US"
+              minDate={new Date(2023, 9, 21)}
+              maxDate={new Date(2023, 10, 0)}
+              minDetail="month"
+              showNeighboringMonth={true}
+              showNavigation={true}
+              prevLabel={null}
+              nextLabel={null}
+              next2Label={null}
+              prev2Label={null}
+              tileClassName="relative"
+              tileDisabled={({ date, view }) =>
+                (view === "month" && date.getDay() === 2) ||
+                date.getDay() === 3 ||
+                date.getDay() === 4 ||
+                date.getDate() == 24
+              }
+              tileContent={({ date, view }) =>
+                (view === "month" && date.getDate() === 21) ||
+                date.getDate() === 22 ||
+                date.getDate() === 23 ||
+                date.getDate() === 31 ||
+                (date.getDate() === 30 && date.getMonth() === 9) ||
+                (date.getDate() === 28 && date.getMonth() === 9) ||
+                (date.getDate() === 29 && date.getMonth() === 9) ? (
+                  <div className=" text-[10px] leading-none text-red-500 lg:text-[12px] ">
+                    Twisted Dreams Haunt
+                  </div>
+                ) : null
+              }
+            />
+            <div className='bg-[#441311] h-28 right-80 left-80 absolute opacity-90  -rotate-12 text-center content-center center'>
+              <span className='h-10 top-0 bottom text-white text-4xl font-custom'>Come back next year</span>
+            </div> 
+          </div>
+        </div> */
+}
