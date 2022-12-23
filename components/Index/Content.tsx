@@ -43,6 +43,16 @@ const Content = () => {
 
   return (
     <>
+      <div className=" w-full bg-zinc-900">
+        <div className="flex h-full flex-col items-center justify-center border border-pink-400 p-1">
+          <h1 className=" font-custom2 text-lg font-extrabold text-[#BABABA] sm:text-2xl md:text-3xl">
+            Buena Park's Favorite Halloween Tradition.
+          </h1>
+          <h2 className=" font-custom2 text-base font-bold text-[#EA6112] sm:text-xl md:text-2xl">
+            Halloween lives here!
+          </h2>
+        </div>
+      </div>
       <div className="mx-auto flex-grow p-2 sm:p-5">
         <div className="flex w-full border border-green-400 py-4">
           <div className="mx-auto flex flex-col items-center justify-center border border-red-400 md:flex-row lg:w-9/12 lg:max-w-[892px] xl:w-8/12 xl:max-w-[1140px]">

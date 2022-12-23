@@ -47,9 +47,9 @@ const VideoHero = () => {
         <div className="absolute bottom-0 right-0 left-0 z-30 bg-black bg-opacity-50">
           {/* a div with two divs with text and spacing between them*/}
           <div className="relative flex h-full flex-col justify-center ">
-            <div className="flex h-full items-center justify-center space-x-10 border border-purple-600 px-4 py-1">
-              <div className="flex items-center justify-center border border-yellow-400 ">
-                <h1 className="w-6/12 overflow-hidden border border-pink-500 text-center text-xs font-bold   text-[#BABABA] sm:text-base md:w-7/12 md:text-xl ">
+            <div className="flex h-full items-center justify-center space-x-10 px-4 py-1">
+              <div className="flex items-center justify-center">
+                <h1 className="w-6/12 overflow-hidden text-center text-xs font-bold   text-[#BABABA] sm:text-base md:w-7/12 md:text-xl ">
                   "Twisted Dreams Haunt is a Gritty Grindhouse Nightmare Come to
                   Life"
                 </h1>
@@ -58,7 +58,7 @@ const VideoHero = () => {
                   href="https://www.haunting.net/twisted-dreams-haunt-2022/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-6/12  items-center  justify-center  border text-xl font-bold text-[#BABABA]"
+                  className="flex w-6/12  items-center  justify-center text-xl font-bold text-[#BABABA]"
                 >
                   <Image
                     src="/images/Hauntingnet.gif"
