@@ -11,8 +11,8 @@ import InfoSectionRight from "./InfoSectionRight";
 
 const x = 33.8529527;
 const y = -118.0314395;
-const center = [x, y];
 const zoom = 10;
+const center = [x, y];
 
 function DisplayPosition({ map }) {
   const [position, setPosition] = useState(() => map.getCenter());
