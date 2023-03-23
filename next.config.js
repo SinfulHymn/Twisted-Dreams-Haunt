@@ -8,6 +8,7 @@ const nextConfig = {
     NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN:
       process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN,
     NEXT_PUBLIC_THUNDERMAP: process.env.NEXT_PUBLIC_THUNDERMAP,
+    NEXT_PUBLIC_STRAPI_API_URL: process.env.NEXT_PUBLIC_STRAPI_API_URL,
   },
   images: {
     domains: ["twisteddreams-s3-bucket.s3.us-west-1.amazonaws.com"],

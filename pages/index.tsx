@@ -2,7 +2,6 @@ import Index from "@components/Index/IndexLayout";
 import { fetchAPI } from "@lib/strapi";
 
 export default function Home({ Hero, Content, seo }) {
-  console.log(Content);
   return <Index heroData={Hero} contentData={Content} />;
 }
 

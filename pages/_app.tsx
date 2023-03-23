@@ -12,7 +12,7 @@ export const GlobalContext = createContext({});
 
 export default function App({ Component, pageProps }: AppProps) {
   const { global } = pageProps;
-  console.log(global);
+  // console.log(global);
   return (
     <ShopProvider>
       <Layout>

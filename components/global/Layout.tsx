@@ -13,7 +13,6 @@ type Props = {
 
 const Layout = ({ children, title }: Props) => {
   const router = useRouter();
-  console.log(router.pathname);
 
   const resolveTitle = () => {
     switch (router.pathname) {
