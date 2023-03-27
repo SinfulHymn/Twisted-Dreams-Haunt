@@ -1,9 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import AutoPlaySilentVideo from "./VideoMutedFix";
 
 const VideoHero = ({ heroData }) => {
-  // console.log(heroData)
   const videoUrl = heroData.VideoHero.data.attributes.url;
   const sponsorLogo = heroData.SponsorLogo.data.attributes.url;
   const sponsorText = heroData.SponsorText;
@@ -35,7 +34,6 @@ const VideoHero = ({ heroData }) => {
 
         <AutoPlaySilentVideo
           className="absolute z-20 h-full w-full object-cover"
-          // videoSrc="/video/TwistedDreamsHaunt.mp4"
           videoSrc={videoUrl}
         />
 
@@ -47,7 +45,6 @@ const VideoHero = ({ heroData }) => {
             height={500}
             className="absolute w-[200px] pb-8 opacity-[.92] sm:w-[240px] lg:w-[320px]"
             // quality={100}
-
             sizes="(max-width: 640px) 100vw, 640px"
           />
         </div>
