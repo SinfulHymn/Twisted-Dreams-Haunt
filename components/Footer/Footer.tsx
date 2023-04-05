@@ -9,7 +9,6 @@ const Footer = ({ footerData }) => {
   const footerTitle = footerData.FooterTitle;
   const footerSubtitle = footerData.FooterSubTitle;
   const footerAddress = footerData.FooterAddress;
-  console.log(footerData);
   return (
     <>
       <div className="flex items-center justify-center border-y border-red-600 py-0.5 font-custom2 font-extrabold tracking-tighter">

@@ -1,8 +1,9 @@
-import React from "react";
 import ProductList from "./ProductList";
+import { getProductsInCollection } from "@lib/Shopifyql";
 import Banner from "@components/global/Banner";
 
-const Store = ({ products }) => {
+const Store = (props) => {
+  const { products } = props;
   return (
     <div className="relative z-0 h-full w-full  text-white">
       <Banner title={"Twisted Dreams Store"} />
@@ -12,3 +13,13 @@ const Store = ({ products }) => {
 };
 
 export default Store;
+
+export const getServerSideProps = async () => {
+  const products = await getProductsInCollection();
+
+  return {
+    props: {
+      products: products,
+    },
+  };
+};

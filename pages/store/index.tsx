@@ -1,18 +1,12 @@
-import Layout from "@components/global/Layout";
 import Store from "@components/Store/Store";
-import { getProductsInCollection } from "@lib/Shopifyql";
 
-export default function Index({ products }) {
-  console.log(products);
-  return <Store products={products} />;
+import { Suspense } from "react";
+
+export default function Index() {
+  // console.log(products);
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Store />
+    </Suspense>
+  );
 }
-
-export const getServerSideProps = async () => {
-  const products = await getProductsInCollection();
-
-  return {
-    props: {
-      products: products,
-    },
-  };
-};

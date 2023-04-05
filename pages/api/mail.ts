@@ -34,7 +34,7 @@ export default async function handler(
     await mail.send(data);
     res.status(200).json({ status: "success" });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(400).json({ status: "error" });
   }
 }

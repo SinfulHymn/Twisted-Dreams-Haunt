@@ -2,7 +2,6 @@ import { fetchAPI } from "@lib/strapi";
 import AboutLayout from "@components/About/AboutLayout";
 
 export default function About({ aboutProps }) {
-  console.log(aboutProps);
   return <AboutLayout aboutProps={aboutProps} />;
 }
 
