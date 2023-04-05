@@ -6,19 +6,16 @@
     <h3 align="center">Twisted Dreams Haunt</h3>
   </a>
   <p align="center">
-    An Event & Ecommerce Web App <br/>
-    A Full Stack Nextjs 
+    Full Stack Ecommerce Advertising Web App 
   </p>
     <a href="https://twisteddreamshaunt.com/"><strong>Live Website - Twisted Dreams Haunt</strong></a>
     <br />
- Event/Ecommerce Web Application built with <br/>
+ Advertising/Ecommerce Application built with <br/>
     <a href="https://nextjs.org/">Nextjs</a>
     ·
     <a href="https://www.shopify.com/">Shopify</a>
     ·
     <a href="https://strapi.io/">Strapi</a>
-    ·
-    <a href="https://graphql.org/">Graphql</a>
     ·
     <a href="https://tailwindcss.com/">TailwindCSS</a>
   </p>
@@ -27,8 +24,9 @@
 </div>
 
 # About
-|            Description             |               Screenshot             |
-| :--------------------------------: | :----------------------------------: |
+
+|                                                                                                                                                                                                                                          Description                                                                                                                                                                                                                                           |                                    Screenshot                                     |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
 | <p align="left">- A React event and ecommerce web application that displays media and information about the Twisted Dreams Event. <br> - Users will be able to explore event details and it's store with Products!<br>- Users are able to browse and filter products by their categories <br> - Users are able to add products to their cart and maintain session with their cart <br> - Users are able to checkout items added to cart <br> - checkout happens through shopify storefront api | <img src="https://i.imgur.com/nqHnjUA.pngng" alt="Logo" width="700" height="460"> |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -48,6 +46,7 @@ edit .env.local with your own shopify store credentials
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Functionality and Development
+
 ```
 - client needed a website to sell products and display information about their event
 - I leveraged Shopify's storefront api to create a custom ecommerce experience
@@ -58,10 +57,11 @@ edit .env.local with your own shopify store credentials
 - the website is fully responsive and mobile friendly
 - the website is fully functional and is currently live at https://twisteddreamshaunt.com/
 ```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 # Current State
+
 ```
 - User is currently able to visit the site and see a directory of products
 
@@ -75,6 +75,7 @@ edit .env.local with your own shopify store credentials
 
 - user will be able to see their comments added to the product they commented on
 ```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Roadmap and future Implementations
@@ -146,9 +147,8 @@ edit .env.local with your own shopify store credentials
 - strapi
 - graphql
 - react
--  react-query
+- react-query
 - swiper
-  
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -162,13 +162,11 @@ edit .env.local with your own shopify store credentials
 - **[Strapi API](https://strapi.io/)**.
 - **[Graphql API](https://graphql.org/)**.
 
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 # KmacShop ScreenShots
 
-|              Index/Home              |          Store Page           |
+|              Index/Home              |              Store Page              |
 | :----------------------------------: | :----------------------------------: |
 | ![](https://i.imgur.com/F6LR7UT.jpg) | ![](https://i.imgur.com/YTHRRN6.jpg) |
 
@@ -176,13 +174,11 @@ edit .env.local with your own shopify store credentials
 | :----------------------------------: | :----------------------------------: |
 | ![](https://i.imgur.com/VaDycAB.jpg) | ![](https://i.imgur.com/EzpncJ4.jpg) |
 
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+# KmacShop WireFrame
 
-# KmacShop WireFrame 
-
-|              Index/Home              |          Store           |
+|              Index/Home              |                Store                 |
 | :----------------------------------: | :----------------------------------: |
 | ![](https://i.imgur.com/NhfcEpd.png) | ![](https://i.imgur.com/u3oa9GA.png) |
 

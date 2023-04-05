@@ -9,7 +9,9 @@ import { useContext } from "react";
 import { CartContext } from "@context/shopContext";
 import MiniCart from "@components/Product/MiniCart";
 import CartButton from "./CartButton";
-const Navbar = (): React.ReactElement => {
+
+const Navbar = ({ headerData }): React.ReactElement => {
+  const mainLogo = headerData?.MainLogo?.data?.attributes?.url;
   const { cart } = useContext(CartContext);
 
   const [isOpen, setOpen] = useState(false);
@@ -22,8 +24,8 @@ const Navbar = (): React.ReactElement => {
           <div className=" flex-0 items-center  justify-center sm:flex-[1_1_0]">
             <Link href={"/"}>
               <Image
-                className="p-1"
-                src={"/images/twisted-dreams-main.png"}
+                className="p-1.5"
+                src={mainLogo}
                 alt={"Logo"}
                 width={200}
                 height={60}

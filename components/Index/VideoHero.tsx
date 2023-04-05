@@ -1,8 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import AutoPlaySilentVideo from "./VideoMutedFix";
 
-const VideoHero = () => {
+const VideoHero = ({ heroData }) => {
+  const videoUrl = heroData.VideoHero.data.attributes.url;
+  const sponsorLogo = heroData.SponsorLogo.data.attributes.url;
+  const sponsorText = heroData.SponsorText;
+  const sponsorLink = "https://www.haunting.net/twisted-dreams-haunt-2022/";
+  const banner = heroData.Banner.data.attributes.url;
   return (
     <>
       {/* changes  */}
@@ -29,18 +34,17 @@ const VideoHero = () => {
 
         <AutoPlaySilentVideo
           className="absolute z-20 h-full w-full object-cover"
-          videoSrc="/video/TwistedDreamsHaunt.mp4"
+          videoSrc={videoUrl}
         />
 
         <div className="absolute z-30 flex h-full w-full items-center justify-center">
           <Image
-            src={"/images/tdh-small-web.png"}
+            src={banner}
             alt={"banner"}
             width={500}
             height={500}
             className="absolute w-[200px] pb-8 opacity-[.92] sm:w-[240px] lg:w-[320px]"
             // quality={100}
-
             sizes="(max-width: 640px) 100vw, 640px"
           />
         </div>
@@ -50,18 +54,17 @@ const VideoHero = () => {
             <div className="flex h-full items-center justify-center space-x-10 px-4 py-1">
               <div className="flex items-center justify-center">
                 <h1 className="w-6/12 overflow-hidden text-center text-xs font-bold   text-[#BABABA] sm:text-base md:w-7/12 md:text-xl ">
-                  "Twisted Dreams Haunt is a Gritty Grindhouse Nightmare Come to
-                  Life"
+                  "{sponsorText}"
                 </h1>
 
                 <a
-                  href="https://www.haunting.net/twisted-dreams-haunt-2022/"
+                  href={sponsorLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-6/12  items-center  justify-center text-xl font-bold text-[#BABABA]"
                 >
                   <Image
-                    src="/images/Hauntingnet.gif"
+                    src={sponsorLogo}
                     alt="Haunting.net"
                     width={100}
                     height={100}

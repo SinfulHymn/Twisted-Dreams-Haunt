@@ -2,11 +2,11 @@ import React from "react";
 import VideoHero from "./VideoHero";
 import Content from "./Content";
 
-const IndexLayout = () => {
+const IndexLayout = ({ heroData, contentData }) => {
   return (
     <>
-      <VideoHero />
-      <Content />
+      <VideoHero heroData={heroData} />
+      <Content contentData={contentData} />
     </>
   );
 };
