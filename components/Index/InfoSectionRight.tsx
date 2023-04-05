@@ -14,10 +14,10 @@ export default function InfoSectionRight({ data }) {
         <div className="absolute bottom-0 left-0 w-full overflow-hidden  md:hidden">
           <div className="">
             <div className="flex w-full items-center justify-center text-center font-custom2 text-3xl font-extrabold text-main-orange">
-              {TitleText}
+              {/* {TitleText} */}
             </div>
             <div className="flex h-full flex-col items-center justify-center bg-[#000000] bg-opacity-50 p-2 text-[#BABABA]">
-              <h4 className="truncate whitespace-normal px-6 text-left text-sm leading-normal  sm:px-2">
+              <h4 className="truncate whitespace-normal px-8 text-left text-xs font-semibold leading-normal  ">
                 {DescriptionText}
               </h4>
             </div>
@@ -29,7 +29,7 @@ export default function InfoSectionRight({ data }) {
           <h3 className="mb-4 text-center font-custom2 text-xl font-bold text-main-orange lg:text-3xl">
             {TitleText}
           </h3>
-          <h4 className="px-6 text-left leading-normal sm:px-2">
+          <h4 className="px-6 text-left leading-normal sm:px-10">
             {DescriptionText}
           </h4>
         </div>

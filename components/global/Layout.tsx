@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import Header from "@components/Header/Header";
 import Foooter from "@components/Footer/Footer";
 import AppHead from "./Head";
 import Image from "next/image";
-
-import { useRouter } from "next/router";
+import { GlobalContext } from "@pages/_app";
 
 type Props = {
   children: React.ReactNode;
@@ -12,50 +11,30 @@ type Props = {
 };
 
 const Layout = ({ children, title }: Props) => {
-  const router = useRouter();
+  const layoutData = useContext(GlobalContext);
+  const { headerData, BackgroundImage, Footer, Favicons } = layoutData;
 
-  const resolveTitle = () => {
-    switch (router.pathname) {
-      case "/":
-        return "Twisted Dreams Haunted House";
-      case "/about":
-        return "About Twisted Dreams Haunted House";
-      case "/tickets":
-        return "Tickets for Twisted Dreams Haunted House";
-      case "/contact":
-        return "Contact Twisted Dreams Haunted House";
-      case "/gallery":
-        return "Gallery for Twisted Dreams Haunted House";
-      case "/faq":
-        return "FAQ for Twisted Dreams Haunted House";
-      case "/privacy":
-        return "Privacy Policy for Twisted Dreams Haunted House";
-      case "/terms":
-        return "Terms of Service for Twisted Dreams Haunted House";
-      case "/store":
-        return "Store for Twisted Dreams Haunted House";
-      default:
-        return "Twisted Dreams Haunted House";
-    } // end switch
-  }; // end resolveTitle
+  if (!global) {
+    return null; // Or render a loading spinner, error message, etc.
+  }
 
   return (
     <>
       <div className="relative flex min-h-screen flex-col">
-        <AppHead title={title} />
-        <Header />
+        <AppHead title={title} faviconData={Favicons} />
+        <Header headerData={headerData} />
         <main className="relative flex flex-grow flex-col pt-[60px]">
           <Image
             fill
             className="-z-50  object-contain"
-            src="/images/tdh-small-web.png"
+            src={BackgroundImage}
             alt="TDH"
             quality={100}
           />
           <div className="absolute -z-40 block h-full w-full bg-black bg-opacity-90 "></div>
           {children}
         </main>
-        <Foooter />
+        <Foooter footerData={Footer} />
       </div>
     </>
   );

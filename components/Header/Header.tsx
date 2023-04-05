@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 
-const Layout = () => {
+const Layout = ({ headerData }) => {
   return (
     <header className=" flex min-w-full flex-col">
-      <Navbar />
+      <Navbar headerData={headerData} />
     </header>
   );
 };
