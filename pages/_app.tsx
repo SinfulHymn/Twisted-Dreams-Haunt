@@ -22,7 +22,7 @@ export const GlobalContext = createContext<GlobalDataType | undefined>(
 
 export default function App({ Component, pageProps }: AppProps) {
   const { layout, global } = pageProps;
-  // console.log(layout, 'layout', global, 'global');
+  // console.log(layout, 'layout', global, 'global');fadsf
   const {
     Header,
     BackgroundImage,
