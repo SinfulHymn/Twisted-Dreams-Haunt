@@ -1,22 +1,27 @@
 import Store from "@components/Store/Store";
 import { getProductsInCollection } from "@lib/Shopifyql";
-import { Suspense } from "react";
+import { useState, useEffect } from "react";
 
 export default function Index({ products }) {
-  // console.log(products);
+  const [isLoading, setIsLoading] = useState(true);
+  const [productsData, setProductData] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const products = await getProductsInCollection();
+      setProductData(products);
+      setIsLoading(false);
+    };
+    fetchProducts();
+  }, []);
+
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Store products={products} />
-    </Suspense>
+    <>
+      {isLoading ? (
+        <div className=" text-3xl font-extrabold text-red-600">Loading...</div>
+      ) : (
+        <Store products={productsData} />
+      )}
+    </>
   );
 }
-
-export const getServerSideProps = async () => {
-  const products = await getProductsInCollection();
-
-  return {
-    props: {
-      products: products,
-    },
-  };
-};
