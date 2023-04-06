@@ -7,16 +7,16 @@ const variants = {
     scale: 1,
     y: 0,
     transition: {
-      duration: 0.65,
-      delay: 0.1,
+      duration: 0.56,
+      // delay: 0.08,
     },
   },
   out: {
     opacity: 0,
-    scale: 1,
-    y: 50,
+    scale: 1.05,
+    y: -50,
     transition: {
-      duration: 0.65,
+      duration: 0.56,
     },
   },
 };
