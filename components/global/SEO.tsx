@@ -1,9 +1,10 @@
 import Head from "next/head";
 
 export default function SEO({ title, description, image }) {
+  console.log(title, description, image);
   return (
     <Head>
-      <title>{title}</title>
+      <title>{}</title>
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta httpEquiv="Content-Type" content="text/html; charset=ISO-8859-1" />
       <meta name="description" content={description} />

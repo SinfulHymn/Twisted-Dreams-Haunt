@@ -47,9 +47,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <ShopProvider>
         <Layout>
           <Transition>
-            <Suspense fallback={<div>Loading...</div>}>
-              <Component {...pageProps} />
-            </Suspense>
+            <Component {...pageProps} />
           </Transition>
         </Layout>
       </ShopProvider>

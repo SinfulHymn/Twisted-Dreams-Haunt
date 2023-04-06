@@ -12,15 +12,13 @@ export default function InfoSectionLeft({ data }) {
           fill
         />
         <div className="absolute bottom-0 left-0 w-full overflow-hidden  md:hidden">
-          <div className="">
-            <div className="flex w-full items-center justify-center text-center font-custom2 text-3xl font-extrabold text-main-orange">
-              {/* {TitleText} */}
-            </div>
-            <div className="flex h-full flex-col items-center justify-center bg-[#000000] bg-opacity-50 p-2 text-[#BABABA]">
-              <h4 className="truncate whitespace-normal px-8 text-left text-xs font-semibold leading-normal  ">
-                {DescriptionText}
-              </h4>
-            </div>
+          <div className="flex h-full flex-col items-center justify-center bg-[#000000] bg-opacity-50 p-2 text-[#BABABA]">
+            <h4 className="truncate whitespace-normal px-8 text-left text-xs font-semibold leading-normal  ">
+              <div className="flex w-full items-center justify-center text-center font-custom2 text-2xl font-extrabold text-main-orange">
+                {TitleText}
+              </div>
+              {DescriptionText}
+            </h4>
           </div>
         </div>
       </div>
