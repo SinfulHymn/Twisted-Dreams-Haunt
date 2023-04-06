@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import ShopProvider from "@context/shopContext";
 import type { AppProps } from "next/app";
-import { createContext } from "react";
+import { createContext, Suspense } from "react";
 import { fetchAPI } from "../lib/strapi.js";
 import Layout from "@components/global/Layout";
 import Transition from "@components/Animations/PageTransition";

@@ -1,11 +1,16 @@
 import VideoMutedFix from "@components/Index/VideoMutedFix";
+import { useContext } from "react";
+import { GlobalContext } from "@pages/_app";
 
 const Banner = ({ title }) => {
+  const layoutData = useContext(GlobalContext);
+  const { BannerVideo } = layoutData;
+
   return (
     <div className="relative h-32 sm:h-40">
       <VideoMutedFix
         className="absolute z-0 h-full w-full object-cover"
-        videoSrc="/video/TwistedDreamsHaunt.mp4"
+        videoSrc={BannerVideo}
       />
 
       <div className="absolute z-10 h-full w-full bg-black bg-opacity-70"></div>
