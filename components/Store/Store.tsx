@@ -1,25 +1,32 @@
+import React from "react";
 import ProductList from "./ProductList";
-import { getProductsInCollection } from "@lib/Shopifyql";
 import Banner from "@components/global/Banner";
+import { useState, useEffect } from "react";
+import { getProductsInCollection } from "@lib/Shopifyql";
 
-const Store = (props) => {
-  const { products } = props;
+const Store = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [productsData, setProductData] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const products = await getProductsInCollection();
+      setProductData(products);
+      setIsLoading(false);
+    };
+    fetchProducts();
+  }, []);
+
   return (
     <div className="relative z-0 h-full w-full  text-white">
       <Banner title={"Twisted Dreams Store"} />
-      <ProductList products={products} />
+      {isLoading ? (
+        <div>Loading...</div>
+      ) : (
+        <ProductList products={productsData} />
+      )}
     </div>
   );
 };
 
 export default Store;
-
-export const getServerSideProps = async () => {
-  const products = await getProductsInCollection();
-
-  return {
-    props: {
-      products: products,
-    },
-  };
-};
