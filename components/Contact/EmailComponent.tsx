@@ -65,7 +65,7 @@ export default function EmailComponent() {
   return (
     <form action="">
       <div className="grid grid-cols-12 gap-4 ">
-        <div className="col-span-12 flex flex-col space-y-8 lg:col-span-5">
+        <div className="col-span-12 flex flex-col space-y-4 sm:space-y-8 lg:col-span-5">
           <div className="font-bold text-main-red">
             <label htmlFor="name" className="block text-main-orange">
               Name
