@@ -31,13 +31,15 @@ const MapRendered = () => {
                   href={"https://goo.gl/maps/Vye9xaDydMJKiuY36"}
                 >
                   <Image
-                    className="max-h-[100px] w-auto object-center"
+                    className="max-h-[6.25rem] w-auto object-center"
                     src="/images/tdh-small-web.png"
                     alt="Twisted Dreams Haunt"
                     width={400}
                     height={400}
                   />
-                  <span className="font-custom">Twisted Dreams</span>
+                  <span className="text-center font-custom">
+                    Directions to Event
+                  </span>
                 </Link>
               </Popup>
             </Marker>
