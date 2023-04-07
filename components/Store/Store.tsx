@@ -3,6 +3,7 @@ import ProductList from "./ProductList";
 import Banner from "@components/global/Banner";
 import { useState, useEffect } from "react";
 import { getProductsInCollection } from "@lib/Shopifyql";
+import Loading from "@components/global/Loading";
 
 const Store = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,14 +19,11 @@ const Store = () => {
   }, []);
 
   return (
-    <div className="relative z-0 h-full w-full  text-white">
+    <>
       <Banner title={"Twisted Dreams Store"} />
-      {isLoading ? (
-        <div>Loading...</div>
-      ) : (
-        <ProductList products={productsData} />
-      )}
-    </div>
+      {/* <Loading /> */}
+      {isLoading ? <Loading /> : <ProductList products={productsData} />}
+    </>
   );
 };
 

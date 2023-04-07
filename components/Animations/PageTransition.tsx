@@ -24,7 +24,7 @@ const variants = {
 const Transition = ({ children }) => {
   const { asPath } = useRouter();
   return (
-    <div className="overflow-hidden">
+    <div className="relative flex flex-grow flex-col overflow-hidden">
       <AnimatePresence initial={false} mode="wait">
         <motion.div
           variants={variants}
@@ -32,6 +32,7 @@ const Transition = ({ children }) => {
           animate="in"
           initial="out"
           exit="out"
+          className="relative flex flex-grow flex-col"
         >
           {children}
         </motion.div>

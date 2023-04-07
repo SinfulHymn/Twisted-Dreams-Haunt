@@ -25,10 +25,14 @@
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"],
       "@data/*": ["data/*"],
-      "@context/*": ["context/*"],
-      
+      "@context/*": ["context/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/global/Loading.tss"
+  ],
   "exclude": ["node_modules"]
 }
