@@ -1,7 +1,7 @@
-import Map from "@components/global/Map/MapSSRfix";
-import styles from "@components/global/Map/Map.module.css";
-import Link from "next/link";
-import Image from "next/image";
+import Map from '@components/global/Map/MapSSRfix';
+import styles from '@components/global/Map/Map.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const x = 33.8529527;
 const y = -118.0314395;
@@ -27,8 +27,8 @@ const MapRendered = () => {
             <Marker position={center}>
               <Popup>
                 <Link
-                  className="flex flex-col items-center "
-                  href={"https://goo.gl/maps/Vye9xaDydMJKiuY36"}
+                  className="flex flex-col items-center"
+                  href={'https://goo.gl/maps/Vye9xaDydMJKiuY36'}
                 >
                   <Image
                     className="max-h-[6.25rem] w-auto object-center"
