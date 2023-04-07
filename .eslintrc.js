@@ -6,11 +6,17 @@ module.exports = {
     node: true,
     es6: true,
   },
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
+    },
+  },
+  settings: {
+    react: {
+      version: 'detect', // Or replace 'detect' with your React version, e.g., '17.0.0'
     },
   },
   extends: [
