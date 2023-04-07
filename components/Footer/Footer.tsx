@@ -67,8 +67,15 @@ const Footer = ({ footerData }) => {
               </Link>
             </p>
             <p className="text-main-orange">
-              Copyright © 2023 Twisted Dreams Haunted House
+              Copyright <span>{`© ${new Date().getFullYear()}`}</span> Twisted
+              Dreams Haunted House
             </p>
+            <Link
+              className=" text-[.5rem] text-main-orange hover:text-main-red"
+              href="/terms"
+            >
+              Event Rules and Conditions
+            </Link>
           </div>
         </div>
       </footer>
