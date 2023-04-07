@@ -1,5 +1,5 @@
-import ProductCard from "./ProductCard";
-import { useRouter } from "next/router";
+import ProductCard from './ProductCard';
+import { useRouter } from 'next/router';
 
 const ProductList = ({ products }) => {
   const router = useRouter();

@@ -1,6 +1,6 @@
-import VideoMutedFix from "@components/Index/VideoMutedFix";
-import { useContext } from "react";
-import { GlobalContext } from "@pages/_app";
+import VideoMutedFix from '@components/Index/VideoMutedFix';
+import { useContext } from 'react';
+import { GlobalContext } from '@pages/_app';
 
 const Banner = ({ title }) => {
   const layoutData = useContext(GlobalContext);

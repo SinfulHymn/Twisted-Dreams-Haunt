@@ -1,4 +1,4 @@
-import ReactPlayer from "react-player";
+import ReactPlayer from 'react-player';
 
 const ReactPlayerComponent = ({ width, height, className }) => {
   return (

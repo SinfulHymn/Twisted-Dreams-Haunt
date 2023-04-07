@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
-import { formatter } from "@utils/helpers";
+import Link from 'next/link';
+import Image from 'next/image';
+import { formatter } from '@utils/helpers';
 
 const ProductCard = ({ product }) => {
   const { id, title, images, priceRange, handle } = product.node;
@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
   const amount = priceRange.minVariantPrice.amount;
   const productImage = images.edges[0]
     ? images.edges[0].node.originalSrc
-    : "/images/placeholder.jpg";
+    : '/images/placeholder.jpg';
 
   return (
     // 050910ef

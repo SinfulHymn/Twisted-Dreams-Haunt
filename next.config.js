@@ -11,12 +11,12 @@ const nextConfig = {
     NEXT_PUBLIC_STRAPI_API_URL: process.env.NEXT_PUBLIC_STRAPI_API_URL,
   },
   images: {
-    domains: ["twisteddreams-s3-bucket.s3.us-west-1.amazonaws.com"],
+    domains: ['twisteddreams-s3-bucket.s3.us-west-1.amazonaws.com'],
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "cdn.shopify.com",
-        pathname: "/s/**",
+        protocol: 'https',
+        hostname: 'cdn.shopify.com',
+        pathname: '/s/**',
       },
     ],
   },

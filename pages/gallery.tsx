@@ -1,6 +1,5 @@
-import Layout from "@components/global/Layout";
-import GalleryLayout from "@components/Gallery/GalleryLayout";
+import GalleryLayout from '@components/Gallery/GalleryLayout';
 
-export default function Gallery({ cart }) {
+export default function Gallery() {
   return <GalleryLayout />;
 }

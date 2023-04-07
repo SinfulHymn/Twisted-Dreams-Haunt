@@ -1,6 +1,6 @@
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic';
 
-const MapSSRfix = dynamic(() => import("@components/global/Map/MapComponent"), {
+const MapSSRfix = dynamic(() => import('@components/global/Map/MapComponent'), {
   ssr: false,
 });
 

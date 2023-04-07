@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 export default function InfoSectionLeft({ data }) {
   const { TitleText, ImageSection, DescriptionText } = data;
   const imageUrl = ImageSection.data.attributes.url;

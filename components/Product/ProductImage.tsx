@@ -1,9 +1,9 @@
-import { useState, useRef } from "react";
-import Image from "next/image";
+import { useState, useRef } from 'react';
+import Image from 'next/image';
 import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
-} from "react-icons/hi";
+} from 'react-icons/hi';
 
 function ProductImage({ images }) {
   const [mainImg, setMainImg] = useState({
@@ -36,7 +36,7 @@ function ProductImage({ images }) {
         </button>
         <div
           ref={ref}
-          style={{ scrollBehavior: "smooth" }}
+          style={{ scrollBehavior: 'smooth' }}
           className="border-palette-lighter flex w-full space-x-1  overflow-auto"
         >
           {images.map((image, index) => (

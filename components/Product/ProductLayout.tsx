@@ -1,5 +1,5 @@
-import ProductPageContent from "./ProductPageContent";
-import Banner from "@components/global/Banner";
+import ProductPageContent from './ProductPageContent';
+import Banner from '@components/global/Banner';
 
 const ProductLayout = ({ product }) => {
   return (

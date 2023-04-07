@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
-import Socials from "./Socials";
+import Link from 'next/link';
+import Image from 'next/image';
+import Socials from './Socials';
 
 const Footer = ({ footerData }) => {
   const footerImage = footerData.FooterImage.data.attributes.url;
@@ -20,7 +20,7 @@ const Footer = ({ footerData }) => {
       <footer className="relative z-0 min-h-[400px] w-full overflow-hidden font-custom2 text-gray-300 sm:min-h-[320px] ">
         <Image
           src={footerImage}
-          alt={"footer"}
+          alt={'footer'}
           fill
           className="absolute top-0 left-0 -z-50 h-full w-full object-contain"
         />
@@ -31,7 +31,7 @@ const Footer = ({ footerData }) => {
           <div className="relative z-10 flex grow flex-col items-center justify-center text-center">
             <div className="z-20 block leading-10 ">
               <Link
-                href={"/about"}
+                href={'/about'}
                 className="block p-4 text-3xl font-semibold text-main-red hover:text-white"
               >
                 {waiverText}
@@ -46,8 +46,8 @@ const Footer = ({ footerData }) => {
             <div className="text-lg font-semibold leading-6 sm:text-lg">
               <p className="px-12 py-2 text-main-orange">{footerSubtitle}</p>
               <p className="px-10 py-2 hover:text-main-red">
-                <Link href={"https://goo.gl/maps/Vye9xaDydMJKiuY36"}>
-                  {" "}
+                <Link href={'https://goo.gl/maps/Vye9xaDydMJKiuY36'}>
+                  {' '}
                   {footerAddress}
                 </Link>
               </p>
@@ -56,7 +56,7 @@ const Footer = ({ footerData }) => {
 
           <div className="flex-end flex w-full flex-col items-center justify-center pb-6 text-xs font-semibold">
             <p className=" text-">
-              webpage built by{" "}
+              webpage built by{' '}
               <Link
                 href="https://github.com/Kmachappy"
                 target="_blank"

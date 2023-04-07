@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
-import { formatter } from "@utils/helpers";
+import Link from 'next/link';
+import Image from 'next/image';
+import { formatter } from '@utils/helpers';
 
 const ProductCard = ({ product }) => {
   const { id, title, images, priceRange, handle } = product.node;
@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
   const amount = priceRange.minVariantPrice.amount;
   const productImage = images.edges[0]
     ? images.edges[0].node.originalSrc
-    : "/images/placeholder.jpg";
+    : '/images/placeholder.jpg';
 
   return (
     <div className="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
@@ -44,9 +44,9 @@ const ProductCard = ({ product }) => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
         </a>

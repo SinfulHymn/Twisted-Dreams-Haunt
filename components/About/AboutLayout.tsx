@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Banner from "@components/global/Banner";
-import MapRendered from "@components/Index/MapRendered";
+import Image from 'next/image';
+import Banner from '@components/global/Banner';
+import MapRendered from '@components/Index/MapRendered';
 
 const AboutLayout = ({ aboutProps }) => {
   const aboutTitle = aboutProps.AboutTitle;
@@ -9,7 +9,7 @@ const AboutLayout = ({ aboutProps }) => {
 
   return (
     <>
-      <Banner title={"About"} />
+      <Banner title={'About'} />
 
       <div className="container mx-auto flex flex-grow flex-col justify-center border-main-orange p-6 text-white">
         {/* make a div that is an about us section */}

@@ -1,4 +1,4 @@
-import Price from "./Price";
+import Price from './Price';
 
 function ProductInfo({ title, description, price }) {
   return (

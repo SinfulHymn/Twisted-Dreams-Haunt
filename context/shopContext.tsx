@@ -1,5 +1,5 @@
-import { createContext, useState, useEffect } from "react";
-import { createCheckout, updateCheckout } from "@lib/Shopifyql";
+import { createContext, useState, useEffect } from 'react';
+import { createCheckout, updateCheckout } from '@lib/Shopifyql';
 
 interface IContextProps {
   addToCart: (variantId: string) => void;
@@ -17,8 +17,8 @@ const CartContext = createContext({} as IContextProps);
 export default function ShopProvider({ children }) {
   const [cart, setCart] = useState([]);
   const [cartOpen, setCartOpen] = useState(false);
-  const [checkoutId, setCheckoutId] = useState("");
-  const [checkoutUrl, setCheckoutUrl] = useState("");
+  const [checkoutId, setCheckoutId] = useState('');
+  const [checkoutUrl, setCheckoutUrl] = useState('');
 
   useEffect(() => {
     if (localStorage.checkout_id) {
@@ -43,12 +43,12 @@ export default function ShopProvider({ children }) {
 
       const checkout = await createCheckout(
         newItem.id,
-        newItem.variantQuantity
+        newItem.variantQuantity,
       );
       setCheckoutId(checkout.id);
       setCheckoutUrl(checkout.webUrl);
 
-      localStorage.setItem("checkout_id", JSON.stringify([newItem, checkout]));
+      localStorage.setItem('checkout_id', JSON.stringify([newItem, checkout]));
     } else {
       let newCart = [];
       let added = false;
@@ -68,8 +68,8 @@ export default function ShopProvider({ children }) {
       setCart(newCart);
       const newCheckout = await updateCheckout(checkoutId, newCart);
       localStorage.setItem(
-        "checkout_id",
-        JSON.stringify([newCart, newCheckout])
+        'checkout_id',
+        JSON.stringify([newCart, newCheckout]),
       );
     }
   }
@@ -81,8 +81,8 @@ export default function ShopProvider({ children }) {
 
     const newCheckout = await updateCheckout(checkoutId, updatedCart);
     localStorage.setItem(
-      "checkout_id",
-      JSON.stringify([updatedCart, newCheckout])
+      'checkout_id',
+      JSON.stringify([updatedCart, newCheckout]),
     );
 
     if (updatedCart.length === 0) {
@@ -102,7 +102,7 @@ export default function ShopProvider({ children }) {
         cartTotal: cart.reduce((acc, item) => acc + item.variantQuantity, 0),
         value: cart.reduce(
           (acc, item) => acc + item.variantQuantity * item.price,
-          0
+          0,
         ),
       }}
     >

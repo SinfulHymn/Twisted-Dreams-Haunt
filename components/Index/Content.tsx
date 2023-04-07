@@ -1,9 +1,8 @@
-import { useState } from "react";
-import MapRendered from "./MapRendered";
-import InfoBanner from "./InfoBanner";
-import AboutSection from "./AboutSection";
-import InfoSectionLeft from "./InfoSectionLeft";
-import InfoSectionRight from "./InfoSectionRight";
+import MapRendered from './MapRendered';
+import InfoBanner from './InfoBanner';
+import AboutSection from './AboutSection';
+import InfoSectionLeft from './InfoSectionLeft';
+import InfoSectionRight from './InfoSectionRight';
 
 const Content = ({ contentData }) => {
   const infoBannerOneData = contentData.InfoBannerOne;
@@ -13,10 +12,10 @@ const Content = ({ contentData }) => {
   const informationBlockTwoData = contentData.InformationBlockTwo;
   const informationBlockThreeData = contentData.InformationBlockThree;
 
-  const [value, setValue] = useState(new Date(2022, 9, 21));
-  function onChange(nextValue) {
-    setValue(nextValue);
-  }
+  // const [value, setValue] = useState(new Date(2022, 9, 21));
+  // function onChange(nextValue) {
+  //   setValue(nextValue);
+  // }
 
   return (
     <>

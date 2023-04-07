@@ -1,11 +1,11 @@
-import Banner from "@components/global/Banner";
-import EmailComponent from "@components/Contact/EmailComponent";
-import MapRendered from "@components/Index/MapRendered";
+import Banner from '@components/global/Banner';
+import EmailComponent from '@components/Contact/EmailComponent';
+import MapRendered from '@components/Index/MapRendered';
 
 const ContactLayout = () => {
   return (
     <>
-      <Banner title={"Contact"} />
+      <Banner title={'Contact'} />
 
       <div className="py-5 px-4 font-custom2 text-main-orange lg:py-10 lg:px-2">
         <div className="container mx-auto grid grid-cols-12 gap-5">
@@ -35,7 +35,7 @@ const ContactLayout = () => {
               </p>
               <div className="space-y-6 font-bold">
                 <p className="flex lg:flex-col">
-                  Email:{" "}
+                  Email:{' '}
                   <a
                     href="mailto:contact@twisteddreamshaunt.com"
                     className="ml-4 text-main-red "
@@ -44,7 +44,7 @@ const ContactLayout = () => {
                   </a>
                 </p>
                 <p className="flex lg:flex-col">
-                  Phone:{" "}
+                  Phone:{' '}
                   <a
                     href="tel:+1 (888) 888 - 8888"
                     className="ml-4 text-main-red"
@@ -53,7 +53,7 @@ const ContactLayout = () => {
                   </a>
                 </p>
                 <p className="flex lg:flex-col">
-                  Fax:{" "}
+                  Fax:{' '}
                   <a
                     href="tel:+1 (888) 888 - 8888"
                     className="ml-4 text-main-red"
@@ -62,7 +62,7 @@ const ContactLayout = () => {
                   </a>
                 </p>
                 <p className="flex lg:flex-col">
-                  website:{" "}
+                  website:{' '}
                   <a
                     href="https://twisteddreamshaunt.com"
                     className="ml-4 text-main-red"

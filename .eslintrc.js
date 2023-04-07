@@ -6,16 +6,30 @@ module.exports = {
     node: true,
     es6: true,
   },
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   extends: [
-    'prettier',
     'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@next/next/recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    'next',
-    'next/core-web-vitals',
   ],
   plugins: ['prettier'],
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        trailingComma: 'all',
+        arrowParens: 'always',
+      },
+    ],
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 0,
     'no-unused-vars': 0,

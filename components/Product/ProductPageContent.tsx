@@ -1,14 +1,14 @@
-import Image from "next/image";
-import ProductForm from "./ProductForm";
-import RecommendedList from "./RecommendedList";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Zoom, Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/zoom";
-import "swiper/css/autoplay";
-import "swiper/css/free-mode";
+import Image from 'next/image';
+import ProductForm from './ProductForm';
+import RecommendedList from './RecommendedList';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Zoom, Autoplay } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/zoom';
+import 'swiper/css/autoplay';
+import 'swiper/css/free-mode';
 
 export default function ProductPageContent({ product }) {
   const images = [];
@@ -20,13 +20,13 @@ export default function ProductPageContent({ product }) {
           <Image
             className="h-[300px] w-full rounded-lg object-contain xs:h-[300px] sm:h-[550px] md:h-[700px] lg:h-[600px] xl:h-[600px] 2xl:h-[600px] 3xl:h-[600px]"
             src={image.node.originalSrc}
-            alt={image.node.altText || "Product Image"}
+            alt={image.node.altText || 'Product Image'}
             width={1000}
             height={1000}
             quality={100}
           />
         </div>
-      </SwiperSlide>
+      </SwiperSlide>,
     );
   });
 
@@ -48,7 +48,7 @@ export default function ProductPageContent({ product }) {
                 }}
                 modules={[Pagination, Navigation, Zoom, Autoplay]}
                 pagination={{
-                  type: "progressbar",
+                  type: 'progressbar',
                 }}
                 navigation={true}
                 className="mySwiper"

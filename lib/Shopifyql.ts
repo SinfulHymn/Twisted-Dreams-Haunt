@@ -7,11 +7,11 @@ async function ShopifyData(query) {
 
   const options = {
     endpoint: URL,
-    method: "POST",
+    method: 'POST',
     headers: {
-      "X-Shopify-Storefront-Access-Token": storefrontAccessToken,
-      Accept: "application/json",
-      "Content-Type": "application/json",
+      'X-Shopify-Storefront-Access-Token': storefrontAccessToken,
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({ query }),
   };
@@ -23,7 +23,7 @@ async function ShopifyData(query) {
 
     return data;
   } catch (error) {
-    throw new Error("Products not fetched");
+    throw new Error('Products not fetched');
   }
 }
 
