@@ -43,7 +43,7 @@ const VideoHero = ({ heroData }) => {
             alt={'banner'}
             width={500}
             height={500}
-            className="absolute w-[200px] pb-8 opacity-[.92] sm:w-[240px] lg:w-[320px]"
+            className="absolute w-[200px] pb-8 opacity-[.8] sm:w-[240px] lg:w-[320px]"
             // quality={100}
             sizes="(max-width: 640px) 100vw, 640px"
           />
