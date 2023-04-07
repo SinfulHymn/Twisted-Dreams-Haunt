@@ -1,4 +1,5 @@
-import Head from "next/head";
+import Head from 'next/head';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const AppHead = ({ title, faviconData }) => {
   return (
     <Head>

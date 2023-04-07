@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import mail from "@sendgrid/mail";
-import type { NextApiRequest, NextApiResponse } from "next";
+import mail from '@sendgrid/mail';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -10,7 +10,7 @@ type Data = {
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<Data>,
 ) {
   const { name, email, subject, message } = req.body;
 
@@ -23,18 +23,18 @@ export default async function handler(
     `;
 
   const data = {
-    to: "bigguy@bigguyautobody.com",
-    from: "bigguy@bigguyautobody.com",
+    to: 'bigguy@bigguyautobody.com',
+    from: 'bigguy@bigguyautobody.com',
     subject: `${subject}`,
     text: content,
-    html: content.replace(/\r\n/g, "<br />"),
+    html: content.replace(/\r\n/g, '<br />'),
   };
 
   try {
     await mail.send(data);
-    res.status(200).json({ status: "success" });
+    res.status(200).json({ status: 'success' });
   } catch (error) {
     // console.log(error);
-    res.status(400).json({ status: "error" });
+    res.status(400).json({ status: 'error' });
   }
 }

@@ -1,9 +1,9 @@
 import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
-} from "react-icons/hi";
+} from 'react-icons/hi';
 
-import Link from "next/link";
+import Link from 'next/link';
 
 function BackToStoreButton() {
   return (

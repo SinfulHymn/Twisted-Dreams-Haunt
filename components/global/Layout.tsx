@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import Header from "@components/Header/Header";
-import Foooter from "@components/Footer/Footer";
-import AppHead from "./Head";
-import Image from "next/image";
-import { GlobalContext } from "@pages/_app";
+import React, { useContext } from 'react';
+import Header from '@components/Header/Header';
+import Foooter from '@components/Footer/Footer';
+import AppHead from './Head';
+import Image from 'next/image';
+import { GlobalContext } from '@pages/_app';
 
 type Props = {
   children: React.ReactNode;

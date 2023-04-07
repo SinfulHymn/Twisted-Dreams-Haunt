@@ -1,6 +1,6 @@
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic';
 
-const ReactPlayer = dynamic(() => import("./ReactPlayer"), {
+const ReactPlayer = dynamic(() => import('./ReactPlayer'), {
   ssr: false,
 });
 

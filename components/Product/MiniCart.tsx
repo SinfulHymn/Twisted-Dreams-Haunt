@@ -1,10 +1,10 @@
-import { Fragment, useContext, useRef } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { AiOutlineClose } from "react-icons/ai";
-import Image from "next/image";
-import Link from "next/link";
-import { CartContext } from "@context/shopContext";
-import { formatter } from "@utils/helpers";
+import { Fragment, useContext, useRef } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
+import { AiOutlineClose } from 'react-icons/ai';
+import Image from 'next/image';
+import Link from 'next/link';
+import { CartContext } from '@context/shopContext';
+import { formatter } from '@utils/helpers';
 
 export default function MiniCart({ cart }) {
   const cancelButtonRef = useRef();
@@ -167,7 +167,7 @@ export default function MiniCart({ cart }) {
                       </div>
                       <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
                         <p>
-                          or{" "}
+                          or{' '}
                           <button
                             type="button"
                             className="font-medium hover:text-gray-800 dark:hover:text-gray-200"

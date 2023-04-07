@@ -1,12 +1,12 @@
-import React from "react";
-import Image from "next/image";
-import AutoPlaySilentVideo from "./VideoMutedFix";
+import React from 'react';
+import Image from 'next/image';
+import AutoPlaySilentVideo from './VideoMutedFix';
 
 const VideoHero = ({ heroData }) => {
   const videoUrl = heroData.VideoHero.data.attributes.url;
   const sponsorLogo = heroData.SponsorLogo.data.attributes.url;
   const sponsorText = heroData.SponsorText;
-  const sponsorLink = "https://www.haunting.net/twisted-dreams-haunt-2022/";
+  const sponsorLink = 'https://www.haunting.net/twisted-dreams-haunt-2022/';
   const banner = heroData.Banner.data.attributes.url;
   return (
     <>
@@ -40,7 +40,7 @@ const VideoHero = ({ heroData }) => {
         <div className="absolute z-30 flex h-full w-full items-center justify-center">
           <Image
             src={banner}
-            alt={"banner"}
+            alt={'banner'}
             width={500}
             height={500}
             className="absolute w-[200px] pb-8 opacity-[.92] sm:w-[240px] lg:w-[320px]"

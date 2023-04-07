@@ -1,14 +1,14 @@
-import ReactPlayer from "./PlayerSSRfix";
+import ReactPlayer from './PlayerSSRfix';
 export default function AboutSection({ aboutData }) {
-  const { AboutDescription, AboutTitle, Video } = aboutData;
+  const { AboutDescription, AboutTitle } = aboutData;
   return (
     <div className="py-4">
       <div className="mx-auto flex flex-col items-center justify-center md:flex-row lg:w-9/12 lg:max-w-[892px] xl:w-8/12 xl:max-w-[1140px]">
         <div className="relative w-full  md:w-1/2">
           <div className="relative pt-[56.25%]">
             <ReactPlayer
-              width={"100%"}
-              height={"100%"}
+              width={'100%'}
+              height={'100%'}
               className="absolute top-0 left-0"
             />
           </div>

@@ -1,14 +1,14 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
-import { Squash as Squash } from "hamburger-react";
-import Socials from "./Socials";
-import SocialsMobile from "./SocialsMobile";
-import { useContext } from "react";
-import { CartContext } from "@context/shopContext";
-import MiniCart from "@components/Product/MiniCart";
-import CartButton from "./CartButton";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState } from 'react';
+import { Squash as Squash } from 'hamburger-react';
+import Socials from './Socials';
+import SocialsMobile from './SocialsMobile';
+import { useContext } from 'react';
+import { CartContext } from '@context/shopContext';
+import MiniCart from '@components/Product/MiniCart';
+import CartButton from './CartButton';
 
 const Navbar = ({ headerData }): React.ReactElement => {
   const mainLogo = headerData?.MainLogo?.data?.attributes?.url;
@@ -22,11 +22,11 @@ const Navbar = ({ headerData }): React.ReactElement => {
         <nav className="flex flex-wrap items-center justify-between px-1 text-white">
           {/* logo */}
           <div className=" flex-0 items-center  justify-center sm:flex-[1_1_0]">
-            <Link href={"/"}>
+            <Link href={'/'}>
               <Image
                 className="p-1.5"
                 src={mainLogo}
-                alt={"Logo"}
+                alt={'Logo'}
                 width={200}
                 height={60}
                 sizes="(max-width: 640px) 100vw, 640px"
@@ -51,8 +51,8 @@ const Navbar = ({ headerData }): React.ReactElement => {
           {/* nav */}
           <div
             className={
-              "order-3 w-full lg:order-2 lg:block lg:flex-[1_1_0] " +
-              (isOpen ? "block" : "hidden")
+              'order-3 w-full lg:order-2 lg:block lg:flex-[1_1_0] ' +
+              (isOpen ? 'block' : 'hidden')
             }
           >
             <SocialsMobile />
@@ -62,7 +62,7 @@ const Navbar = ({ headerData }): React.ReactElement => {
                   onClick={() => {
                     setOpen(false);
                   }}
-                  href={"/"}
+                  href={'/'}
                   className="block p-4 hover:text-main-red"
                 >
                   Home
@@ -73,7 +73,7 @@ const Navbar = ({ headerData }): React.ReactElement => {
                   onClick={() => {
                     setOpen(false);
                   }}
-                  href={"/store"}
+                  href={'/store'}
                   className="block p-4 hover:text-main-red"
                 >
                   Store
@@ -84,7 +84,7 @@ const Navbar = ({ headerData }): React.ReactElement => {
                   onClick={() => {
                     setOpen(false);
                   }}
-                  href={"/gallery"}
+                  href={'/gallery'}
                   className="block p-4 hover:text-main-red"
                 >
                   Gallery
@@ -95,7 +95,7 @@ const Navbar = ({ headerData }): React.ReactElement => {
                   onClick={() => {
                     setOpen(false);
                   }}
-                  href={"/about"}
+                  href={'/about'}
                   className="block p-4 hover:text-main-red"
                 >
                   About
@@ -106,7 +106,7 @@ const Navbar = ({ headerData }): React.ReactElement => {
                   onClick={() => {
                     setOpen(false);
                   }}
-                  href={"/contact"}
+                  href={'/contact'}
                   className="block p-4 hover:text-main-red"
                 >
                   Contact

@@ -1,13 +1,13 @@
-import classNames from "classnames";
-import { useState } from "react";
+import classNames from 'classnames';
+import { useState } from 'react';
 
 export default function EmailComponent() {
   const [form, setForm] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-    status: "",
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+    status: '',
   });
 
   const handleForm = (e) => {
@@ -23,33 +23,33 @@ export default function EmailComponent() {
     if (!name || !email || !subject || !message) {
       setForm({
         ...form,
-        status: "Please fill out all fields",
+        status: 'Please fill out all fields',
       });
     } else {
       setForm({
         ...form,
-        status: "Sending...",
+        status: 'Sending...',
       });
-      await fetch("/api/mail", {
-        method: "POST",
+      await fetch('/api/mail', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(form),
       }).then((res) => {
         if (res.status === 200) {
           setForm({
             ...form,
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-            status: "Message Sent Successfully",
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+            status: 'Message Sent Successfully',
           });
         } else {
           setForm({
             ...form,
-            status: "Message failed to send",
+            status: 'Message failed to send',
           });
         }
       });
@@ -83,8 +83,8 @@ export default function EmailComponent() {
               />
             </div>
             {!form.name &&
-              form.status != "Message Sent Successfully" &&
-              form.status != "" && <RequiredMessage />}
+              form.status != 'Message Sent Successfully' &&
+              form.status != '' && <RequiredMessage />}
           </div>
 
           <div className="font-bold text-main-red">
@@ -105,8 +105,8 @@ export default function EmailComponent() {
                 className="block h-[50px] w-full rounded-sm border-main-orange p-4 placeholder-main-red shadow-sm focus:border-main-orange focus:ring-main-orange"
               />
               {!form.email &&
-                form.status != "Message Sent Successfully" &&
-                form.status != "" && <RequiredMessage />}
+                form.status != 'Message Sent Successfully' &&
+                form.status != '' && <RequiredMessage />}
             </div>
           </div>
 
@@ -125,8 +125,8 @@ export default function EmailComponent() {
                 className="block h-[50px] w-full rounded-sm  border-main-orange p-4 placeholder-main-red shadow-sm focus:border-main-orange focus:ring-main-orange"
               />
               {!form.subject &&
-                form.status != "Message Sent Successfully" &&
-                form.status != "" && <RequiredMessage />}
+                form.status != 'Message Sent Successfully' &&
+                form.status != '' && <RequiredMessage />}
             </div>
           </div>
         </div>
@@ -146,8 +146,8 @@ export default function EmailComponent() {
               className="block h-[278px] w-full rounded-sm border-main-orange p-4 placeholder-main-red shadow-sm focus:border-main-orange focus:ring-main-orange"
             />
             {!form.message &&
-              form.status != "Message Sent Successfully" &&
-              form.status != "" && <RequiredMessage />}
+              form.status != 'Message Sent Successfully' &&
+              form.status != '' && <RequiredMessage />}
           </div>
         </div>
       </div>
@@ -162,14 +162,14 @@ export default function EmailComponent() {
       </div>
       {form.status && (
         <p
-          className={classNames(" my-6 border p-2", {
-            "border-main-red text-main-red":
-              form.status === "Message failed to send",
-            "border-green-800 text-green-800":
-              form.status === "Message Sent Successfully",
-            "border-main-red  text-main-red":
-              form.status === "Please fill out all fields",
-            "border-yellow-800 text-yellow-800": form.status === "Sending...",
+          className={classNames(' my-6 border p-2', {
+            'border-main-red text-main-red':
+              form.status === 'Message failed to send',
+            'border-green-800 text-green-800':
+              form.status === 'Message Sent Successfully',
+            'border-main-red  text-main-red':
+              form.status === 'Please fill out all fields',
+            'border-yellow-800 text-yellow-800': form.status === 'Sending...',
           })}
         >
           {form.status}

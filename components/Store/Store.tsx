@@ -1,9 +1,9 @@
-import React from "react";
-import ProductList from "./ProductList";
-import Banner from "@components/global/Banner";
-import { useState, useEffect } from "react";
-import { getProductsInCollection } from "@lib/Shopifyql";
-import Loading from "@components/global/Loading";
+import React from 'react';
+import ProductList from './ProductList';
+import Banner from '@components/global/Banner';
+import { useState, useEffect } from 'react';
+import { getProductsInCollection } from '@lib/Shopifyql';
+import Loading from '@components/global/Loading';
 
 const Store = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +20,7 @@ const Store = () => {
 
   return (
     <>
-      <Banner title={"Twisted Dreams Store"} />
+      <Banner title={'Twisted Dreams Store'} />
       {/* <Loading /> */}
       {isLoading ? <Loading /> : <ProductList products={productsData} />}
     </>

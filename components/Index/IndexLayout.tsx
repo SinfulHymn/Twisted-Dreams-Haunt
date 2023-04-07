@@ -1,6 +1,6 @@
-import React from "react";
-import VideoHero from "./VideoHero";
-import Content from "./Content";
+import React from 'react';
+import VideoHero from './VideoHero';
+import Content from './Content';
 
 const IndexLayout = ({ heroData, contentData }) => {
   return (

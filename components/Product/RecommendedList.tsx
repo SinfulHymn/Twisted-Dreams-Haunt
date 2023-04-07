@@ -1,4 +1,4 @@
-import ProductCard from "@components/Store/ProductCard";
+import ProductCard from '@components/Store/ProductCard';
 
 const RecommendedList = ({ products, current }) => {
   return (
@@ -12,7 +12,7 @@ const RecommendedList = ({ products, current }) => {
         {products.map((product) =>
           product.node.id === current ? null : (
             <ProductCard key={product.node.id} product={product} />
-          )
+          ),
         )}
       </div>
     </div>

@@ -1,20 +1,20 @@
-import Index from "@components/Index/IndexLayout";
-import { fetchAPI } from "@lib/strapi";
+import Index from '@components/Index/IndexLayout';
+import { fetchAPI } from '@lib/strapi';
 
 export default function Home({ Hero, Content, seo }) {
   return <Index heroData={Hero} contentData={Content} />;
 }
 
 export async function getStaticProps() {
-  const homePageRes = await fetchAPI("/homepage", {
+  const homePageRes = await fetchAPI('/homepage', {
     populate: {
-      Hero: { populate: "*" },
-      InfoBannerOne: { populate: "*" },
-      InfoBannerTwo: { populate: "*" },
-      AboutSection: { populate: "*" },
-      InformationBlockOne: { populate: "*" },
-      InformationBlockTwo: { populate: "*" },
-      InformationBlockThree: { populate: "*" },
+      Hero: { populate: '*' },
+      InfoBannerOne: { populate: '*' },
+      InfoBannerTwo: { populate: '*' },
+      AboutSection: { populate: '*' },
+      InformationBlockOne: { populate: '*' },
+      InformationBlockTwo: { populate: '*' },
+      InformationBlockThree: { populate: '*' },
     },
   });
   return {

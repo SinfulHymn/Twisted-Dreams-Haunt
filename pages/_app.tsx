@@ -1,10 +1,10 @@
-import "../styles/globals.css";
-import ShopProvider from "@context/shopContext";
-import type { AppProps } from "next/app";
-import { createContext, Suspense } from "react";
-import { fetchAPI } from "../lib/strapi.js";
-import Layout from "@components/global/Layout";
-import Transition from "@components/Animations/PageTransition";
+import '../styles/globals.css';
+import ShopProvider from '@context/shopContext';
+import type { AppProps } from 'next/app';
+import { createContext, Suspense } from 'react';
+import { fetchAPI } from '../lib/strapi.js';
+import Layout from '@components/global/Layout';
+import Transition from '@components/Animations/PageTransition';
 
 type GlobalDataType = {
   headerData: object;
@@ -17,7 +17,7 @@ type GlobalDataType = {
 };
 
 export const GlobalContext = createContext<GlobalDataType | undefined>(
-  undefined
+  undefined,
 );
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -60,19 +60,19 @@ export default function App({ Component, pageProps }: AppProps) {
 // https://github.com/vercel/next.js/discussions/10949
 App.getInitialProps = async (ctx) => {
   // Fetch global site settings from Strapi
-  const layoutRes = await fetchAPI("/layout", {
+  const layoutRes = await fetchAPI('/layout', {
     populate: {
-      BackgroundImage: { populate: "*" },
-      BannerVideo: { populate: "*" },
-      MapIconImage: { populate: "*" },
-      ProductImagePlaceHolder: { populate: "*" },
-      Header: { populate: "*" },
-      Footer: { populate: "*" },
-      Favicons: { populate: "*" },
+      BackgroundImage: { populate: '*' },
+      BannerVideo: { populate: '*' },
+      MapIconImage: { populate: '*' },
+      ProductImagePlaceHolder: { populate: '*' },
+      Header: { populate: '*' },
+      Footer: { populate: '*' },
+      Favicons: { populate: '*' },
     },
   });
-  const globalRes = await fetchAPI("/global", {
-    populate: "*",
+  const globalRes = await fetchAPI('/global', {
+    populate: '*',
   });
 
   // Pass the data to our page via props

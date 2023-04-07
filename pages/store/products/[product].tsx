@@ -1,6 +1,5 @@
-import Layout from "@components/global/Layout";
-import { getAllProducts, getProduct } from "@lib/Shopifyql";
-import ProductLayout from "@components/Product/ProductLayout";
+import { getAllProducts, getProduct } from '@lib/Shopifyql';
+import ProductLayout from '@components/Product/ProductLayout';
 
 export default function ProductPage({ product }) {
   return <ProductLayout product={product} />;
