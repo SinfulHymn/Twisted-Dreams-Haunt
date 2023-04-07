@@ -24,10 +24,10 @@ const Navbar = ({ headerData }): React.ReactElement => {
           <div className=" flex-0 items-center  justify-center sm:flex-[1_1_0]">
             <Link href={'/'}>
               <Image
-                className="p-1.5"
+                className="p-2"
                 src={mainLogo}
                 alt={'Logo'}
-                width={200}
+                width={180}
                 height={60}
                 sizes="(max-width: 640px) 100vw, 640px"
               />
