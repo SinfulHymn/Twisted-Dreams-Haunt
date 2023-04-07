@@ -17,7 +17,7 @@ const VideoHero = ({ heroData }) => {
                             bg of the div is hero
                             center and cover background images 
             */}
-      <div className="relative z-0 min-h-[500px]    overflow-hidden lg:min-h-[600px]">
+      <div className="relative z-0 min-h-[33rem]    overflow-hidden lg:min-h-[600px]">
         {/* <Image
                 src="/images/landscape-web.png"
                 alt="Twisted Dreams Haunt"
