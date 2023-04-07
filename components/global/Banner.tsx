@@ -7,7 +7,7 @@ const Banner = ({ title }) => {
   const { BannerVideo } = layoutData;
 
   return (
-    <div className="relative h-32 sm:h-40">
+    <div className="relative h-24 sm:h-40">
       <VideoMutedFix
         className="absolute z-0 h-full w-full object-cover"
         videoSrc={BannerVideo}
