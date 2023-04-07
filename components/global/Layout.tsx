@@ -26,12 +26,13 @@ const Layout = ({ children, title }: Props) => {
         <main className="relative flex flex-grow flex-col pt-[60px]">
           <Image
             fill
-            className="-z-50  object-contain"
+            className="-z-50 object-contain"
             src={BackgroundImage}
             alt="TDH"
             quality={100}
           />
           <div className="absolute -z-40 block h-full w-full bg-black bg-opacity-90 "></div>
+          {/* test */}
           {children}
         </main>
         <Foooter footerData={Footer} />
